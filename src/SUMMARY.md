@@ -21,11 +21,11 @@
         - [Mixin 与继承](basics/css-mixins-inheritance.md)
         - [嵌套规则与模块化](basics/css-nesting-modular.md)
         - [使用 SASS/LESS 优化项目样式](basics/css-sass-less-optimization.md)
-    - [第4章：JavaScript 与 ES6 基础](basics/js-es6-basics.md)
+    - [第4章：JavaScript 与 ES6+ 基础](basics/js-es6-basics.md)
         - [JavaScript 简史与发展](basics/js-history-development.md)
         - [变量、数据类型与运算符](basics/js-variables-types-operators.md)
         - [控制流与循环](basics/js-control-flow-loops.md)
-        - [ES6 的主要特性](basics/es6-features.md)
+        - [ES6+ 的主要特性](basics/es6-features.md)
         - [模块化：import 与 export](basics/js-modules.md)
         - [Promise 与异步编程](basics/js-promise-async.md)
 
