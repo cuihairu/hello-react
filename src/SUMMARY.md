@@ -152,9 +152,3 @@
         - [测试工具与方法](projects/testing-tools.md)
         - [持续集成与自动化部署](projects/ci-cd.md)
 
-- [第九部分：展望与未来](future/README.md)
-    - [第24章：React 的未来与趋势](future/react-future.md)
-        - [最新的 React 特性介绍](future/react-new-features.md)
-        - [React Server Components 与应用场景](future/react-server-components.md)
-        - [Concurrent Mode 与 Fiber 的发展](future/react-concurrent-mode.md)
-        - [如何跟踪 React 社区与生态的最新动态](future/react-community.md)
