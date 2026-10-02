@@ -26,7 +26,7 @@ Next.js 是一个支持 SSR 的 React 框架，内置了多种 SEO 优化功能�
 
 使用 Next.js 的 `Head` 组件，可以动态生成页面的 `title` 和 `meta` 标签，以提升 SEO。
 
-```javascript
+```jsx
 import Head from 'next/head';
 
 function HomePage() {
@@ -49,7 +49,7 @@ function HomePage() {
 
 在 Next.js 中，`getServerSideProps` 用于在请求时服务器端预加载数据，并在页面渲染前将其传递到组件。这有助于生成动态的页面内容，同时保证这些内容被搜索引擎抓取。
 
-```javascript
+```jsx
 export async function getServerSideProps(context) {
   const res = await fetch('https://api.example.com/data');
   const data = await res.json();
@@ -75,7 +75,7 @@ function DataPage({ data }) {
 
 Next.js 的静态生成（Static Generation）功能允许在构建时生成静态 HTML 页面，适用于内容不经常变化的页面。这些页面具有较高的加载速度和良好的 SEO 特性。
 
-```javascript
+```jsx
 export async function getStaticProps() {
   const res = await fetch('https://api.example.com/data');
   const data = await res.json();
@@ -101,7 +101,7 @@ function StaticPage({ data }) {
 
 Next.js 提供了 `next/image` 组件，用于自动优化和加载图片。通过延迟加载、调整图片大小和格式，提升页面加载速度，从而改善 SEO。
 
-```javascript
+```jsx
 import Image from 'next/image';
 
 function HomePage() {

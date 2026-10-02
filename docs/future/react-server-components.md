@@ -40,7 +40,7 @@ Server Component (默认)
     └── import ClientComponent   →  **边界切断**
             │
             ├── import ChildClient  → 客户端组件（传播）
-            └── import ServerUtil   → ❌ 错误：客户端不可引入服务端模块
+            └── import ServerUtil   → 错误：客户端不可引入服务端模块
 ```
 
 **关键原则**：
@@ -53,7 +53,7 @@ Server Component (默认)
 ### 3.1 传统 Client Component（CSR/SSR 混合）
 
 ```tsx
-// ❌ 客户端组件：瀑布流、需 useEffect、水合开销
+// 反例 · 客户端组件：瀑布流、需 useEffect、水合开销
 function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
   const [posts, setPosts] = useState([]);
@@ -71,11 +71,13 @@ function UserProfile({ userId }) {
 ### 3.2 Server Component（并行、零包、直连 DB）
 
 ```tsx
-// ✅ 服务端组件：并行获取、无水合、直连数据库
+// 正例 · 服务端组件：并行获取、无水合、直连数据库
 async function UserProfile({ userId }) {
-  // 并行执行，无需 Promise.all 显式写（React 自动优化）
-  const user = await db.user.findUnique({ where: { id: userId } });
-  const posts = await db.post.findMany({ where: { authorId: userId } });
+  // 两个查询互不依赖，用 Promise.all 并行执行，避免串行等待
+  const [user, posts] = await Promise.all([
+    db.user.findUnique({ where: { id: userId } }),
+    db.post.findMany({ where: { authorId: userId } }),
+  ]);
 
   return <div>{user.name} 的 {posts.length} 篇文章</div>;
 }
@@ -126,7 +128,7 @@ Flight 是 RSC 的**序列化格式**，将服务端组件树编码为流式 JSO
 
 ### 4.2 简化示例
 
-```json
+```jsonc
 // 服务端生成的 Flight 流（简化）
 [
   ["$", "html", null, {"startTag": "<div>"}],
@@ -145,22 +147,24 @@ Flight 是 RSC 的**序列化格式**，将服务端组件树编码为流式 JSO
 ### 4.3 可序列化 Props 限制
 
 ```tsx
-// ✅ 允许：原始值、纯对象、数组、Date、Promise、React Element
-<ClientComponent
-  name="Alice"
-  count={42}
-  items={['a', 'b']}
-  meta={{ createdAt: new Date() }}
-  promise={fetchData()}
-  children={<ServerOnlyComponent />}
-/>
+<>
+  {/* 允许：原始值、纯对象、数组、Date、Promise、React Element */}
+  <ClientComponent
+    name="Alice"
+    count={42}
+    items={['a', 'b']}
+    meta={{ createdAt: new Date() }}
+    promise={fetchData()}
+    children={<ServerOnlyComponent />}
+  />
 
-// ❌ 禁止：类实例、函数、Symbol、DOM 节点、WeakMap、循环引用
-<ClientComponent
-  handler={() => {}}           // 函数不序列化
-  ref={someRef}                // Ref 不序列化
-  classInstance={new Foo()}    // 类实例不序列化
-/>
+  {/* 禁止：类实例、函数、Symbol、DOM 节点、WeakMap、循环引用 */}
+  <ClientComponent
+    handler={() => {}}           // 函数不序列化
+    ref={someRef}                // Ref 不序列化
+    classInstance={new Foo()}    // 类实例不序列化
+  />
+</>
 ```
 
 **解决方案**：函数改用 Server Actions、Ref 仅在客户端创建、类实例转纯数据。
@@ -236,9 +240,11 @@ export function CreatePostForm() {
 
 | 数据源 | 默认缓存 | 控制方式 |
 |--------|----------|----------|
-| `fetch()` (GET) | **强缓存**（`force-cache`） | `fetch(url, { cache: 'no-store' })` |
+| `fetch()` (GET) | **强缓存**（`force-cache`）* | `fetch(url, { cache: 'no-store' })` |
 | 数据库查询 | **无缓存**（每次请求执行） | 手动 `unstable_cache` |
 | Server Action | **不缓存**（POST 语义） | N/A |
+
+> \* 该行为指 Next.js 14；**Next.js 15 起 `fetch` 默认改为不缓存**，需要缓存时显式传 `cache: 'force-cache'`。
 
 ### 6.2 手动缓存与标签失效
 
@@ -297,7 +303,7 @@ app/
 ### 8.1 陷阱：在 Server Component 中使用 `useState`
 
 ```tsx
-// ❌ 报错：Server Component 不支持 Hooks
+// 报错：Server Component 不支持 Hooks
 async function Counter() {
   const [count, setCount] = useState(0); // Error
   return <button onClick={() => setCount(c => c + 1)}>{count}</button>;
@@ -312,7 +318,10 @@ export function Counter() {
   const [count, setCount] = useState(0);
   return <button onClick={() => setCount(c => c + 1)}>{count}</button>;
 }
+```
 
+
+```tsx
 // Page.tsx (Server Component)
 import { Counter } from './Counter.client';
 export default function Page() {
@@ -323,10 +332,10 @@ export default function Page() {
 ### 8.2 陷阱：客户端组件引入服务端工具
 
 ```tsx
-// ❌ ClientComponent.tsx
+// 错误示范：ClientComponent.tsx
 'use client';
 import { db } from '@/lib/db'; // db 只能在服务端运行
-export function Widget() { ... }
+export function Widget() { /* ... */ }
 ```
 
 **修正**：通过 Server Action 或 Props 传递数据

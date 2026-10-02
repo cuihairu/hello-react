@@ -29,7 +29,7 @@ yarn add react-router-dom
    ```
 
 2. **设置路由**：
-   ```javascript
+   ```jsx
    function App() {
      return (
        <Router>
@@ -52,7 +52,7 @@ yarn add react-router-dom
    ```
 
 3. **创建组件**：
-   ```javascript
+   ```jsx
    function Home() {
      return <h2>Home Page</h2>;
    }
@@ -72,7 +72,7 @@ yarn add react-router-dom
 
 React Router 支持在路由路径中使用参数。可以通过在路由路径中添加 `:` 前缀来定义参数，例如 `"/user/:id"`。在组件中，可以通过 `useParams` Hook 来获取这些参数：
 
-```javascript
+```jsx
 import { useParams } from 'react-router-dom';
 
 function User() {
@@ -88,7 +88,7 @@ function User() {
 
 有时需要根据条件动态加载组件或内容。可以使用 React 的 `lazy` 和 `Suspense` 来实现代码拆分和动态加载：
 
-```javascript
+```jsx
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
@@ -126,7 +126,7 @@ function App() {
 
 嵌套路由允许在子路由中定义更多的路由。例如，您可能希望在一个页面中显示不同的子页面：
 
-```javascript
+```jsx
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Dashboard() {
@@ -151,7 +151,7 @@ function Dashboard() {
 
 React Router 提供了 `useNavigate` Hook 用于编程式导航。可以在事件处理程序中使用它进行页面跳转：
 
-```javascript
+```jsx
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
@@ -174,7 +174,7 @@ function Login() {
 
 可以创建一个高阶组件或组件封装来保护路由：
 
-```javascript
+```jsx
 import { Navigate } from 'react-router-dom';
 
 // 认证状态示例：实际项目中可来自 Context、Redux 或服务端会话
@@ -200,7 +200,7 @@ function PrivateRoute({ element }) {
 
 React Router 支持通过配置对象的方式进行路由设置。可以将路由配置提取到一个单独的文件中：
 
-```javascript
+```jsx
 const routes = [
   { path: '/', element: <Home /> },
   { path: '/about', element: <About /> },
@@ -213,7 +213,7 @@ const routes = [
 
 使用 `useNavigate` 进行编程式导航：
 
-```javascript
+```jsx
 import { useNavigate } from 'react-router-dom';
 
 function NavigateButton() {

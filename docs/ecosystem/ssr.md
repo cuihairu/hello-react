@@ -30,7 +30,7 @@ React 提供了 `renderToString` 和 `renderToNodeStream` 两个方法用于在�
 
 `renderToString` 是最常用的 SSR 方法，它将 React 组件渲染为一个字符串，并将该字符串直接插入到 HTML 模板中。
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import App from './App';
@@ -70,7 +70,7 @@ app.listen(3000, () => {
 
 `renderToNodeStream` 方法可以逐步地将 React 组件流式渲染为 HTML，这对于处理大型页面或提升服务器性能非常有用。
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import App from './App';
@@ -131,7 +131,7 @@ npm run dev
 
 在 Next.js 中，任何在 `pages` 目录下的文件都会被自动映射为路由。
 
-```javascript
+```jsx
 // pages/index.js
 import React from 'react';
 
@@ -148,7 +148,7 @@ export default Home;
 
 Next.js 提供了 `getServerSideProps` 函数用于在服务器端获取数据，并将其作为 props 传递给页面组件。
 
-```javascript
+```jsx
 // pages/index.js
 import React from 'react';
 

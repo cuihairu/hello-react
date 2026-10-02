@@ -1,6 +1,6 @@
 ### Concurrent Mode 与调度器（Scheduler）
 
-React 的 Concurrent Mode 和调度器（Scheduler）是 React 16.8 版本中引入的重要功能，它们旨在提高应用的响应性和性能。Concurrent Mode 使得 React 可以更灵活地管理任务优先级，并在用户交互时保持应用的流畅性。调度器则负责管理这些任务的调度和优先级。以下是 Concurrent Mode 和调度器的详细介绍。
+React 的并发能力（Concurrent Rendering）和调度器（Scheduler）是旨在提高应用响应性和性能的重要机制。调度器最早以 `unstable_` 前缀的实验性 API 出现在 React 16.x 中，而并发能力在 **React 18** 中正式落地——官方不再使用 "Concurrent Mode" 这个说法，而是称为 Concurrent Rendering，并通过 `createRoot` 默认启用。它使得 React 可以更灵活地管理任务优先级，并在用户交互时保持应用的流畅性。调度器则负责管理这些任务的调度和优先级。以下是并发机制和调度器的详细介绍。
 
 ---
 
@@ -61,23 +61,20 @@ unstable_scheduleCallback(unstable_NormalPriority, () => {
 
 ## 3. Concurrent Mode 的实际应用
 
-### 3.1 使用 Concurrent Mode
+### 3.1 使用并发渲染
 
-要启用 Concurrent Mode，开发者需要使用 React 的 experimental API。以下是一个简单的例子，演示如何在应用中启用 Concurrent Mode：
+React 18 起，使用 `createRoot` 即可启用并发渲染，**不需要任何额外配置项**（并发特性默认开启）。以下是一个简单的例子：
 
-```javascript
+```jsx
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-const root = createRoot(document.getElementById('root'), {
-  // 启用 Concurrent Mode
-  concurrentMode: true,
-});
+const root = createRoot(document.getElementById('root'));
 
 root.render(<App />);
 ```
 
-在这个例子中，`createRoot` 函数的配置选项中包含 `concurrentMode: true`，用于启用 Concurrent Mode。
+在这个例子中，`createRoot` 创建的根节点即运行在并发渲染机制之下；也可以配合 `startTransition`、`useDeferredValue` 等 API 显式标记低优先级更新。
 
 ### 3.2 Concurrent Mode 的最佳实践
 

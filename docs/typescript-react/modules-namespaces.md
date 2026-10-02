@@ -104,7 +104,7 @@ export * from './math'; // 重新导出 math 模块的所有内容
 
 TypeScript 支持不同的模块解析策略，可以通过 `tsconfig.json` 文件配置：
 
-```json
+```jsonc
 {
   "compilerOptions": {
     "module": "commonjs", // 使用 CommonJS 模块系统

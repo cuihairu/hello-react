@@ -16,27 +16,31 @@
 #### 23.2.2. 创建和配置 React Native 项目
 1. **安装开发环境**：
    - 安装 [Node.js](https://nodejs.org/).
-   - 安装 [Watchman](https://facebook.github.io/watchman/docs/install)（用于监控文件变化）。
-   - 安装 [React Native CLI](https://reactnative.dev/docs/environment-setup)：
+   - macOS 上开发 iOS 需安装 Xcode 与 [Watchman](https://facebook.github.io/watchman/docs/install)（用于监控文件变化）。
+
+2. **创建新项目**（二选一）：
+   - **Expo（官方推荐，开箱即用）**：
      ```bash
-     npm install -g react-native-cli
+     npx create-expo-app MyApp
+     cd MyApp
+     npx expo start
+     ```
+   - **React Native CLI（需要原生能力时）**：早期的全局 `react-native-cli` 已废弃，现在通过 `npx` 调用社区 CLI：
+     ```bash
+     npx @react-native-community/cli@latest init MyApp
+     cd MyApp
      ```
 
-2. **创建新项目**：
-   ```bash
-   npx react-native init MyApp
-   cd MyApp
-   ```
-
 3. **运行开发服务器**：
-   - 对于 Android：
+   - 对于 Android（RN CLI 项目，需已连接设备或启动模拟器）：
      ```bash
-     npx react-native run-android
+     npm run android
      ```
    - 对于 iOS（需要 macOS 和 Xcode）：
      ```bash
-     npx react-native run-ios
+     npm run ios
      ```
+   - Expo 项目则直接使用 `npx expo run:android` / `npx expo run:ios`，或用 Expo Go 扫码预览。
 
 #### 23.2.3. 开发基础
 - **组件化开发**：
@@ -71,7 +75,7 @@
 #### 23.2.6. 常见的开发工具和资源
 - **开发工具**：
   - **Expo**：提供了一整套开发工具，可以简化 React Native 开发过程，特别适用于快速原型开发。
-  - **Flipper**：用于调试 React Native 应用，包括 UI 调试、性能监控和网络请求查看。
+  - **React Native DevTools**：React Native 0.76 起内置的新调试器（基于 Chrome DevTools 协议，配合 Hermes 引擎），支持断点、Console 与内存审查。早期的 Flipper 已停止维护，新项目不建议再引入。
 
 - **学习资源**：
   - [React Native 官方文档](https://reactnative.dev/docs/getting-started)

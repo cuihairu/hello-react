@@ -62,6 +62,16 @@ Welcome.defaultProps = {
 };
 ```
 
+::: warning
+`defaultProps` 在函数组件上已被弃用（React 18.3 起会在控制台告警，React 19 中移除），函数组件请改用默认参数：
+
+```jsx
+function Welcome({ name = 'Guest' }) {
+  return <h1>Hello, {name}!</h1>;
+}
+```
+:::
+
 ## 2. State
 
 ### 2.1 State 的定义

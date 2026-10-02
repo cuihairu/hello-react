@@ -75,7 +75,7 @@
 4. **编写组件：**
 
    - **TodoList.tsx**
-     ```typescript
+     ```tsx
      import React from 'react';
      import { Todo } from '../models/Todo';
      import TodoItem from './TodoItem';
@@ -105,7 +105,7 @@
      ```
 
    - **TodoItem.tsx**
-     ```typescript
+     ```tsx
      import React from 'react';
      import { Todo } from '../models/Todo';
 
@@ -133,7 +133,7 @@
      ```
 
    - **TodoForm.tsx**
-     ```typescript
+     ```tsx
      import React, { useState } from 'react';
 
      interface Props {
@@ -167,7 +167,7 @@
      ```
 
    - **Filters.tsx**
-     ```typescript
+     ```tsx
      import React from 'react';
 
      interface Props {
@@ -270,7 +270,7 @@
 
 6. **主应用程序（App.tsx）：**
 
-   ```typescript
+   ```tsx
    import React, { useReducer } from 'react';
    import TodoList from './components/TodoList';
    import TodoForm from './components/TodoForm';
@@ -326,16 +326,14 @@
 
 ---
 
-#### **测试与质量保证
-
-**
+#### 测试与质量保证
 
 1. **编写测试：**
 
    使用 Jest 和 React Testing Library 编写组件测试。测试 Todo 项目的添加、删除、筛选等功能。
 
    - **TodoList.test.tsx**
-     ```typescript
+     ```tsx
      import React from 'react';
      import { render, fireEvent } from '@testing-library/react';
      import TodoList from './TodoList';
@@ -350,12 +348,13 @@
        const onToggle = jest.fn();
        const onDelete = jest.fn();
 
-       const { getByText } = render(
+       const { getByText, getAllByText } = render(
          <TodoList todos={todos} onToggle={onToggle} onDelete={onDelete} />
        );
 
        fireEvent.click(getByText('Learn React'));
-       fireEvent.click(getByText('Delete'));
+       // 两条 Todo 都渲染了 Delete 按钮，需用 getAllByText 取第一个
+       fireEvent.click(getAllByText('Delete')[0]);
 
        expect(onToggle).toHaveBeenCalledWith(1);
        expect(onDelete).toHaveBeenCalledWith(1);

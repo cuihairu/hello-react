@@ -18,7 +18,7 @@
      ```
    - **配置**：
      在 `package.json` 中添加测试脚本：
-     ```json
+     ```jsonc
      "scripts": {
        "test": "jest"
      }
@@ -26,6 +26,7 @@
 
 2. **Enzyme**
    - **概述**：Enzyme 是一个由 Airbnb 开发的测试工具，专门用于 React 组件的单元测试。它提供了与组件交互的 API，方便对组件进行测试。
+   - **注意**：Enzyme 已基本停止维护，且没有 React 18 的官方适配器（`enzyme-adapter-react-16` 只适用于 React 16）。存量项目了解即可，**新项目请使用 React Testing Library**。
    - **特点**：
      - 支持浅渲染、完全渲染和静态渲染。
      - 提供模拟事件、模拟函数和组件的深入操作。
@@ -52,7 +53,7 @@
      npm install --save-dev @testing-library/react
      ```
    - **基本用法**：
-     ```javascript
+     ```jsx
      import { render, screen } from '@testing-library/react';
      import MyComponent from './MyComponent';
 
@@ -79,7 +80,7 @@
    - **目的**：确保组件的渲染输出在多次测试中保持一致。
    - **示例**：使用 Jest 的快照功能来保存组件的渲染结果，并在后续测试中进行比较。
    - **使用方法**：
-     ```javascript
+     ```jsx
      import { render } from '@testing-library/react';
      import MyComponent from './MyComponent';
      import renderer from 'react-test-renderer';
@@ -89,6 +90,8 @@
        expect(tree).toMatchSnapshot();
      });
      ```
+
+     > `react-test-renderer` 自 React 18.3 起已被官方标记为 deprecated，React 19 中彻底移除。新项目的快照测试建议直接用 RTL 的 `render(...).asFragment()` 或 `container` 输出配合 `toMatchSnapshot()`。
 
 4. **模拟测试**
    - **概述**：模拟测试用于替代组件中的实际依赖项（如函数、模块），并提供虚假的实现或数据，以便测试组件的行为。

@@ -49,8 +49,8 @@ React Portals 提供了一种将子节点渲染到 DOM 节点的不同位置的�
 
 ##### 注意事项
 
-- **事件处理**：Portal 中的事件处理会继续冒泡到 DOM 树的父节点。
-- **CSS 样式**：Portal 内的子节点会使用其父组件的 CSS 样式，但其渲染位置不受限制。
+- **事件处理**：Portal 中的事件会沿 **React 组件树**向上冒泡（而不是沿 DOM 树），即事件会先被 React 树中的父组件捕获，即使 Portal 渲染到了 DOM 的其他位置。
+- **CSS 样式**：CSS 继承和层叠遵循 **DOM 位置**——Portal 内容的样式继承自其真实渲染位置（如 `body`）的祖先节点，而不是 React 树中的父组件；React Context 则沿 React 树传递，与 DOM 位置无关。
 
 #### Profiler API
 

@@ -258,7 +258,7 @@ TypeScript 对 JavaScript 的类进行了扩展，支持更多的面向对象编
 
 - **定义类型的组件**：
 
-  ```typescript
+  ```tsx
   import React from 'react';
 
   interface Props {

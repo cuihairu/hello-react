@@ -90,9 +90,11 @@ module.exports = {
       }
     ]
   },
-  // 开发服务器配置
+  // 开发服务器配置（webpack-dev-server 4+ 用 static 指定静态资源目录）
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     compress: true,
     port: 9000,
   }

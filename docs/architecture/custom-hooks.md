@@ -137,18 +137,18 @@ function useForm(initialValues) {
 
 ### 4.2 自定义 Hook 的测试
 
-测试自定义 Hook 可以使用 React Testing Library 的 `renderHook` 方法来创建 Hook 的实例，并验证其行为。
+测试自定义 Hook 可以使用 React Testing Library 的 `renderHook` 方法来创建 Hook 的实例，并验证其行为。`renderHook` 自 `@testing-library/react` v13.1 起内置（独立的 `@testing-library/react-hooks` 包已废弃并归并到主包）。
 
 ```jsx
-import { renderHook, act } from '@testing-library/react-hooks';
+import { renderHook, waitFor } from '@testing-library/react';
 import useFetchUser from './useFetchUser';
 
 test('should fetch user data', async () => {
-  const { result, waitForNextUpdate } = renderHook(() => useFetchUser(1));
+  const { result } = renderHook(() => useFetchUser(1));
 
-  await waitForNextUpdate();
+  await waitFor(() => expect(result.current.user).toBeDefined());
 
-  expect(result.current.user).toBeDefined();
+  expect(result.current.loading).toBe(false);
 });
 ```
 

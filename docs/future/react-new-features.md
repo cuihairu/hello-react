@@ -106,8 +106,10 @@ export default function Article({ slug }) {
 function FormField() {
   const id = useId(); // :r0:、:r1:... 服务端客户端一致
   return (
-    <label htmlFor={id}>邮箱</label>
-    <input id={id} type="email" />
+    <>
+      <label htmlFor={id}>邮箱</label>
+      <input id={id} type="email" />
+    </>
   );
 }
 ```
@@ -117,10 +119,13 @@ function FormField() {
 ## 7. `forwardRef` 简化（实验性）
 
 ```tsx
-// 旧写法
+// 旧写法：必须用 forwardRef 包装
 const Input = forwardRef((props, ref) => <input {...props} ref={ref} />);
+```
 
-// 新写法（需启用 experimental）
+
+```tsx
+// 新写法（实验性）：ref 作为普通 prop 直接接收
 function Input(props, ref) {
   return <input {...props} ref={ref} />;
 }

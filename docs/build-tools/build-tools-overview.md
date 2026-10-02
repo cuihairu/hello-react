@@ -109,7 +109,7 @@
 
 - **基本配置示例**：
 
-  ```json
+  ```jsonc
   // package.json
   {
     "scripts": {

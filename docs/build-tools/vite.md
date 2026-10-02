@@ -73,7 +73,7 @@ export default defineConfig({
 
 #### 3. 修改项目结构
 
-Vite 默认使用 `src` 目录作为根目录。你可以将你的代码文件移到 `src` 目录下，并在 `src` 目录中创建 `index.html` 文件。例如：
+Vite 默认以**项目根目录**作为 `root`，`index.html` 通常放在项目根目录。上面的配置通过 `root: './src'` 把入口移到了 `src` 目录，因此需要把代码文件和 `index.html` 放进 `src`。例如：
 
 ```
 project-root/
@@ -118,7 +118,7 @@ npx vite
 yarn vite
 ```
 
-Vite 将启动一个开发服务器，默认在 `http://localhost:3000` 上运行。
+Vite 将启动一个开发服务器，按上面的配置访问 `http://localhost:3000`（未配置 `server.port` 时 Vite 默认端口为 `5173`）。
 
 ---
 

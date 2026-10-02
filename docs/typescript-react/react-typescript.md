@@ -65,9 +65,9 @@ npm create vite@latest my-app --template react-ts
 
 ### 3.1 函数组件
 
-可以使用 `React.FC` 或 `React.FunctionComponent` 类型来定义函数组件。这些类型会自动处理 `children` 属性。
+可以使用 `React.FC` 或 `React.FunctionComponent` 类型来定义函数组件。注意：React 18 起的官方类型定义中 `React.FC` 不再隐式包含 `children` 属性（React 17 及之前隐式包含），如需使用 `children` 应在 Props 中显式声明。
 
-```typescript
+```tsx
 import React from 'react';
 
 interface Props {
@@ -91,7 +91,7 @@ export default Greeting;
 
 类组件可以通过继承 `React.Component` 类来定义，并传入 `Props` 和 `State` 类型参数。
 
-```typescript
+```tsx
 import React, { Component } from 'react';
 
 interface Props {
@@ -128,7 +128,7 @@ export default Counter;
 
 Context API 需要指定泛型来定义上下文的值类型：
 
-```typescript
+```tsx
 import React, { createContext, useContext, useState } from 'react';
 
 interface AuthContextType {
@@ -139,7 +139,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const AuthProvider: React.FC = ({ children }) => {
+const AuthProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const login = () => setIsAuthenticated(true);

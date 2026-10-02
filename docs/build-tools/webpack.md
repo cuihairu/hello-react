@@ -42,9 +42,11 @@ module.exports = {
   plugins: [
     // 插件可以用来扩展 Webpack 的功能
   ],
-  // 开发服务器配置
+  // 开发服务器配置（webpack-dev-server 4+ 用 static 指定静态资源目录）
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     compress: true,
     port: 9000,
   },
@@ -55,7 +57,7 @@ module.exports = {
 
 #### 2. 模块解析
 
-**加载器（Loaders）**：用于处理文件类型，例如 JavaScript、CSS、图片等，将它们转换为模块。常用的加载器包括 `babel-loader`、`style-loader`、`css-loader` 和 `file-loader`。
+**加载器（Loaders）**：用于处理文件类型，例如 JavaScript、CSS、图片等，将它们转换为模块。常用的加载器包括 `babel-loader`、`style-loader`、`css-loader` 等；处理图片等资源在 Webpack 5 中推荐使用内置的资源模块（asset modules），`file-loader`/`url-loader` 已不再需要。
 
 **配置示例**：
 
@@ -74,17 +76,13 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
-      // 处理图片文件
+      // Webpack 5 资源模块：图片输出到 images 目录
       {
         test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name].[hash][ext]',
+        },
       },
     ],
   },
@@ -195,7 +193,9 @@ module.exports = {
 ```javascript
 module.exports = {
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     compress: true,
     port: 9000,
     hot: true,

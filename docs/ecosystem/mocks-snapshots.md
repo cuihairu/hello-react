@@ -20,7 +20,7 @@
 
 假设有一个组件 `UserProfile`，它从 API 获取用户数据并显示：
 
-```javascript
+```jsx
 // UserProfile.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -40,7 +40,7 @@ export default function UserProfile() {
 
 在测试中，我们可以模拟 `axios` 模块来控制返回的数据：
 
-```javascript
+```jsx
 // UserProfile.test.js
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
@@ -78,7 +78,7 @@ test('displays user name after fetching', async () => {
 
 假设有一个 `Button` 组件，我们可以创建一个快照测试：
 
-```javascript
+```jsx
 // Button.js
 import React from 'react';
 
@@ -89,7 +89,7 @@ export default function Button({ label }) {
 
 创建快照测试：
 
-```javascript
+```jsx
 // Button.test.js
 import React from 'react';
 import renderer from 'react-test-renderer';

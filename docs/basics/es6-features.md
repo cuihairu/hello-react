@@ -208,7 +208,9 @@ ECMAScript 6（ES6），也称为 ECMAScript 2015，是 JavaScript 语言的一�
   // math.js
   export const add = (a, b) => a + b;
   export const subtract = (a, b) => a - b;
+  ```
 
+  ```javascript
   // main.js
   import { add, subtract } from './math.js';
   console.log(add(2, 3)); // 5

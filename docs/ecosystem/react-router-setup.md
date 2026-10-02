@@ -31,7 +31,7 @@ yarn add react-router-dom
    - `Link`：用于创建导航链接。
 
 2. **设置路由**：
-   ```javascript
+   ```jsx
    function App() {
      return (
        <Router>
@@ -58,7 +58,7 @@ yarn add react-router-dom
    - **`<Routes>`** 包含多个 **`<Route>`** 组件，每个 **`<Route>`** 组件定义了一个路径和相应的组件。
 
 3. **创建组件**：
-   ```javascript
+   ```jsx
    function Home() {
      return <h2>Home Page</h2>;
    }
@@ -78,7 +78,7 @@ yarn add react-router-dom
 
 下面是一个完整的 React Router 配置示例：
 
-```javascript
+```jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 

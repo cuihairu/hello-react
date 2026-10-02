@@ -21,7 +21,7 @@
 
 `Counter.js`：
 
-```javascript
+```jsx
 export default function Counter({ count }) {
   return <div>Count: {count}</div>;
 }
@@ -29,7 +29,7 @@ export default function Counter({ count }) {
 
 `Counter.test.js`：
 
-```javascript
+```jsx
 import { render } from '@testing-library/react';
 import Counter from './Counter';
 
@@ -58,7 +58,7 @@ test('displays the correct count', () => {
 
 `Form.js`：
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 
 export default function Form({ onSubmit }) {
@@ -80,7 +80,7 @@ export default function Form({ onSubmit }) {
 
 `Form.test.js`：
 
-```javascript
+```jsx
 import { render, fireEvent } from '@testing-library/react';
 import Form from './Form';
 

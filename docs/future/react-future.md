@@ -42,9 +42,11 @@ function UserItem({ user }) {
 
 | 阶段 | 版本 | 状态 | 备注 |
 |------|------|------|------|
-| 实验性 | Canary | 可通过 `babel-plugin-react-compiler` 试用 | 需配合 ESLint 规则 |
-| 稳定发布 | 19.x / 20.x | 计划中 | 默认开启，可通过 `"react-compiler": false` 关闭 |
+| 实验性 | Canary | 已经历经 `babel-plugin-react-compiler` 长期试用 | 需配合 ESLint 规则 |
+| 稳定发布 | Compiler v1.0 | **已发布**（React Conf 2025 正式开源，支持 React 17+） | 按 opt-in 方式在构建配置中启用（如 Next.js 的 `experimental.reactCompiler`） |
 | 完全成熟 | 20+ | 规划中 | 支持更复杂的控制流、库代码优化 |
+
+> 单个组件需要退出编译器优化时，在组件内使用 `"use no memo"` 指令。
 
 ### 1.4 迁移准备
 
@@ -66,12 +68,15 @@ function UserItem({ user }) {
 // 统一的边界标记（提议）
 'use client';  // 文件级指令：此文件及引用链在客户端渲染
 'use server';  // 函数级指令：Server Action，表单直连
+```
 
+
+```jsonc
 // 统一的序列化格式（React Flight）
 {
   "type": "ClientComponent",
   "key": null,
-  "props": { "children": [/* ... */] },
+  "props": { "children": [] },
   "module": "app/components/InteractiveChart.client.js"
 }
 ```
@@ -85,6 +90,8 @@ function UserItem({ user }) {
 | 类型安全 | 框架特定类型工具 | 统一 `@types/react-server` |
 
 ## 3. Offscreen API —— 离屏预渲染与隐藏保活
+
+> 命名更新：该提案已更名为 **Activity**，最终 API 形态为 `<Activity mode="hidden|visible">`（Canary 通道可用），本文沿用 Offscreen 阐述设计动机，两者语义一致。
 
 ### 3.1 解决的问题
 

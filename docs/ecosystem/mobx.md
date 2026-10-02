@@ -81,7 +81,7 @@ export default store;
 
 接下来，将 store 注入到 React 组件中，使组件能够响应 store 中状态的变化。
 
-```javascript
+```jsx
 import React from 'react';
 import { observer } from 'mobx-react';
 import todoStore from './stores/TodoStore';

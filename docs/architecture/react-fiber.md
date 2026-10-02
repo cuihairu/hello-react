@@ -17,7 +17,7 @@ React Fiber 是 React 16 中引入的新架构，旨在解决旧版 React 架构
   - `sibling`: 指向兄弟 Fiber 节点的引用。
   - `pendingProps`: 组件的新属性。
   - `memoizedProps`: 组件的当前属性。
-  - `effectTag`: 记录节点的变更类型（如新增、删除或更新）。
+  - `effectTag`: 记录节点的变更类型（如新增、删除或更新；React 17 起该字段更名为 `flags`）。
 
 ### 1.2 可中断的更新
 
@@ -76,22 +76,26 @@ React Fiber 是 React 16 中引入的新架构，旨在解决旧版 React 架构
 ### 示例：使用 Fiber 优化渲染
 
 ```javascript
-import { unstable_scheduleCallback, unstable_ImmediatePriority } from 'scheduler';
+import {
+  unstable_scheduleCallback,
+  unstable_ImmediatePriority,
+  unstable_LowPriority
+} from 'scheduler';
 
 // 调度一个高优先级任务
 unstable_scheduleCallback(unstable_ImmediatePriority, () => {
   console.log('高优先级任务');
 });
 
-// 调度一个低优先级任务
-unstable_scheduleCallback(() => {
+// 调度一个低优先级任务（第一个参数是优先级，不能省略）
+unstable_scheduleCallback(unstable_LowPriority, () => {
   console.log('低优先级任务');
 });
 ```
 
 ### 示例：Fiber 组件更新
 
-```javascript
+```jsx
 class MyComponent extends React.Component {
   render() {
     return (

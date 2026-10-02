@@ -9,7 +9,7 @@
 **1. 定义嵌套路由**
 
 可以在主路由的组件中定义子路由：
-```javascript
+```jsx
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 // 子组件
@@ -76,7 +76,7 @@ export default App;
 **1. 使用 `Link` 组件**
 
 `Link` 组件用于在应用内进行导航，类似于 HTML 的 `<a>` 标签，但不会导致页面重新加载：
-```javascript
+```jsx
 import { Link } from 'react-router-dom';
 
 function Navigation() {
@@ -95,7 +95,7 @@ function Navigation() {
 **2. 使用 `useNavigate` 钩子**
 
 `useNavigate` 钩子用于在函数组件中编程式地进行导航：
-```javascript
+```jsx
 import { useNavigate } from 'react-router-dom';
 
 function LoginButton() {
@@ -111,7 +111,7 @@ function LoginButton() {
 ```
 
 **完整示例**：
-```javascript
+```jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useNavigate } from 'react-router-dom';
 

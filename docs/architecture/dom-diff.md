@@ -1,6 +1,6 @@
 ### 8.2 DOM Diff 算法解析
 
-DOM Diff 算法是 React 用于高效比较虚拟 DOM 树和真实 DOM 树的核心技术。它的主要任务是找到两个虚拟 DOM 树之间的差异，并将这些差异最小化地应用到真实 DOM 上。以下是 DOM Diff 算法的详细解析。
+DOM Diff 算法是 React 用于高效比较前后两棵虚拟 DOM 树的核心技术。它的主要任务是找到新旧两棵虚拟 DOM 树之间的差异，并将这些差异最小化地应用到真实 DOM 上。以下是 DOM Diff 算法的详细解析。
 
 ---
 
@@ -8,7 +8,7 @@ DOM Diff 算法是 React 用于高效比较虚拟 DOM 树和真实 DOM 树的核
 
 ### 核心目标
 
-Diff 算法的核心目标是尽可能高效地计算出虚拟 DOM 树与真实 DOM 树之间的差异，并只将必要的更新应用到真实 DOM 上。主要通过以下步骤实现：
+Diff 算法的核心目标是尽可能高效地计算出新旧两棵虚拟 DOM 树之间的差异，并只将必要的更新应用到真实 DOM 上。主要通过以下步骤实现：
 
 1. **比较根节点**：算法首先比较虚拟 DOM 树的根节点。如果根节点的类型不同，整个子树都会被重新渲染。
 
@@ -60,7 +60,7 @@ Diff 算法的核心目标是尽可能高效地计算出虚拟 DOM 树与真实 
 
 ### 3. 树的层级比较
 
-- **层级比较**：算法逐层比较虚拟 DOM 树和真实 DOM 树，确保每层的节点都进行准确比较，从而减少不必要的 DOM 操作。
+- **层级比较**：算法逐层比较新旧两棵虚拟 DOM 树（React 假设 DOM 节点很少跨层级移动，因此只做同层比较，复杂度从 O(n³) 降到 O(n)），确保每层的节点都进行准确比较，从而减少不必要的 DOM 操作。
 
 ---
 
@@ -130,15 +130,18 @@ const patch = [
 ### 应用补丁
 
 ```javascript
-// 更新真实 DOM
+// 更新真实 DOM（与上面生成的补丁结构对应）
 function applyUpdates(patch) {
   patch.forEach(operation => {
+    const target = document.querySelector(operation.target);
     switch (operation.type) {
       case 'UPDATE_ATTR':
-        document.querySelector(operation.target).setAttribute(operation.attr, operation.value);
+        Object.entries(operation.attrs).forEach(([attr, value]) => {
+          target.setAttribute(attr, value);
+        });
         break;
       case 'UPDATE_TEXT':
-        document.querySelector(operation.target).textContent = operation.text;
+        target.textContent = operation.text;
         break;
     }
   });

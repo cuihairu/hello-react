@@ -42,7 +42,7 @@ export default useTimer;
 
 **使用示例**：
 
-```javascript
+```jsx
 import React from 'react';
 import useTimer from './useTimer';
 
@@ -91,7 +91,7 @@ export default useTheme;
 
 **使用示例**：
 
-```javascript
+```jsx
 import React from 'react';
 import useTheme from './useTheme';
 

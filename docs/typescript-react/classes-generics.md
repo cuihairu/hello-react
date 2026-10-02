@@ -221,7 +221,7 @@ function createArray<T = string>(length: number, value: T): T[] {
 }
 
 const stringArray = createArray(3, "Hello");
-const numberArray = createArray(3, 42); // T 默认是 string
+const numberArray = createArray(3, 42); // T 被推断为 number，默认类型仅在无法推断时生效
 ```
 
 ---

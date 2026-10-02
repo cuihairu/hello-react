@@ -80,7 +80,7 @@ Redux 是一个用于管理 JavaScript 应用程序全局状态的预测式状�
 4. **使用 React-Redux 提供的 Provider 组件**：
    - 使用 `Provider` 组件将 Redux `store` 注入到 React 组件中。
 
-   ```javascript
+   ```jsx
    import React from 'react';
    import ReactDOM from 'react-dom';
    import { Provider } from 'react-redux';
@@ -101,7 +101,7 @@ Redux 是一个用于管理 JavaScript 应用程序全局状态的预测式状�
 5. **连接 React 组件与 Redux**：
    - 使用 `connect` 高阶组件或 `useSelector` 和 `useDispatch` 钩子将 React 组件与 Redux `store` 连接。
 
-   ```javascript
+   ```jsx
    import React from 'react';
    import { useSelector, useDispatch } from 'react-redux';
 

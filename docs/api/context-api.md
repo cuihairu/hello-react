@@ -9,8 +9,8 @@ React 的 Context API 是一种解决组件之间共享状态和数据的有效�
 ```jsx
 import React, { createContext, useState } from 'react';
 
-// 创建 Context 对象
-const ThemeContext = createContext();
+// 创建 Context 对象（供消费方具名导入）
+export const ThemeContext = createContext();
 
 // 创建 Context Provider 组件
 const ThemeProvider = ({ children }) => {

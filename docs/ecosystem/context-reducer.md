@@ -48,7 +48,7 @@ export const AppContext = createContext();
 
 接下来，创建一个 `Provider` 组件，这个组件将 `useReducer` 提供的状态和 `dispatch` 函数通过 `Context` 传递给子组件。
 
-```javascript
+```jsx
 export function AppProvider({ children }) {
   const [state, dispatch] = useReducer(appReducer, initialState);
 
@@ -62,7 +62,7 @@ export function AppProvider({ children }) {
 
 将 `AppProvider` 包裹在应用的根组件或需要使用全局状态的部分组件中。
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -80,7 +80,7 @@ ReactDOM.render(
 
 在需要访问或更新全局状态的组件中，使用 `useContext` 钩子来获取 `state` 和 `dispatch`。
 
-```javascript
+```jsx
 import React, { useContext } from 'react';
 import { AppContext } from './context/AppContext';
 
@@ -107,7 +107,7 @@ export default Counter;
 
 假设你有一个用户认证状态需要在应用中共享，可以使用类似的方式将 `SET_USER` action 派发到 reducer 中，以更新用户信息。
 
-```javascript
+```jsx
 function Login() {
   const { dispatch } = useContext(AppContext);
 

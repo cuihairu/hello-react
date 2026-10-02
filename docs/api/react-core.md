@@ -283,9 +283,7 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 
 ```jsx
 <Profiler id="MyComponent" onRender={(id, phase, actualDuration) => {
-  console
-
-.log(id, phase, actualDuration);
+  console.log(id, phase, actualDuration);
 }}>
   <MyComponent />
 </Profiler>

@@ -162,7 +162,7 @@ const navigateToPage = () => {
 
 #### 集成其他库
 
-你可以在 Taro 项目中集成其他 React 生态的库，如 Redux、React Router 等，来实现更复杂的功能和状态管理。
+你可以在 Taro 项目中集成 Redux、Zustand、MobX 等状态管理库，来实现更复杂的功能和状态管理。注意：**React Router 在 Taro 小程序端不可用**——路由由 Taro 内置的 `@tarojs/router` 接管，通过 `app.config` 声明页面并用 `Taro.navigateTo` 等方法跳转（H5 端同样使用 Taro Router）。
 
 ### 总结
 

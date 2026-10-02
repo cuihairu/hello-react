@@ -25,12 +25,13 @@ Taro 提供了一套封装好的 API，用于跨平台调用。这些 API 是基
 
 在 Taro 中，你可以使用 Taro 提供的 API 来完成各种任务，这些 API 会在不同平台上进行相应的处理。例如，获取用户信息、跳转页面等。
 
-- **获取用户信息**：
+- **获取用户信息**（`getUserInfo` 已被微信废弃，现使用 `getUserProfile`；2022 年后微信进一步收紧，推荐改用头像昵称填写能力）：
 
   ```js
   import Taro from '@tarojs/taro';
 
-  Taro.getUserInfo({
+  Taro.getUserProfile({
+    desc: '用于展示用户头像昵称', // 必填，声明用途
     success: (res) => {
       console.log(res.userInfo);
     }
@@ -73,16 +74,19 @@ Taro 提供了一套封装好的 API，用于跨平台调用。这些 API 是基
 
 ### 4. **使用 Taro 插件**
 
-有些平台特有的功能可以通过 Taro 插件来实现。例如，Taro 的插件系统允许你引入原生插件来实现一些特定功能。
+有些平台特有的功能可以通过 Taro 插件来实现。Taro 插件不通过 import 引入，而是在构建配置 `config/index.js` 的 `plugins` 字段中声明，编译时由 Taro 加载。
 
-- **使用插件**：
+- **在配置中使用插件**：
 
   ```js
-  import { myPlugin } from '@tarojs/plugin';
-
-  myPlugin({
-    // 插件配置
-  });
+  // config/index.js
+  module.exports = {
+    // ...
+    plugins: [
+      '@tarojs/plugin-http', // 示例：让小程序支持使用 async/await 的网络请求
+      // 其他插件，支持传参：['@tarojs/plugin-xxx', { option: true }]
+    ]
+  };
   ```
 
 ### 5. **处理小程序 API**

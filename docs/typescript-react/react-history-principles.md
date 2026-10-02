@@ -10,17 +10,19 @@
 
 ### 1.2 React 的发布与早期发展
 
-- **2013 年 5 月**：React 0.3 发布，提供了基本的组件功能和虚拟 DOM。
-- **2015 年 3 月**：React 0.14 发布，引入了功能组件和更完善的 API。
+- **2013 年 5 月**：React 开源并发布 0.3，提供了基本的组件功能和虚拟 DOM。
+- **2015 年 3 月**：React 0.13 发布，开始支持 ES6 `class` 定义组件。
+- **2015 年 10 月**：React 0.14 发布，引入函数组件，并将 DOM 相关代码拆分到 `react-dom`。
 - **2017 年 9 月**：React 16 发布，推出了全新的 Fiber 架构，增强了性能和可扩展性。
-- **2018 年 2 月**：React 16.3 发布，带来了新的生命周期方法和 Context API。
-- **2019 年 10 月**：React 16.9 发布，引入了 Hooks 的初步实现。
-- **2020 年 10 月**：React 17 发布，主要关注事件系统的改进和向后兼容性。
-- **2021 年 10 月**：React 18 发布，带来了并发模式（Concurrent Mode）和自动批处理（Automatic Batching）的新特性。
+- **2018 年 3 月**：React 16.3 发布，带来了新的生命周期方法（`getDerivedStateFromProps`、`getSnapshotBeforeUpdate`）和新的 Context API。
+- **2019 年 2 月**：React 16.8 发布，正式引入 Hooks（`useState`、`useEffect` 等）。
+- **2020 年 10 月**：React 17 发布，主要关注事件系统的改进和向后兼容性（无新特性版本）。
+- **2022 年 3 月**：React 18 发布，带来了并发渲染特性（Concurrent Rendering）和自动批处理（Automatic Batching）等新特性。
+- **2024 年 12 月**：React 19 发布，带来了 `use` API、Actions、改进的 Context 与资源加载等能力。
 
 ### 1.3 发展至今
 
-React 继续保持快速发展，定期发布新版本，不断引入新特性和改进。React 社区也不断壮大，形成了庞大的生态系统，包括工具、库和最佳实践。
+React 继续保持快速发展，定期发布新版本，不断引入新特性和改进（当前最新主线为 React 19.x）。React 社区也不断壮大，形成了庞大的生态系统，包括工具、库和最佳实践。
 
 ---
 

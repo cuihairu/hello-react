@@ -46,19 +46,20 @@ Taro 项目的基本结构如下：
 
 ```
 my-taro-project/
-  ├── config/             # 配置文件
+  ├── config/             # 配置文件目录
+  │   └── index.js        # Taro 构建配置（TS 项目为 index.ts）
   ├── src/                # 源代码
   │   ├── pages/          # 页面目录
   │   ├── components/     # 组件目录
-  │   └── app.js          # 应用入口文件
+  │   ├── app.js          # 应用入口文件
+  │   └── app.config.js   # 应用全局配置（路由、窗口等）
   ├── dist/               # 编译输出目录
-  ├── package.json        # 项目依赖及配置信息
-  └── taro.config.js      # Taro 配置文件
+  └── package.json        # 项目依赖及配置信息
 ```
 
 ##### 2.3 配置 Taro
 
-Taro 的配置文件通常是 `taro.config.js`，在该文件中可以配置不同平台的编译选项、插件、路径别名等。例如：
+Taro 3 的构建配置文件位于 `config/index.js`（TypeScript 项目为 `config/index.ts`），在该文件中可以配置不同平台的编译选项、插件、路径别名等。例如：
 
 ```javascript
 module.exports = {
@@ -66,9 +67,9 @@ module.exports = {
   date: '2022-05-25',
   designWidth: 750,
   deviceRatio: {
-    '640': 2.34,
-    '750': 2,
-    '828': 1.81
+    '640': 2.34 / 1,
+    '750': 1,
+    '828': 1.81 / 1
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
@@ -133,14 +134,10 @@ Taro 支持在小程序中使用 React.js 进行开发。你可以在 `src/pages
 
 3. **配置页面路由**：
 
-   在 `src/app.js` 文件中配置页面路由：
+   在 `src/app.config.js` 文件中配置页面路由（Taro 3 将路由与全局窗口配置抽到了独立的 `app.config` 文件中，`app.js` 只负责入口逻辑）：
 
    ```javascript
-   import Taro from '@tarojs/taro';
-   import Index from './pages/index/index';
-
-   Taro.initPxTransform({ designWidth: 750 });
-
+   // src/app.config.js
    export default {
      pages: [
        'pages/index/index',
@@ -153,6 +150,22 @@ Taro 支持在小程序中使用 React.js 进行开发。你可以在 `src/pages
        navigationBarTextStyle: 'black'
      }
    };
+   ```
+
+   在 `src/app.js` 中编写入口逻辑（编译器会自动读取同级的 `app.config.js`，无需手动引入）：
+
+   ```javascript
+   // src/app.js
+   import { Component } from 'react';
+   import './app.css';
+
+   class App extends Component {
+     render() {
+       return this.props.children;
+     }
+   }
+
+   export default App;
    ```
 
 ---

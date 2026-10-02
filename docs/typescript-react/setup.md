@@ -36,7 +36,7 @@ TypeScript 可以通过 npm（Node.js 的包管理器）进行安装。可以选
 
 - **`tsconfig.json` 示例**：
 
-  ```json
+  ```jsonc
   {
     "compilerOptions": {
       "target": "es6",                      // 编译到的 JavaScript 版本
@@ -107,8 +107,8 @@ TypeScript 可以通过 npm（Node.js 的包管理器）进行安装。可以选
 为了在开发过程中获得更好的 TypeScript 支持，可以配置开发工具和 IDE。
 
 - **VSCode 配置**：
-  - 安装 [TypeScript 插件](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)。
-  - 启用 TypeScript 相关的功能，如代码提示、自动补全、重构等。
+  - VSCode 内置 TypeScript 语言支持，无需额外安装插件即可获得代码提示、自动补全、重构等能力（想尝鲜最新版语言服务可选装 [TypeScript Next](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)）。
+  - 保持 VSCode 的 TypeScript 版本与项目 `package.json` 中的版本一致，避免编辑器与编译行为不一致。
 
 - **Linting 和格式化**：
   - 配置 ESLint 和 Prettier，以保持代码风格一致并避免常见的编码错误。

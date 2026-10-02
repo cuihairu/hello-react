@@ -25,7 +25,16 @@
   ```jsx
   this.setState({ count: this.state.count + 1 });
   this.setState({ count: this.state.count + 1 });
-  // 实际更新后的状态是 count: 当前值 + 2
+  // 两次都基于同一份旧状态计算，count 最终只 +1；
+  // 因为对象式更新会把队列中前面的同键更新覆盖掉
+  ```
+
+- **函数式更新**：如果新的状态依赖上一次更新后的值，应传入函数形式。React 会把队列中的更新依次应用，保证连续多次累加都生效。
+
+  ```jsx
+  this.setState(prevState => ({ count: prevState.count + 1 }));
+  this.setState(prevState => ({ count: prevState.count + 1 }));
+  // 函数式更新会基于前一次的结果计算，count 最终 +2
   ```
 
 ### 2. 状态更新的调度

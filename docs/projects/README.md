@@ -11,10 +11,10 @@
 - [部署与性能优化](todo-deployment.md) —— 构建优化、代码分割、CDN、Service Worker、Lighthouse 指标
 
 ### 第23章：React 生态系统实战拓展
-- [Next.js 与服务端渲染（SSR）](nextjs-overview.md) —— App Router 迁移、Server Components、数据获取、ISR、Edge Runtime
+- [Next.js 与服务端渲染（SSR）](nextjs-overview.md) —— Pages Router 文件路由、SSR/SSG/ISR 数据获取、API 路由、SEO 优化
 - [React Native 简介与移动开发](react-native.md) —— 原生组件、布局系统、导航、原生模块、发布流程
-- [测试工具与方法](testing-tools.md) —— RTL + Jest 实战、MSW API Mock、E2E (Playwright)、视觉回归
-- [持续集成与自动化部署](ci-cd.md) —— 矩阵测试、依赖缓存、自动发布、回滚策略、环境隔离
+- [测试工具与方法](testing-tools.md) —— Jest / RTL / Enzyme 工具对比、单元·集成·快照·模拟·E2E 测试方法、CI 与代码质量
+- [持续集成与自动化部署](ci-cd.md) —— GitHub Actions / CircleCI / GitLab CI 配置、自动部署、CD 流程集成
 
 ## 学习目标
 

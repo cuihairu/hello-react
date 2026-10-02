@@ -20,7 +20,7 @@ function Example() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // 组件挂载时执行
+    // 挂载后以及 count 变化后执行
     document.title = `You clicked ${count} times`;
 
     // 可选的清理函数，在组件卸载时执行

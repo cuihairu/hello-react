@@ -25,7 +25,7 @@
   - 允许使用 JavaScript 和 React 组件来开发 iOS 和 Android 应用。
 
 - **React Native 的基本用法**
-  - **创建 React Native 项目**：使用 `npx react-native init` 创建项目。
+  - **创建 React Native 项目**：官方推荐 `npx create-expo-app`（Expo）或 `npx @react-native-community/cli init`（早期的全局 `react-native-cli` 已废弃）。
   - **组件和布局**：使用 React Native 提供的组件，如 `View`、`Text`、`Image`。
   - **导航**：使用 `react-navigation` 或 `react-native-navigation` 实现应用导航。
 

@@ -37,7 +37,7 @@ Taro 提供了一些内置的适配工具和功能，帮助你处理平台间的
 
 ### 3. **处理样式兼容性**
 
-- **CSS 样式预处理**：使用 SASS 或 LESS 可以帮助你编写更具兼容性的样式代码。可以通过变量、Mixin 等方式，针对不同平台的样式做不同的处理。
+- **样式条件编译**：Taro 在样式文件中支持通过 `#ifdef` 注释做平台级条件编译，可以把平台特有的样式写进同一条规则；也可以用文件后缀（如 `index.weapp.scss`）为指定平台提供整套样式。
 
   ```scss
   // styles.scss
@@ -45,15 +45,13 @@ Taro 提供了一些内置的适配工具和功能，帮助你处理平台间的
     // 基础样式
     padding: 20px;
 
-    // 微信小程序特有样式
-    @if $platform == 'wechat' {
-      background-color: #fff;
-    }
+    /*  #ifdef weapp  */
+    background-color: #fff;   // 微信小程序特有样式
+    /*  #endif  */
 
-    // 支付宝小程序特有样式
-    @if $platform == 'alipay' {
-      background-color: #f8f8f8;
-    }
+    /*  #ifdef alipay  */
+    background-color: #f8f8f8; // 支付宝小程序特有样式
+    /*  #endif  */
   }
   ```
 

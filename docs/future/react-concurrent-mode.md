@@ -164,10 +164,10 @@ function handleClick() {
 ## 5. 性能调优检查清单
 
 ```tsx
-// ❌ 错误：每次渲染创建新函数/对象，破坏 memo
+// 错误示范：每次渲染创建新函数/对象，破坏 memo
 <Child onClick={() => doSomething(id)} style={{ color: 'red' }} />
 
-// ✅ 正确：稳定引用
+// 正确写法：稳定引用
 const handleClick = useCallback(() => doSomething(id), [id]);
 const style = useMemo(() => ({ color: 'red' }), []);
 <Child onClick={handleClick} style={style} />

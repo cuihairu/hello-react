@@ -15,7 +15,7 @@
   - 消费者模式：通过 `MyContext.Consumer` 或 `useContext` 钩子消费状态。
 
 示例代码：
-```javascript
+```jsx
 import React, { useState, useContext, createContext } from 'react';
 
 const ThemeContext = createContext();
@@ -68,7 +68,7 @@ function ThemeButton() {
 - **连接 React 与 Redux**：使用 `react-redux` 提供的 `Provider`、`connect` 和 `useSelector`、`useDispatch` 钩子将 Redux 集成到 React 应用中。
 
 示例代码：
-```javascript
+```jsx
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider, useDispatch, useSelector } from 'react-redux';
@@ -130,7 +130,7 @@ export default App;
 - **集成 React 与 MobX**：使用 `mobx-react-lite` 提供的 `observer` 高阶组件将 React 组件与 MobX 状态绑定。
 
 示例代码：
-```javascript
+```jsx
 import React from 'react';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react-lite';
@@ -180,7 +180,7 @@ export default App;
   - **使用 useQuery 获取数据**：`const { data, error, isLoading } = useQuery('key', fetchFunction);`
 
 示例代码：
-```javascript
+```jsx
 import React from 'react';
 import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
 

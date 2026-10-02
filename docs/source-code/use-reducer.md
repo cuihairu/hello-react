@@ -6,7 +6,7 @@
 
 #### `useReducer` 的基本用法
 
-```javascript
+```jsx
 import { useReducer } from 'react';
 
 // Reducer 函数
@@ -90,7 +90,7 @@ function formReducer(state, action) {
 
 2. **使用 `useReducer` 在组件中管理状态**
 
-```javascript
+```jsx
 import React, { useReducer } from 'react';
 
 function MyForm() {

@@ -21,9 +21,9 @@ export default {
   date: '2024-08-12',
   designWidth: 750,
   deviceRatio: {
-    '640': 2.34 / 2,
-    '750': 2 / 2,
-    '828': 1 / 2
+    '640': 2.34 / 1,
+    '750': 1,
+    '828': 1.81 / 1
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
@@ -53,10 +53,10 @@ export default {
   taro build --type alipay
   ```
 
-- **构建其他平台**（如百度小程序、字节跳动小程序等）
+- **构建百度小程序**（`swan`；字节跳动小程序对应 `tt`，H5 对应 `h5`）
 
   ```bash
-  taro build --type h5
+  taro build --type swan
   ```
 
 - **构建所有平台**
@@ -114,26 +114,32 @@ export default {
        runs-on: ubuntu-latest
        steps:
          - name: Checkout code
-           uses: actions/checkout@v3
+           uses: actions/checkout@v4
          - name: Setup Node.js
-           uses: actions/setup-node@v3
+           uses: actions/setup-node@v4
            with:
-             node-version: '16'
+             node-version: '20'
          - name: Install dependencies
-           run: npm install
+           run: npm ci
          - name: Build project
            run: npm run build
          - name: Deploy to WeChat
            run: ./deploy-wechat.sh
    ```
 
-3. **创建部署脚本**：编写脚本 `deploy-wechat.sh` 来上传构建后的代码到微信开发者工具。
+3. **创建部署脚本**：编写脚本 `deploy-wechat.sh` 上传构建后的代码。微信官方提供两种方式：微信开发者工具自带的 `cli` 命令，或推荐的 `miniprogram-ci` 包（需在微信公众平台「开发管理 → 开发设置 → 小程序代码上传」中生成上传密钥）。
 
    ```bash
    #!/bin/bash
-   # 上传代码到微信小程序
-   # 需要配置微信开发者工具的命令行工具
-   wechat-cli upload --project ./dist/weapp
+   # 方式一：微信开发者工具命令行（需在设置中开启服务端口）
+   # "<微信开发者工具安装路径>/cli" upload --project ./dist/weapp --version 1.0.0 --desc "CI 构建"
+
+   # 方式二：官方 miniprogram-ci 包（CI 环境推荐）
+   npx miniprogram-ci upload \
+     --project ./dist/weapp \
+     --key-path ./private.wx.key \
+     --version 1.0.0 \
+     --desc "CI 构建"
    ```
 
 通过这些步骤，你可以成功构建和发布 Taro 项目到各大平台，并利用 CI/CD 工具实现自动化构建和发布流程。

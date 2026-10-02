@@ -13,15 +13,21 @@ npx create-react-app todo-app --template typescript
 cd todo-app
 ```
 
+::: warning 关于 create-react-app
+CRA 已被 React 官方标记为不再推荐（deprecated），不再接收新特性。新项目建议改用 Vite（`npm create vite@latest todo-app -- --template react-ts`）或 Next.js；本文示例为保持教程独立性仍以 CRA 目录结构讲解，换用其他脚手架时组件代码完全通用。
+:::
+
 #### 2. 安装所需依赖
 
 如果需要使用其他库，比如状态管理工具（如 Redux 或 MobX），可以安装相应的依赖。
 
 ```bash
-npm install redux react-redux @types/react-redux
+npm install redux react-redux
 # 或
 npm install mobx mobx-react-lite
 ```
+
+> `react-redux` v8 起已内置 TypeScript 类型定义，无需再安装 `@types/react-redux`（该包仅对应 v7 及更早版本）。
 
 #### 3. 结构规划
 
@@ -179,7 +185,7 @@ import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
 import Filters from './components/Filters';
 import { Todo } from './types/todo';
-import { todoReducer, TodoAction } from './hooks/useTodos';
+import { todoReducer } from './hooks/useTodos';
 
 const App: React.FC = () => {
   const [todos, dispatch] = useReducer(todoReducer, []);
@@ -235,7 +241,7 @@ export interface Todo {
 ```ts
 import { Todo } from '../types/todo';
 
-type TodoAction =
+export type TodoAction =
   | { type: 'ADD_TODO'; payload: { text: string } }
   | { type: 'TOGGLE_TODO'; payload: { id: number } }
   | { type: 'DELETE_TODO'; payload: { id: number } };

@@ -25,7 +25,7 @@ Idea (Issue/Discord) → RFC PR (github.com/reactjs/rfcs)
             └─► 主版本号（Major）移除
 ```
 
-### 1.2 关键 RFC 状态追踪（2024-2025）
+### 1.2 关键 RFC 状态追踪（2024-2025 快照，2025 年后更新见表注）
 
 | RFC | 标题 | 状态 | 预计稳定版本 | 关注点 |
 |-----|------|------|--------------|--------|
@@ -35,6 +35,8 @@ Idea (Issue/Discord) → RFC PR (github.com/reactjs/rfcs)
 | #309 | Offscreen API | **讨论中** | 20+ | 离屏预渲染、标签页保活 |
 | #315 | Signals 集成 | **探索中** | 未定 | 细粒度响应式、替代部分 useState |
 | #320 | View Transitions API | **提案中** | 19+ | 页面转场动画原生支持 |
+
+> **2025 年更新**：React Compiler 已于 React Conf 2025 发布 **v1.0 稳定版**（支持 React 17+，按构建配置 opt-in 启用）；Offscreen 提案已更名为 **Activity**（`<Activity mode="hidden">`，Canary 通道可用）。
 
 ### 1.3 如何参与
 
@@ -67,61 +69,61 @@ Idea (Issue/Discord) → RFC PR (github.com/reactjs/rfcs)
 
 | 库 | React 18 并发 | React 19 / RSC | 迁移指南 |
 |----|---------------|----------------|----------|
-| **React Router v7** | ✅ 完整支持 | 🚧 v7 beta 支持 RSC | [迁移指南](https://reactrouter.com/start/declarative/routing) |
-| **TanStack Router** | ✅ 类型安全优先 | ✅ 完整 RSC 支持 | [文档](https://tanstack.com/router) |
-| **Wouter** | ✅ 轻量兼容 | 🚧 实验性 RSC | 极简场景可用 |
+| **React Router v7** | 完整支持 | 部分支持 · v7 beta 支持 RSC | [迁移指南](https://reactrouter.com/start/declarative/routing) |
+| **TanStack Router** | 类型安全优先 | 完整 RSC 支持 | [文档](https://tanstack.com/router) |
+| **Wouter** | 轻量兼容 | 部分支持 · 实验性 RSC | 极简场景可用 |
 
 ### 3.2 状态管理
 
 | 库 | React 18 并发 | React 19 / RSC | 备注 |
 |----|---------------|----------------|------|
-| **Redux Toolkit** | ✅ `useSyncExternalStore` 兼容 | ✅ RSC 兼容（客户端边界） | 推荐配合 `createSlice` |
-| **Zustand** | ✅ 原生并发安全 | ✅ RSC 兼容 | 无 Provider，天然适配 |
-| **Jotai** | ✅ 原子级并发 | ✅ RSC 服务端原子 | 服务端可序列化 |
-| **Recoil** | ⚠️ 维护模式 | ❌ 无 RSC 计划 | 建议迁移 Jotai/Zustand |
-| **MobX** | ✅ `observer` 兼容 | 🚧 实验性 RSC | 需 `makeObservable` 配置 |
+| **Redux Toolkit** | `useSyncExternalStore` 兼容 | RSC 兼容（客户端边界） | 推荐配合 `createSlice` |
+| **Zustand** | 原生并发安全 | RSC 兼容 | 无 Provider，天然适配 |
+| **Jotai** | 原子级并发 | RSC 服务端原子 | 服务端可序列化 |
+| **Recoil** | 维护模式 | 无 RSC 计划 | 建议迁移 Jotai/Zustand |
+| **MobX** | `observer` 兼容 | 部分支持 · 实验性 RSC | 需 `makeObservable` 配置 |
 
 ### 3.3 数据获取与缓存
 
 | 库 | React 18 Suspense | React 19 RSC | 推荐度 |
 |----|-------------------|--------------|--------|
-| **TanStack Query v5** | ✅ 完整支持 | ✅ Server/Client 双模式 | ⭐⭐⭐⭐⭐ 首选 |
-| **SWR 3** | ✅ 支持 | ✅ RSC 兼容 | ⭐⭐⭐⭐ 轻量替代 |
-| **Apollo Client** | ✅ 支持 | 🚧 GraphQL RSC 实验 | GraphQL 必选 |
-| **RTK Query** | ✅ 支持 | ✅ 兼容 | Redux 生态首选 |
+| **TanStack Query v5** | 完整支持 | Server/Client 双模式 | 5/5 首选 |
+| **SWR 3** | 支持 | RSC 兼容 | 4/5 轻量替代 |
+| **Apollo Client** | 支持 | 部分支持 · GraphQL RSC 实验 | GraphQL 必选 |
+| **RTK Query** | 支持 | 兼容 | Redux 生态首选 |
 
 ### 3.4 UI 组件库
 
 | 库 | React 18 | React 19 / RSC | 备注 |
 |----|----------|----------------|------|
-| **Radix UI / shadcn/ui** | ✅ 完美 | ✅ 无运行时依赖 | 无头组件首选 |
-| **MUI (v6)** | ✅ 支持 | 🚧 逐步适配 | 重组件库场景 |
-| **Ant Design (v5)** | ✅ 支持 | 🚧 适配中 | 企业级后台首选 |
-| **Chakra UI** | ⚠️ v2 维护模式 | ❌ 无 RSC 计划 | 建议迁移 Panda CSS / shadcn |
-| **Tailwind CSS** | ✅ 无关 | ✅ 无关 | 原子化 CSS 标准配置 |
+| **Radix UI / shadcn/ui** | 完美支持 | 无运行时依赖 | 无头组件首选 |
+| **MUI (v6)** | 支持 | 部分支持 · 逐步适配 | 重组件库场景 |
+| **Ant Design (v5)** | 支持 | 部分支持 · 适配中 | 企业级后台首选 |
+| **Chakra UI** | v2 维护模式 | 无 RSC 计划 | 建议迁移 Panda CSS / shadcn |
+| **Tailwind CSS** | 无关 | 无关 | 原子化 CSS 标准配置 |
 
 ### 3.5 测试工具
 
 | 工具 | React 18 | React 19 | 备注 |
 |------|----------|----------|------|
-| **Vitest + RTL** | ✅ 推荐 | ✅ 推荐 | 现代首选组合 |
-| **Jest + RTL** | ✅ 支持 | ✅ 支持 | 老项目维护 |
-| **Playwright** | ✅ E2E 标准 | ✅ E2E 标准 | 必配 |
-| **Storybook** | ✅ v8 支持 | ✅ v8 RSC 支持 | 组件文档驱动开发 |
+| **Vitest + RTL** | 推荐 | 推荐 | 现代首选组合 |
+| **Jest + RTL** | 支持 | 支持 | 老项目维护 |
+| **Playwright** | E2E 标准 | E2E 标准 | 必配 |
+| **Storybook** | v8 支持 | v8 RSC 支持 | 组件文档驱动开发 |
 
 ## 4. 迁移工具链
 
 ### 4.1 官方 Codemods
 
 ```bash
-# React 19 破坏性变更自动修复
-npx @react/codemod@latest react-19-codemods .
+# 官方 codemod 工具（github.com/reactjs/react-codemod）
+npx react-codemod update-react-imports .
 
-# 典型修复：
-# - createRoot 替代 render
-# - useEffect 清理函数异步化
-# - PropTypes 移除建议
-# - UNSAFE_ 生命周期重命名
+# 需要人工核对的 React 19 破坏性变更（见 react.dev 官方 Upgrading Guide）：
+# - createRoot 替代 ReactDOM.render
+# - useEffect 清理函数的异步执行时机
+# - 函数组件 defaultProps、react-test-renderer/shallow 等移除项
+# - UNSAFE_ 生命周期仍可按需重命名
 ```
 
 ### 4.2 社区工具

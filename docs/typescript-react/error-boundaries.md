@@ -17,9 +17,9 @@ React 提供了错误边界（Error Boundaries）来捕捉和处理子组件中�
 
 ### 创建一个错误边界组件
 
-错误边界组件需要实现两个静态方法：`getDerivedStateFromError` 和 `componentDidCatch`。
+错误边界组件需要实现两个方法：静态方法 `getDerivedStateFromError` 和实例方法 `componentDidCatch`。
 
-1. **getDerivedStateFromError**
+1. **getDerivedStateFromError（静态方法）**
 
    该方法会在捕捉到错误时调用，返回一个更新的状态以渲染备用 UI。
 
@@ -30,9 +30,9 @@ React 提供了错误边界（Error Boundaries）来捕捉和处理子组件中�
    }
    ```
 
-2. **componentDidCatch**
+2. **componentDidCatch（实例方法）**
 
-   该方法会在捕捉到错误后调用，接收错误信息和错误信息的组件栈信息。
+   该方法会在捕捉到错误后调用，接收错误信息和错误信息的组件栈信息，适合在这里上报错误日志。
 
    ```jsx
    componentDidCatch(error, info) {
@@ -108,9 +108,10 @@ const App = () => (
 
 - **错误边界的粒度**：不要将错误边界过度地细化到每个组件。只在需要时使用错误边界，例如在捕捉特定功能或页面的错误时。
 
-### 6. 处理生命周期方法中的错误
+### 6. 留意错误边界自身的错误
 
-- **生命周期方法**：错误边界不会捕捉生命周期方法中的错误，例如 `componentDidMount`。在这些方法中，确保代码具有良好的错误处理机制。
+- **子组件的生命周期错误**：子组件的 `render`、构造函数和生命周期方法（如 `componentDidMount`）中抛出的错误，**可以**被上层的错误边界捕获。
+- **错误边界自身的错误**：错误边界无法捕获自己内部抛出的错误。如果其自身的 `render` 或生命周期方法出错，需要在其外层再包一层错误边界兜底。
 
 ## 7.11.4 错误边界的限制
 

@@ -39,7 +39,7 @@ Next.js 项目有一些特定的目录结构和文件：
   
 - **动态路由**：使用方括号 `[]` 定义动态路由参数。例如，`pages/posts/[id].js` 对应 `/posts/:id`，其中 `id` 是动态参数。
 
-```javascript
+```jsx
 // pages/posts/[id].js
 import { useRouter } from 'next/router';
 
@@ -67,7 +67,7 @@ Next.js 支持多种数据获取方式：
 
 示例代码：
 
-```javascript
+```jsx
 // pages/posts/[id].js
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -104,7 +104,7 @@ Next.js 支持多种样式解决方案：
 
 - **内联样式与 Styled JSX**：Next.js 内置支持 styled-jsx，允许在组件内部定义作用域样式。
 
-```javascript
+```jsx
 function Home() {
   return (
     <div>
@@ -128,7 +128,7 @@ function Home() {
 }
 ```
 
-```javascript
+```jsx
 // pages/index.js
 import styles from '../styles/Home.module.css';
 
@@ -139,7 +139,7 @@ function Home() {
 
 - **全局样式**：可以在 `_app.js` 中引入全局样式。
 
-```javascript
+```jsx
 // pages/_app.js
 import '../styles/globals.css';
 

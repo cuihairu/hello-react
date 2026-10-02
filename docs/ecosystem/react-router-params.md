@@ -9,14 +9,14 @@
 **1. 定义路由参数**
 
 在路由定义中，你可以使用冒号 `:` 来定义参数：
-```javascript
+```jsx
 <Route path="/user/:id" element={<UserProfile />} />
 ```
 
 **2. 访问路由参数**
 
 在组件中，可以通过 `useParams` 钩子来访问这些参数：
-```javascript
+```jsx
 import { useParams } from 'react-router-dom';
 
 function UserProfile() {
@@ -32,7 +32,7 @@ function UserProfile() {
 ```
 
 **完整示例**：
-```javascript
+```jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom';
 
@@ -83,7 +83,7 @@ export default App;
 
 **2. 动态加载组件示例**
 
-```javascript
+```jsx
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 

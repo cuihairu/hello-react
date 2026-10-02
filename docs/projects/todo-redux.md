@@ -2,12 +2,13 @@
 
 ### 1. 安装 Redux 和相关库
 
-首先，安装 Redux、React-Redux 和 TypeScript 的类型定义。
+首先，安装 Redux 和 React-Redux：
 
 ```bash
 npm install redux react-redux
-npm install @types/react-redux
 ```
+
+> `react-redux` v8 起已内置 TypeScript 类型定义，无需再安装 `@types/react-redux`（该包仅对应 v7 及更早版本）。
 
 ### 2. 配置 Redux
 
@@ -72,37 +73,76 @@ export const deleteTodo = (id: number): TodoActionTypes => ({
   type: DELETE_TODO,
   payload: { id },
 });
+
+// 筛选状态也放进 store，供 Filters 组件使用
+export type TodoFilter = 'all' | 'completed' | 'active';
+
+export const SET_FILTER = 'SET_FILTER';
+
+export interface SetFilterAction {
+  type: typeof SET_FILTER;
+  payload: { filter: TodoFilter };
+}
+
+export const setFilter = (filter: TodoFilter): SetFilterAction => ({
+  type: SET_FILTER,
+  payload: { filter },
+});
 ```
 
 #### 2.3. 定义 Reducer
 
 **`src/store/reducer.ts`**
 
+状态由 `todos`（列表）和 `filter`(筛选条件)两部分组成：
+
 ```ts
 import { Todo } from '../types/todo';
-import { TodoActionTypes, ADD_TODO, TOGGLE_TODO, DELETE_TODO } from './actions';
+import { TodoActionTypes, TodoFilter, ADD_TODO, TOGGLE_TODO, DELETE_TODO, SET_FILTER } from './actions';
 
-const initialState: Todo[] = [];
+export interface TodoState {
+  todos: Todo[];
+  filter: TodoFilter;
+}
 
-export const todoReducer = (state = initialState, action: TodoActionTypes): Todo[] => {
+const initialState: TodoState = {
+  todos: [],
+  filter: 'all',
+};
+
+export const todoReducer = (state = initialState, action: TodoActionTypes | SetFilterAction): TodoState => {
   switch (action.type) {
     case ADD_TODO:
-      return [
+      return {
         ...state,
-        {
-          id: Date.now(),
-          text: action.payload.text,
-          completed: false,
-        },
-      ];
+        todos: [
+          ...state.todos,
+          {
+            id: Date.now(),
+            text: action.payload.text,
+            completed: false,
+          },
+        ],
+      };
     case TOGGLE_TODO:
-      return state.map(todo =>
-        todo.id === action.payload.id
-          ? { ...todo, completed: !todo.completed }
-          : todo
-      );
+      return {
+        ...state,
+        todos: state.todos.map(todo =>
+          todo.id === action.payload.id
+            ? { ...todo, completed: !todo.completed }
+            : todo
+        ),
+      };
     case DELETE_TODO:
-      return state.filter(todo => todo.id !== action.payload.id);
+      return {
+        ...state,
+        todos: state.todos.filter(todo => todo.id !== action.payload.id),
+      };
+    case SET_FILTER:
+      return {
+        ...state,
+        filter: action.payload.filter,
+      };
     default:
       return state;
   }
@@ -114,10 +154,13 @@ export const todoReducer = (state = initialState, action: TodoActionTypes): Todo
 **`src/store/store.ts`**
 
 ```ts
-import { createStore } from 'redux';
+import { legacy_createStore as createStore } from 'redux';
 import { todoReducer } from './reducer';
 
 export const store = createStore(todoReducer);
+
+// 供 useSelector 等处使用的全局状态类型
+export type RootState = ReturnType<typeof store.getState>;
 ```
 
 ### 3. 连接 Redux 与 React
@@ -130,16 +173,19 @@ export const store = createStore(todoReducer);
 
 ```tsx
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
 );
 ```
 
@@ -151,12 +197,16 @@ ReactDOM.render(
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import TodoItem from './TodoItem';
-import { Todo } from '../types/todo';
-import { RootState } from '../types/store';
+import { RootState } from '../store/store';
 import { toggleTodo, deleteTodo } from '../store/actions';
 
 const TodoList: React.FC = () => {
-  const todos = useSelector((state: RootState) => state);
+  // RootState 从 store.ts 导出（ReturnType<typeof store.getState>）
+  const todos = useSelector((state: RootState) => {
+    if (state.filter === 'completed') return state.todos.filter(t => t.completed);
+    if (state.filter === 'active') return state.todos.filter(t => !t.completed);
+    return state.todos;
+  });
   const dispatch = useDispatch();
 
   const handleToggle = (id: number) => {
@@ -226,8 +276,7 @@ export default TodoForm;
 ```tsx
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { TodoFilter } from '../types/store';
-import { setFilter } from '../store/actions';
+import { TodoFilter, setFilter } from '../store/actions';
 
 const Filters: React.FC = () => {
   const dispatch = useDispatch();

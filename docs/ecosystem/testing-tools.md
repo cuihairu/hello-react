@@ -14,7 +14,7 @@
 - **模拟和定时器控制**：Jest 提供内置的模拟功能和定时器控制，便于测试异步代码。
 
 **使用示例**：
-```javascript
+```jsx
 import { render } from '@testing-library/react';
 import MyComponent from './MyComponent';
 
@@ -41,7 +41,7 @@ test('renders MyComponent with correct text', () => {
 - **静态渲染（Static Rendering）**：生成静态 HTML 标记，适用于测试生成的 HTML 结构。
 
 **使用示例**：
-```javascript
+```jsx
 import { shallow } from 'enzyme';
 import MyComponent from './MyComponent';
 
@@ -70,7 +70,7 @@ test('renders the correct text', () => {
 - **丰富的选择器**：提供一系列选择器，可以根据文本、标签、角色等查找元素。
 
 **使用示例**：
-```javascript
+```jsx
 import { render, fireEvent } from '@testing-library/react';
 import MyComponent from './MyComponent';
 

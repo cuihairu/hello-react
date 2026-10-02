@@ -64,10 +64,10 @@ Taro 的核心是将统一的代码通过不同的编译器转换为各个平台
 4. **启动开发服务器**：
 
    ```bash
-   taro dev:weapp
+   npm run dev:weapp
    ```
 
-   或者根据需要启动其他平台的开发服务器。
+   该脚本等价于 `taro build --type weapp --watch`（监听模式构建微信小程序）；其他平台对应 `npm run dev:h5` 等。
 
 5. **编写代码**：
 

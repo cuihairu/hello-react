@@ -69,16 +69,16 @@ Reconciliation 机制是 React 中负责高效更新用户界面的核心算法�
 
 ### 示例：使用 Fiber 优化更新
 
-```javascript
+```jsx
 import React, { useState, useEffect } from 'react';
 
 function MyComponent() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // 模拟一个高优先级任务
+    // requestIdleCallback 在浏览器空闲时执行，适合模拟低优先级任务
     const handle = requestIdleCallback(() => {
-      console.log('High priority task');
+      console.log('Idle-time (low priority) task');
     });
 
     // 清理函数

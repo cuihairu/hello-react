@@ -34,12 +34,13 @@
          runs-on: ubuntu-latest
 
          steps:
-           - uses: actions/checkout@v2
+           - uses: actions/checkout@v4
            - name: Set up Node.js
-             uses: actions/setup-node@v2
+             uses: actions/setup-node@v4
              with:
-               node-version: '14'
-           - run: npm install
+               node-version: '20'
+               cache: 'npm'
+           - run: npm ci
            - run: npm test
      ```
    - **特点**：
@@ -56,7 +57,7 @@
      jobs:
        build:
          docker:
-           - image: circleci/node:14
+           - image: cimg/node:20.18
          steps:
            - checkout
            - run:
@@ -119,7 +120,7 @@
        deploy:
          runs-on: ubuntu-latest
          steps:
-           - uses: actions/checkout@v2
+           - uses: actions/checkout@v4
            - name: Deploy to server
              run: |
                scp -r ./build user@server:/path/to/deploy
@@ -131,7 +132,7 @@
      ```yaml
      deploy:
        docker:
-         - image: circleci/node:14
+         - image: cimg/node:20.18
        steps:
          - checkout
          - run:

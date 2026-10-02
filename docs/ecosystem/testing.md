@@ -47,7 +47,7 @@
    - **介绍**：Jest 是一个 JavaScript 测试框架，广泛用于 React 应用的单元测试和集成测试。
    - **实践**：编写测试用例，确保组件的渲染和功能如预期。
 
-   ```javascript
+   ```jsx
    import { render, screen } from '@testing-library/react';
    import MyComponent from './MyComponent';
 
@@ -62,7 +62,7 @@
    - **介绍**：React Testing Library 是用于测试 React 组件的轻量级工具，侧重于用户行为测试。
    - **实践**：通过用户行为模拟，测试组件的渲染、交互和状态管理。
 
-   ```javascript
+   ```jsx
    import { render, fireEvent } from '@testing-library/react';
    import Button from './Button';
 
@@ -96,7 +96,7 @@
    - **介绍**：快照测试用于验证 UI 组件在不同状态下的渲染结果，通过比对当前渲染输出和之前的快照来检测 UI 的变化。
    - **实践**：使用 Jest 的快照功能，生成和比对组件的快照。
 
-   ```javascript
+   ```jsx
    import renderer from 'react-test-renderer';
    import MyComponent from './MyComponent';
 

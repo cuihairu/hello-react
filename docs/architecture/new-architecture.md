@@ -52,7 +52,7 @@
 
 ### 1. Concurrent Mode
 
-- **定义**：Concurrent Mode 是 React 16.8 引入的实验性功能，旨在提高 React 的响应性和流畅性。它允许 React 在后台进行复杂的计算，而不会阻塞主线程。
+- **定义**：并发能力最早在 React 16.x 后期以实验性功能（Concurrent Mode）出现，旨在提高 React 的响应性和流畅性，并在 **React 18** 正式落地为 Concurrent Rendering（通过 `createRoot` 默认启用）。它允许 React 在后台进行复杂的计算，而不会阻塞主线程。
 
 - **可中断渲染**：Concurrent Mode 支持可中断渲染，允许 React 在渲染过程中中断和恢复任务，从而提高了 UI 的响应速度。
 
@@ -80,7 +80,7 @@
 
 ### 2. 缺点
 
-- **实验性功能**：Concurrent Mode 和部分新特性仍然处于实验阶段，可能会有不稳定的情况或需要额外的配置。
+- **学习曲线**：新版架构引入了许多新概念和机制（增量渲染、优先级调度、并发特性），可能需要开发者花费时间学习和适应。
 
 - **学习曲线**：新版架构引入了许多新概念和机制，可能需要开发者花费时间学习和适应。
 
@@ -90,7 +90,7 @@
 
 ### 示例：Concurrent Mode 的应用
 
-```javascript
+```jsx
 import { Suspense, lazy } from 'react';
 
 // 使用 Suspense 和 lazy 加载组件

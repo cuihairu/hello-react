@@ -80,7 +80,7 @@ Parcel 是一个零配置的构建工具，旨在使构建过程尽可能简单�
 
 - **基本配置**：
 
-  ```json
+  ```jsonc
   // package.json
   {
     "scripts": {
@@ -102,11 +102,13 @@ Webpack 是最成熟和功能强大的构建工具之一，但其配置可能比
 
   ```javascript
   // webpack.config.js
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
+  module.exports = {
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
     },
-  },
+  };
   ```
 
 - **懒加载**：动态导入模块，按需加载。
@@ -121,9 +123,11 @@ Webpack 是最成熟和功能强大的构建工具之一，但其配置可能比
 
   ```javascript
   // webpack.config.js
-  cache: {
-    type: 'filesystem',
-  },
+  module.exports = {
+    cache: {
+      type: 'filesystem',
+    },
+  };
   ```
 
 ##### 11.2.2 插件
@@ -134,11 +138,13 @@ Webpack 是最成熟和功能强大的构建工具之一，但其配置可能比
   // webpack.config.js
   const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
+  module.exports = {
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: './src/index.html',
+      }),
+    ],
+  };
   ```
 
 - **MiniCssExtractPlugin**：将 CSS 提取到单独的文件中。
@@ -176,7 +182,7 @@ Babel 是一个 JavaScript 编译器，用于将 ES6+ 代码转换为向后兼�
   npm install --save-dev @babel/core @babel/cli @babel/preset-env
   ```
 
-  ```javascript
+  ```jsonc
   // .babelrc
   {
     "presets": ["@babel/preset-env"]
@@ -210,7 +216,7 @@ Babel 是一个 JavaScript 编译器，用于将 ES6+ 代码转换为向后兼�
 
 - **npm scripts**：通过 `package.json` 定义构建、测试和部署脚本。
 
-  ```json
+  ```jsonc
   // package.json
   {
     "scripts": {
@@ -238,12 +244,12 @@ Babel 是一个 JavaScript 编译器，用于将 ES6+ 代码转换为向后兼�
     build:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v4
         - name: Set up Node.js
-          uses: actions/setup-node@v2
+          uses: actions/setup-node@v4
           with:
-            node-version: '14'
-        - run: npm install
+            node-version: '20'
+        - run: npm ci
         - run: npm run build
         - run: npm test
   ```

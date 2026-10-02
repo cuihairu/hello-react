@@ -98,15 +98,15 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run build
       run: npm run build
@@ -148,15 +148,15 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '20'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run build
       run: npm run build
@@ -167,10 +167,9 @@ jobs:
     - name: Deploy
       if: github.ref == 'refs/heads/main'
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       run: |
-        npm install -g deploy-cli
-        deploy-cli deploy --environment production
+        npx vercel deploy --prod --yes --token "$VERCEL_TOKEN"
 ```
 
 2. **配置部署工具**：

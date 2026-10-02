@@ -199,6 +199,10 @@ export default MyComponent;
 - 在事件处理程序中批量更新组件状态
 - 提高渲染性能
 
+::: tip
+这是 React 16/17 时代的 API。**React 18 起，`createRoot` 创建的应用默认在事件处理、生命周期、`setTimeout`、Promise 等所有场景中自动批处理**，通常不再需要手动调用 `unstable_batchedUpdates`（该 API 仅用于兼容旧代码）。
+:::
+
 #### 7. **React.lazy 和 Suspense**
 
 `React.lazy` 和 `Suspense` 允许你动态加载组件，以优化应用性能。`React.lazy` 用于延迟加载组件，而 `Suspense` 用于处理加载状态。

@@ -268,9 +268,7 @@
       this.state = { hasError: false };
     }
 
-    static getDerived
-
-StateFromError() {
+    static getDerivedStateFromError(error) {
       return { hasError: true };
     }
 
