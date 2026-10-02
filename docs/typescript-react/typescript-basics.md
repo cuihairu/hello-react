@@ -280,6 +280,10 @@ TypeScript 对 JavaScript 的类进行了扩展，支持更多的面向对象编
   npx create-react-app my-app --template typescript
   ```
 
+  ::: warning
+  Create React App 已于 2023 年进入维护模式、不再积极开发，React 官方文档建议新项目改用 [Vite](https://vitejs.dev/) 或 Next.js 等框架。本节保留 CRA 命令以便对照旧项目，新项目请优先使用 Vite（见《在 React 项目中使用 TypeScript》）。
+  :::
+
 #### 5.7 **总结**
 
 TypeScript 提供了静态类型检查和现代 JavaScript 的特性，使得编写和维护大型代码库变得更加容易和安全。掌握 TypeScript 的基础知识将帮助你编写更可靠的代码，并提升你的开发效率。
