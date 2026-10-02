@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Hello React
   text: React 知识体系
-  tagline: 从前端基础到工程实战——TypeScript、架构演变、Hooks 深度、构建工具、源码解析、生态系统与项目实战，系统掌握 React。
+  tagline: 从前端基础到工程实战：TypeScript、架构演变、Hooks、构建工具、源码与生态。
   actions:
     - theme: brand
       text: 开始阅读

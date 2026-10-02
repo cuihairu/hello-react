@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@fontsource-variable/space-grotesk": "^5.3.0"
   }
 }

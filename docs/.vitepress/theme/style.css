@@ -3,6 +3,12 @@
    品牌色来源：logo.svg 主色 #087EA4（出现 4 次）、强调色 #61DAFB（出现 3 次）
    亮色模式：品牌主色 #087EA4，悬停 #076B8B，按下 #065870，弱态 rgba(8,126,164,0.14)
    深色模式：品牌主色 #61DAFB，悬停 #8CE4FF，按下 #4FD1EE，弱态 rgba(97,218,251,0.16)
+
+   设计规范（Shape / Color / Motion Lock）：
+   · 圆角：卡片 10px、行内代码 6px、pill 999px，全站一致
+   · 转场：200ms ease；阴影一律带品牌色相，禁纯黑阴影
+   · 展示字体：Space Grotesk Variable（拉丁），中文回退系统栈
+   · prefers-reduced-motion 下关闭全部动效
    ============================================================ */
 
 /* ---------- 品牌色 ---------- */
@@ -12,6 +18,16 @@
   --vp-c-brand-2: #076B8B;
   --vp-c-brand-3: #065870;
   --vp-c-brand-soft: rgba(8, 126, 164, 0.14);
+
+  /* teal-soft 底色（提示容器、表头、水印底） */
+  --teal-soft: rgba(8, 126, 164, 0.08);
+  --teal-hairline: rgba(8, 126, 164, 0.25);
+  --brand-shadow: rgba(8, 126, 164, 0.08);
+
+  /* 形状系统 */
+  --radius-card: 10px;
+  --radius-code: 6px;
+  --radius-pill: 999px;
 }
 
 .dark {
@@ -19,23 +35,70 @@
   --vp-c-brand-2: #8CE4FF;
   --vp-c-brand-3: #4FD1EE;
   --vp-c-brand-soft: rgba(97, 218, 251, 0.16);
+
+  --teal-soft: rgba(97, 218, 251, 0.10);
+  --teal-hairline: rgba(97, 218, 251, 0.28);
+  --brand-shadow: rgba(97, 218, 251, 0.10);
+}
+
+/* ---------- 底色与文字（off-black，忌纯黑） ---------- */
+
+:root:not(.dark) {
+  --vp-c-text-1: #1b2733;
+  /* 页面分区 tint：侧边栏、导航用极淡的品牌底 */
+  --vp-sidebar-bg-color: #f5fafd;
+  --vp-nav-bg-color: #f5fafd;
+}
+
+.dark {
+  --vp-c-bg: #0d1420;
+  --vp-c-bg-alt: #0f1725;
+  --vp-c-bg-soft: #121b2a;
+  --vp-sidebar-bg-color: #0d1420;
+  --vp-nav-bg-color: #0d1420;
+  --vp-code-block-bg: #131c2b;
+}
+
+::selection {
+  background: rgba(8, 126, 164, 0.18);
+}
+.dark ::selection {
+  background: rgba(97, 218, 251, 0.18);
 }
 
 /* ---------- 字体 ---------- */
 
 :root {
+  --vp-font-display: 'Space Grotesk Variable', -apple-system, BlinkMacSystemFont,
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
   --vp-font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
     'Microsoft YaHei', 'Noto Sans CJK SC', 'Segoe UI', sans-serif;
   --vp-font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
 }
 
-/* ---------- 基础 ---------- */
+/* 展示字体只上标题、hero 站名与导航站名：拉丁字符走 Space Grotesk，中文回退系统栈 */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.VPHero .name,
+.VPHero .text,
+.VPNavBarTitle .title {
+  font-family: var(--vp-font-display);
+  letter-spacing: -0.01em;
+}
 
 body {
   font-family: var(--vp-font-body);
   font-size: 16.5px;
   line-height: 1.75;
   text-rendering: optimizeLegibility;
+}
+
+/* ---------- 基础 ---------- */
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* 浏览器表面（滚动条、焦点环属于设计） */
@@ -85,7 +148,7 @@ body {
   font-size: 1.4rem;
   margin: 3rem 0 1.5rem;
   padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--vp-c-border);
+  border-bottom: 1px solid var(--teal-hairline);
 }
 .vp-doc h3 {
   font-size: 1.25rem;
@@ -103,6 +166,15 @@ body {
 .vp-doc td {
   line-height: 1.6;
   padding: 0.6rem 0.9rem;
+}
+.vp-doc th {
+  background: var(--teal-soft);
+}
+.vp-doc tbody tr:nth-child(2n) {
+  background: #f8fbfd;
+}
+.dark .vp-doc tbody tr:nth-child(2n) {
+  background: #111a29;
 }
 .vp-doc li {
   margin: 0.35rem 0;
@@ -125,16 +197,56 @@ body {
 .vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
   font-family: var(--vp-font-mono);
   font-size: 0.85em;
-  border-radius: 4px;
+  border-radius: var(--radius-code);
   padding: 2px 6px;
 }
 
+.vp-doc div[class*='language-'] {
+  border-radius: var(--radius-card);
+}
 .vp-doc div[class*='language-'] code {
   font-size: 0.875rem;
   line-height: 1.7;
 }
 
-/* ---------- 首页 Hero 调整 ---------- */
+/* ---------- 提示容器：teal-soft 底 + 左侧 3px 实线 ---------- */
+
+.vp-doc .custom-block {
+  border-radius: var(--radius-card);
+  transition: border-color 0.2s ease;
+}
+.vp-doc .custom-block.tip {
+  background: var(--teal-soft);
+  border: 1px solid transparent;
+  border-left: 3px solid var(--vp-c-brand-1);
+}
+.dark .vp-doc .custom-block.tip {
+  border-left-color: var(--vp-c-brand-1);
+}
+
+/* ---------- kbd：统一按键样式 ---------- */
+
+.vp-doc kbd,
+.custom-block kbd {
+  font-family: var(--vp-font-mono);
+  font-size: 0.85em;
+  border-radius: var(--radius-code);
+  border: 1px solid var(--vp-c-border);
+  border-bottom-width: 2px;
+  padding: 1px 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+/* ---------- 按钮 / 徽标：pill ---------- */
+
+.VPButton,
+.VPBadge {
+  border-radius: var(--radius-pill);
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, transform 0.2s ease;
+}
+
+/* ---------- 首页 Hero ---------- */
 
 :root {
   --vp-home-hero-name-color: transparent;
@@ -151,6 +263,83 @@ body {
     var(--vp-c-brand-1) 0%,
     var(--vp-c-brand-2) 100%
   );
+}
+
+/* hero 原子轨道水印：logo 椭圆轨道极淡化铺底，右侧偏置 */
+.VPHero {
+  position: relative;
+}
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: -12%;
+  right: -14%;
+  width: 580px;
+  height: 580px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cg fill='none' stroke='%23087EA4' stroke-width='1.6'%3E%3Cellipse cx='64' cy='64' rx='56' ry='22'/%3E%3Cellipse cx='64' cy='64' rx='56' ry='22' transform='rotate(60 64 64)'/%3E%3Cellipse cx='64' cy='64' rx='56' ry='22' transform='rotate(120 64 64)'/%3E%3C/g%3E%3Ccircle cx='64' cy='64' r='10' fill='%23087EA4'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  opacity: 0.04;
+  pointer-events: none;
+}
+.dark .VPHero::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cg fill='none' stroke='%2361DAFB' stroke-width='1.6'%3E%3Cellipse cx='64' cy='64' rx='56' ry='22'/%3E%3Cellipse cx='64' cy='64' rx='56' ry='22' transform='rotate(60 64 64)'/%3E%3Cellipse cx='64' cy='64' rx='56' ry='22' transform='rotate(120 64 64)'/%3E%3C/g%3E%3Ccircle cx='64' cy='64' r='10' fill='%2361DAFB'/%3E%3C/svg%3E");
+  opacity: 0.06;
+}
+/* 正文层级高于水印 */
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- 首页 features：2×2 网格 ---------- */
+/* VitePress 1.6 的 features 是 flex + width 百分比（grid-4 = 25%），
+   覆盖为桌面端两列，与 640~960px 区间一致 */
+
+@media (min-width: 960px) {
+  .VPFeatures .item.grid-4,
+  .VPFeatures .item.grid-3 {
+    width: 50% !important;
+  }
+}
+
+.VPFeature {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: 0 2px 10px var(--brand-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+/* 卡片顶部 2px teal 到 cyan 渐变描边 */
+.VPFeature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #087EA4, #61DAFB);
+}
+.VPFeature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px var(--brand-shadow);
+}
+.dark .VPFeature:hover {
+  box-shadow: 0 10px 28px rgba(97, 218, 251, 0.10);
+}
+
+/* ---------- 动效克制：reduced motion 下全部关闭 ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 .vp-doc h1 code,
