@@ -81,8 +81,11 @@
 .vp-doc h2,
 .vp-doc h3,
 .vp-doc h4,
+/* VitePress 2.0-alpha 把 hero 的 .name/.text 改名为 .heading/.tagline，两套都写以兼容 */
 .VPHero .name,
+.VPHero .heading,
 .VPHero .text,
+.VPHero .tagline,
 .VPNavBarTitle .title {
   font-family: var(--vp-font-display);
   letter-spacing: -0.01em;
@@ -299,6 +302,10 @@ html {
   .VPFeatures .item.grid-4,
   .VPFeatures .item.grid-3 {
     width: 50% !important;
+  }
+  /* 第 5 张卡（时间线入口）单独占满一行，避免 2+2+1 的半宽孤卡 */
+  .VPFeatures .item.grid-4:last-child:nth-child(odd) {
+    width: 100% !important;
   }
 }
 

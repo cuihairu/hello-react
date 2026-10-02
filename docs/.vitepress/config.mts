@@ -20,7 +20,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   themeConfig: {
-    logo: '/hello-react/logo.svg',
+    logo: '/logo.svg',
     siteTitle: 'Hello React',
 
     nav: [

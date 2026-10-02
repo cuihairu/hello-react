@@ -22,4 +22,7 @@ features:
     details: Virtual DOM、Fiber、Reconciliation、Concurrent Mode、useState/useEffect/useContext/useReducer 源码级解析。
   - title: 生态与工程实战
     details: React Router、Redux/MobX、Next.js SSR、测试体系、CI/CD、Taro 多端、Todo 全栈项目实战。
+  - title: 发展史时间线
+    details: React 十六年（2010 → 2026）：从 FaxJS 原型到 Fiber 重写、Hooks、并发渲染与 React Compiler 的 26 个关键节点。
+    link: /timeline
 ---
