@@ -13,6 +13,7 @@ React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/)
 从前端基础到工程实战的 React 知识站点，覆盖 TypeScript、架构演变、Hooks 深度解析、构建工具、源码内幕、生态系统与项目实战。
 
 <p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
+<p align="center"><img src="docs/public/badges/license.svg" alt="CC BY 4.0" /></p>
 
 ## 本地开发
 
@@ -64,3 +65,6 @@ hello-react/
 - 中文正文首行缩进 2em、行高 1.75、留白充足
 - 品牌色源自 Logo 主色 #087EA4 / 强调色 #61DAFB，亮暗两套 Token
 - 标题与表格移除装饰性 emoji，保留语义性标记
+## License
+
+本作品采用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 许可协议发布。
