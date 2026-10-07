@@ -12,6 +12,8 @@ React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/)
 
 从前端基础到工程实战的 React 知识站点，覆盖 TypeScript、架构演变、Hooks 深度解析、构建工具、源码内幕、生态系统与项目实战。
 
+<p align="center"><img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /></p>
+
 ## 本地开发
 
 ```bash
