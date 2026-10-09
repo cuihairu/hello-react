@@ -255,4 +255,12 @@ export const TIMELINE: TimelineEvent[] = [
     why: '早年构想的 Offscreen 提案更名 Activity，随 19.2 正式出货：以 visible/hidden 两种模式保活或预渲染子树，隐藏不卸载、状态不丢失。标签页切换与抽屉保活这些老问题有了官方原语。',
     link: '/future/react-concurrent-mode',
   },
+  {
+    year: 2026,
+    title: 'React 19.3：View Transitions 进入核心',
+    who: 'React 团队（React 19.3，9 月 9 日）',
+    field: 'concurrent',
+    why: '视图切换动画此前要在浏览器 View Transitions API 上手写接线，19.3 把 <ViewTransition /> 与 addTransitionType 收进核心：动画随 transition 的 pending 状态自动编排，无需手动管理 DOM 快照。同版还加入 Fragment refs 与 react-dom 的 browser() 浏览器专属子树标记。',
+    link: '/future/react-new-features',
+  },
 ]

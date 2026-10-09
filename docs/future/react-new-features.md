@@ -1,6 +1,6 @@
 # React 新特性速览
 
-基于 React 19 RC 与 Canary 通道的最新特性汇总，帮助你评估升级收益与迁移成本。
+基于 React 19 系列（含 19.3 正式版）与 Canary 通道的特性汇总，帮助你评估升级收益与迁移成本。
 
 ## 1. `use` —— 在组件中读取 Promise/Context
 
@@ -134,6 +134,27 @@ Input.displayName = 'Input';
 
 - 函数组件直接接收 `ref` 作为第二参数，无需 `forwardRef` 包装
 
+## 8. React 19.3：View Transitions 与 Fragment refs
+
+React 19.3（2026 年 9 月 9 日发布）把视图切换动画接入核心：
+
+```tsx
+import { ViewTransition, addTransitionType } from 'react';
+
+function Tabs({ tab, children }) {
+  return (
+    <ViewTransition>
+      <div key={tab}>{children}</div>
+    </ViewTransition>
+  );
+}
+```
+
+- `<ViewTransition />`：包裹需要动画的子树，进入、退出、共享元素切换由 React 自动编排
+- `addTransitionType`：给 transition 打标签，动画按类型定制
+- Fragment refs：`<Fragment />` 支持 ref，便于组合平台行为
+- react-dom 的 `browser()`：返回一个服务端渲染时抛错、浏览器端 resolve 的 thenable，配合 `use(browser())` 把子树标记为仅浏览器渲染
+
 ## 迁移建议
 
 | 特性 | 稳定版本 | 迁移优先级 | 备注 |
@@ -143,9 +164,12 @@ Input.displayName = 'Input';
 | `useActionState` | 19 | 中 | 表单重构配合 Server Action 收益最大 |
 | 文档元数据 | 19 | 低 | 可渐进式替换 helmet |
 | `forwardRef` 简化 | 实验 | 低 | 等稳定后再统一重构 |
+| `<ViewTransition />` | 19.3 | 中 | 视图切换动画改用官方原语，替代手写 View Transitions API |
+| `browser()` | 19.3 | 低 | 标记仅浏览器渲染的子树，替代 `useEffect` 挂载后渲染 |
 
 ## 相关资源
 
 - [React 19 RC 发布日志](https://react.dev/blog/2024/12/05/react-19)
+- [React 19.3 发布日志](https://react.dev/blog/2026/09/09/react-19-3)
 - [RFC: use Hook](https://github.com/reactjs/rfcs/pull/229)
 - [RFC: Server Actions](https://github.com/reactjs/rfcs/pull/271)
