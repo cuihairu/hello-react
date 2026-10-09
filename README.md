@@ -24,11 +24,14 @@ A React knowledge site spanning frontend fundamentals to engineering practice, c
 ## Local Development
 
 ```bash
-npm install          # install dependencies
-npm run docs:dev     # local dev server
-npm run docs:build   # build to docs/.vitepress/dist
-npm run docs:preview # preview the build output locally
+npm install           # install dependencies
+npm run docs:dev      # local dev server
+npm run docs:build    # build to docs/.vitepress/dist, checks source-level dead links
+npm run docs:preview  # preview the build output locally
+npm run audit:links   # audit all built HTML for dead links and broken anchors
 ```
+
+Dead-link checking runs at two levels: VitePress fails the build on source-level dead links, and `audit:links` scans the built HTML for links pointing to excluded files or broken page anchors (CI runs it after every build).
 
 ## Directory Structure
 
@@ -58,6 +61,8 @@ hello-react/
 │   │       └── style.css     # brand colors, CJK typography, code styles
 │   └── index.md              # home page (layout: home)
 ├── package.json              # dependencies and scripts
+├── scripts/
+│   └── audit-links.mjs       # built-output dead-link gate
 ├── .github/workflows/
 │   └── deploy-docs.yml       # Pages deploy workflow
 └── README.md                 # this file

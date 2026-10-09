@@ -35,6 +35,9 @@ jobs:
       - name: Build with VitePress
         run: npm run docs:build
 
+      - name: Audit built HTML for dead links
+        run: npm run audit:links
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:

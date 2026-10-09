@@ -24,11 +24,14 @@ React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/) ·
 ## 本地开发
 
 ```bash
-npm install        # 安装依赖
-npm run docs:dev   # 本地开发
-npm run docs:build # 构建到 docs/.vitepress/dist
+npm install         # 安装依赖
+npm run docs:dev    # 本地开发
+npm run docs:build  # 构建到 docs/.vitepress/dist，检查源级死链
 npm run docs:preview # 本地预览构建产物
+npm run audit:links # 扫描构建产物中的死链与失效锚点
 ```
+
+死链检查分两层：VitePress 构建时对源级死链直接报错，`audit:links` 扫描构建产物中指向被排除文件或失效锚点的链接（CI 每次构建后执行）。
 
 ## 目录结构
 
@@ -58,6 +61,8 @@ hello-react/
 │   │       └── style.css     # 品牌色、中文排印、代码样式
 │   └── index.md              # 首页（layout: home）
 ├── package.json              # 依赖与脚本
+├── scripts/
+│   └── audit-links.mjs       # 构建产物死链门禁
 ├── .github/workflows/
 │   └── deploy-docs.yml       # Pages 部署工作流
 └── README.md                 # 仓库说明

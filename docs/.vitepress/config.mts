@@ -17,7 +17,7 @@ export default defineConfig({
   // mdbook 遗留的目录文件保留在仓库作映射底稿，不作为页面构建
   srcExclude: ['**/SUMMARY.md'],
 
-  ignoreDeadLinks: true,
+  // 不忽略死链：构建期即检查源级死链（指向 srcExclude 文件的链接除外，由 CI 的 audit:links 兜底）
 
   themeConfig: {
     logo: '/logo.svg',
