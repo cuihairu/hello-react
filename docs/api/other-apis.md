@@ -227,6 +227,22 @@ export default App;
 - 动态加载组件
 - 优化初始加载时间
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页辅助 API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.Fragment` | 稳定 | 无变化 | — |
+| `React.StrictMode` | 16.3 起稳定 | 无变化 | 19 起 ref 回调在挂载时会被双调用 |
+| `React.createRef` | 16.3 起稳定 | 无变化 | — |
+| `React.forwardRef` | 16.3 起稳定 | 仍可用，多数场景不再需要 | `ref` 成为函数组件的普通 prop |
+| `React.Profiler` | 16.5 起稳定 | 无变化 | — |
+| `ReactDOM.unstable_batchedUpdates` | 可用 | 仍保留，无需手动调用 | React 18 起已自动批处理 |
+| `React.lazy` / `Suspense` | 16.6 起稳定 | 无变化 | Suspense 兄弟节点提交行为改进 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 这些辅助 API 提供了各种功能，以支持不同的开发需求和性能优化：

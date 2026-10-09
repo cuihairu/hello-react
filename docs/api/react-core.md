@@ -289,6 +289,24 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 </Profiler>
 ```
 
+#### React 18 → 19 版本对照
+
+本章各节正文以 React 18 为准。下表按章内小节汇总 React 19 的变化，逐条对照见各章节页：
+
+| 小节 | React 19 变化 |
+| --- | --- |
+| 20.1 JSX 与 JSX 相关 API | 除 `forwardRef` 外无变化；`createFactory` 移除，需新 JSX transform |
+| 20.2 组件相关 API | 无变化，类组件仍是合法写法 |
+| 20.3 生命周期方法 | 方法本身无变化；渲染期错误不再重抛 |
+| 20.4 State 与 Props API | 函数组件 `defaultProps` 移除、`propTypes` 被忽略 |
+| 20.5 ReactDOM 与渲染相关 API | `render` / `hydrate` / `unmountComponentAtNode` / `findDOMNode` 均已移除 |
+| 20.6 Hooks API | 无变化；新增 `use`、`useActionState`、`useOptimistic` |
+| 20.7 Context API | `<Context>` 可直接作为 Provider |
+| 20.8 Refs 与 DOM 交互 API | `ref` 成为普通 prop，`forwardRef` 多数场景不再需要；回调 ref 可返回清理函数 |
+| 20.9 Portals 与 Profiler API | 无变化 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 #### 总结
 
 本章介绍了 React 的核心 API，从 JSX 语法到组件相关 API，再到生命周期方法、Hooks、Context API、Refs、Portals 和 Profiler。了解和掌握这些 API 能够帮助开发者高效地创建和管理 React 组件、优化应用性能，并提升开发体验。

@@ -235,6 +235,21 @@ export default MyComponent;
 - 避免不必要的重新渲染
 - 提升函数组件的性能
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页模式对到 React 19：
+
+| 模式 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 高阶组件（HOC） | 稳定 | 无变化 | 转发 ref 的 HOC 多数场景不再需要 `forwardRef`，`ref` 可直接透传 |
+| Render Props | 稳定 | 无变化 | — |
+| Context 扩展 | 16.3 起稳定 | 更新 | React 19 起 `<Context>` 可直接作为 Provider |
+| `React.lazy` / `Suspense` | 16.6 起稳定 | 无变化 | Suspense 行为改进：最近边界的 fallback 立即提交，兄弟节点随后预热 |
+| 错误边界 | 16 起稳定 | 无变化 | 渲染期错误不再重抛，可用根选项 `onUncaughtError` / `onCaughtError` 自定义上报 |
+| `React.memo` | 16.6 起稳定 | 无变化 | — |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 在 React 开发中，除了核心 API，还有许多高阶函数和模式可以帮助你更高效地构建组件：

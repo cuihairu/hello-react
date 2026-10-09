@@ -169,3 +169,18 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 ```
 
 这些核心概念和 API 是 React 的基础，掌握它们可以帮助开发者更高效地使用 React 构建和管理复杂的用户界面。
+
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页概述的 API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.createElement` | 稳定 | 无变化 | — |
+| `ReactDOM.render` | 可用（不推荐） | **已移除** | 改用 `createRoot` |
+| `useState` / `useEffect` | 16.8 起稳定 | 无变化 | — |
+| `ReactDOM.createPortal` | 稳定 | 无变化 | — |
+
+各 API 的完整对照见本部分对应章节页。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

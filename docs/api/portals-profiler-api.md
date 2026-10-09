@@ -117,6 +117,17 @@ Profiler API 用于分析 React 应用的性能。React Profiler 允许开发者
 - **开销**：Profiler 组件在开发模式中有性能开销，因此应仅在开发阶段使用。
 - **分析数据**：分析 Profiler 提供的数据时，需结合应用的整体性能来做出优化决策。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把 Portals 与 Profiler API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `ReactDOM.createPortal` | 稳定 | 无变化 | — |
+| `Profiler` 组件 | 16.5 起稳定 | 无变化 | `onRender` 回调参数不变 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 - **Portals**：允许将子节点渲染到 DOM 树的不同位置，非常适用于模态框、对话框等场景。
