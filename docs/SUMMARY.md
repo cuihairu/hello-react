@@ -1,5 +1,6 @@
 # 目录
 
+- [知识点总纲](knowledge.md)
 - [第一部分：前端基础](basics/README.md)
     - [第1章：开发环境搭建](basics/environment-setup.md)
         - [安装与配置 Node.js](basics/nodejs-setup.md)

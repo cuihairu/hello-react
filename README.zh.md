@@ -13,7 +13,7 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/)
+React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/) · [知识点总纲](https://cuihairu.github.io/hello-react/knowledge)
 
 </div>
 

@@ -13,7 +13,7 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React knowledge base · [Read online](https://cuihairu.github.io/hello-react/)
+React knowledge base · [Read online](https://cuihairu.github.io/hello-react/) · [Knowledge map](https://cuihairu.github.io/hello-react/knowledge)
 
 </div>
 

@@ -4,6 +4,10 @@
     "link": "/timeline"
   },
   {
+    "text": "知识点总纲",
+    "link": "/knowledge"
+  },
+  {
     "text": "第一部分：前端基础",
     "link": "/basics/README",
     "collapsed": true,
