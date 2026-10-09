@@ -245,6 +245,25 @@ const LayoutEffectExample = () => {
 - `useLayoutEffect` 在浏览器绘制之前同步执行。
 - 用于需要同步测量 DOM 元素的场景。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Hooks 对到 React 19，供升级时查阅：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useState` | 16.8 起稳定 | 无变化 | — |
+| `useEffect` | 16.8 起稳定 | 无变化 | — |
+| `useContext` | 16.8 起稳定 | 无变化 | React 19 起 `<Context>` 可直接作为 Provider 使用，见 [Context API](context-api.md) |
+| `useReducer` | 16.8 起稳定 | 无变化 | TypeScript 类型收紧：不再接受完整的 reducer 类型参数 |
+| `useCallback` | 16.8 起稳定 | 无变化 | StrictMode 下重复渲染会复用首次渲染的计算结果 |
+| `useMemo` | 16.8 起稳定 | 无变化 | 同 `useCallback`，StrictMode 下复用首次结果 |
+| `useImperativeHandle` | 16.8 起稳定 | 无变化 | 可配合 React 19 的 ref 清理函数使用 |
+| `useLayoutEffect` | 16.8 起稳定 | 无变化 | — |
+
+React 19 新增的 `use`、`useActionState`、`useOptimistic` 与 react-dom 的 `useFormStatus` 不在本页展开，见[未来部分的新特性速览](../future/react-new-features.md)。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 - **`useState`** 用于在函数组件中添加 state。

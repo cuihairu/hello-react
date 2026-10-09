@@ -111,6 +111,21 @@ const MainComponent = React.memo(() => {
 - **使用多个 Context**：如果有不同类型的数据需要传递，可以使用多个 context 而不是一个大的 context。
 - **提供默认值**：为 Context 提供合理的默认值，以便在没有 Provider 的情况下，应用能正常工作。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页的 Context 写法对到 React 19：
+
+| API / 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.createContext` | 16.3 起稳定 | 无变化 | — |
+| `<Context.Provider>` | 16.3 起稳定 | 仍可用，官方计划弃用 | React 19 起 `<Context value={...}>` 可直接作为 Provider，官方提供 codemod 迁移 |
+| `useContext` | 16.8 起稳定 | 无变化 | — |
+| 遗留 Context（`contextTypes` / `getChildContext`） | 已弃用 | **已移除** | 改用 `createContext` |
+
+`use`（React 19 新增）也可以读取 context，且可在条件语句与循环中调用，见[未来部分的新特性速览](../future/react-new-features.md)。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 - **创建 Context**：使用 `React.createContext` 创建 context。

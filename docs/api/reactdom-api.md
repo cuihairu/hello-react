@@ -148,6 +148,24 @@ const Modal = ({ children }) => {
 - 第一个参数是要渲染的内容，第二个参数是目标 DOM 节点。
 - 适用于实现模态框、通知等需要脱离常规 DOM 结构的组件。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。React 19 是 ReactDOM 渲染 API 变化最大的一版，下表供升级时查阅：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `ReactDOM.render()` | 可用（不推荐） | **已移除** | 改用 `createRoot` + `root.render()` |
+| `ReactDOM.createRoot()` | 18 新增，推荐 | 无变化 | 新增根选项 `onCaughtError`、`onUncaughtError` |
+| `ReactDOM.unmountComponentAtNode()` | 可用（不推荐） | **已移除** | 改用 `root.unmount()` |
+| `ReactDOM.hydrate()` | 可用（不推荐） | **已移除** | 改用 `hydrateRoot` |
+| `ReactDOM.flushSync()` | 稳定 | 无变化 | — |
+| `ReactDOM.findDOMNode()` | 已弃用 | **已移除** | 改用 ref 获取 DOM 节点 |
+| `ReactDOM.createPortal()` | 稳定 | 无变化 | — |
+
+React 19 的其他相关变化：新增 `react-dom/static` 的 `prerender` / `prerenderToNodeStream` 静态渲染 API；`react-dom/test-utils` 的 `act` 被移除（改用 `React.act`）；UMD 构建被移除，改用 ESM。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 - **`ReactDOM.render()`** 和 **`ReactDOM.createRoot()`** 用于将 React 组件挂载到 DOM 中。

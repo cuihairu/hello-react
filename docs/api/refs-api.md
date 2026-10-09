@@ -148,6 +148,22 @@ const ParentComponent = () => {
 - **Forward Refs**：使用 `React.forwardRef` 在函数组件中转发 refs。
 - **与动画库集成**：将 refs 与第三方动画库（如 GSAP）结合使用。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。ref 体系在 React 19 有一次重要更新（ref 成为普通 prop、新增清理函数），下表供升级时查阅：
+
+| API / 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.createRef` | 16.3 起稳定 | 无变化 | — |
+| `useRef` | 16.8 起稳定 | 无变化 | TypeScript 类型收紧：必须提供初始值参数 |
+| 回调 ref | 稳定 | **更新** | 可返回清理函数，卸载时调用；不再以 `null` 回调替代清理 |
+| `React.forwardRef` | 16.3 起稳定 | 仍可用，多数场景不再需要 | 函数组件的 `ref` 成为普通 prop，可直接接收；官方计划在未来版本弃用 |
+| 访问 `element.ref` | 可用 | **已弃用** | 改用 `element.props.ref` |
+
+TypeScript 注意：回调 ref 若隐式返回值会被类型系统拒绝，赋值需写成块级函数体。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 - **创建 Ref**：使用 `React.createRef`（类组件）或 `useRef`（函数组件）。
