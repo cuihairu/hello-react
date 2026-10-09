@@ -71,6 +71,19 @@ export default MyPureComponent;
 - **简化开发**：无需手动实现 `shouldComponentUpdate` 方法，通过浅层比较自动优化性能。
 - **限制**：由于只进行浅层比较，对于复杂的对象（如嵌套结构的对象或数组），可能无法正确判断变化，从而导致不必要的渲染问题。
 
+#### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把两个类组件基类对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.Component` | 类组件基类 | 无变化 | 类组件在 React 19 中仍是合法写法 |
+| `React.PureComponent` | 稳定 | 无变化 | — |
+
+React 19 影响类组件写法的变化集中在 props 校验与默认值：函数组件上的 `defaultProps` 已移除、`propTypes` 被忽略，类组件上两者保留但属遗留写法，详见 [State 与 Props API](state-props.md)。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 #### 对比总结
 
 - **`React.Component`**：适用于需要自定义渲染逻辑或生命周期控制的组件。它提供了灵活性，但可能会导致性能问题，特别是在组件频繁更新的情况下。

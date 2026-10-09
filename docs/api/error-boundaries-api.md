@@ -95,6 +95,19 @@ export default App;
 
 - **不能捕获服务器渲染中的错误**：错误边界不适用于服务器端渲染中的错误，这需要服务器端的错误处理机制。
 
+#### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把错误边界 API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `static getDerivedStateFromError` | 16.6 起稳定 | 无变化 | — |
+| `componentDidCatch` | 16 起稳定 | 无变化 | — |
+
+React 19 的错误处理行为变化：渲染期错误不再重抛，未被边界捕获的错误经 `window.reportError` 上报，被捕获的错误只记录一次；可在 `createRoot` 时用 `onUncaughtError`、`onCaughtError` 自定义处理。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 #### 总结
 
 - **错误边界**：用来捕获子组件树中的 JavaScript 错误，防止整个应用崩溃。

@@ -153,6 +153,22 @@ const element = (
 );
 ```
 
+#### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 JSX 相关 API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `React.createElement` | 稳定 | 无变化 | — |
+| `React.cloneElement` | 稳定 | 无变化 | — |
+| `React.createContext` | 16.3 起稳定 | 无变化 | — |
+| `React.forwardRef` | 16.3 起稳定 | 仍可用，多数场景不再需要 | 函数组件的 `ref` 成为普通 prop，可直接接收；官方计划在未来版本弃用 |
+| `React.Fragment` | 稳定 | 无变化 | — |
+
+React 19 其他相关变化：`React.createFactory` 已移除（改用 JSX）；必须启用新的 JSX transform，否则运行时告警。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 #### 总结
 
 JSX 是 React 提供的一个强大的语法扩展，允许开发者以更直观的方式定义 UI 结构。它结合了 JavaScript 的表达能力和 HTML 的结构描述，使得 React 的组件化开发更加高效和易于理解。通过掌握 JSX 的语法和相关 API，可以更好地利用 React 的功能来构建复杂的用户界面。

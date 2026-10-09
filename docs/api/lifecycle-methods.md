@@ -195,6 +195,22 @@ export default MyComponent;
 - `prevState`：组件更新前的 state。
 - `snapshot`：`getSnapshotBeforeUpdate` 返回的快照信息。
 
+### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页生命周期方法对到 React 19：
+
+| 方法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `componentDidMount` | 稳定 | 无变化 | — |
+| `shouldComponentUpdate` | 稳定 | 无变化 | — |
+| `componentDidUpdate` | 稳定 | 无变化 | — |
+| `componentWillUnmount` | 稳定 | 无变化 | — |
+| `getSnapshotBeforeUpdate` | 16.3 起稳定 | 无变化 | — |
+
+React 19 与生命周期相关的行为变化在错误处理：渲染期未捕获的错误不再重抛，改经 `window.reportError` 上报；可用根选项 `onUncaughtError`、`onCaughtError` 自定义上报，见[错误边界相关 API](error-boundaries-api.md)。
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ### 总结
 
 React 的生命周期方法使得组件能够在其生命周期的各个阶段执行特定的操作。掌握这些方法可以帮助你更好地管理组件的行为和性能。了解每个生命周期方法的用途和调用时机，可以帮助你构建更高效和健壮的 React 组件。

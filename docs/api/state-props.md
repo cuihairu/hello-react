@@ -130,6 +130,21 @@
   };
   ```
 
+#### React 18 → 19 版本对照
+
+本页正文以 React 18 为准。React 19 移除了本页涉及的 props 默认值与类型校验旧写法，下表供升级时查阅：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `this.state` | 类组件状态 | 无变化 | — |
+| `this.setState()` | 稳定 | 无变化 | — |
+| `this.forceUpdate()` | 可用（不推荐） | 无变化 | — |
+| `this.props` | 类组件属性 | 无变化 | — |
+| `defaultProps` | 可用 | 函数组件上**已移除** | 类组件保留；函数组件改用 ES6 默认参数 `function A({ x = 1 })` |
+| `propTypes` | 可用（运行时校验） | **被忽略** | 不再做运行时校验，改用 TypeScript 等类型方案 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 #### 总结
 
 - **State**：用于存储和管理组件内部的数据，允许组件根据用户交互或其他事件更新自己的状态。
