@@ -24,5 +24,37 @@
 ## 使用建议
 
 - **开发时查阅**：配合 IDE 类型提示使用，本文档补充官方文档未覆盖的细节与陷阱
-- **版本对照**：标注的 API 以 React 18 为准，弃用项标注替代方案
+- **版本对照**：正文以 React 18 为准，各页附「React 18 → 19 版本对照」表，列出版本变化与替代方案
 - **源码对照**：每个 API 条目关联「第五部分：源码解析」对应章节，便于深入理解实现
+
+## React 19 速查
+
+React 19 移除与弃用的 API 汇总如下，各页的「React 18 → 19 版本对照」节有逐条说明。
+
+**已移除**
+
+| 已移除 | 替代 |
+| --- | --- |
+| `ReactDOM.render` | `createRoot` + `root.render()` |
+| `ReactDOM.hydrate` | `hydrateRoot` |
+| `ReactDOM.unmountComponentAtNode` | `root.unmount()` |
+| `ReactDOM.findDOMNode` | ref |
+| `react-dom/test-utils` 的 `act` | `React.act` |
+| `React.createFactory` | JSX |
+| 字符串 ref | 回调 ref |
+| 遗留 Context（`contextTypes` / `getChildContext`） | `createContext` |
+| 模块工厂模式 | 普通函数返回 JSX |
+| 函数组件上的 `defaultProps` | ES6 默认参数 |
+| `propTypes`（被静默忽略） | TypeScript 等类型方案 |
+| UMD 构建 | ESM |
+
+**新弃用**
+
+| 已弃用 | 替代 |
+| --- | --- |
+| `element.ref` | `element.props.ref` |
+| `React.forwardRef` | `ref` 直接作为普通 prop |
+| `<Context.Provider>` | `<Context>` |
+| `react-test-renderer` | `@testing-library/react` |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
