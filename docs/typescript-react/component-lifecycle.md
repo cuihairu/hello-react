@@ -155,6 +155,22 @@ function Example() {
 }
 ```
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页生命周期内容对到 React 19：
+
+| API / 行为 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `componentDidMount` 等类生命周期 | 可用 | 无变化 | — |
+| `useEffect` / `useLayoutEffect` | 16.8 起稳定 | 无变化 | — |
+| 旧版 Context（`contextTypes` / `getChildContext`） | 可用 | **已移除** | 改用 `createContext` + `contextType` |
+| render 中抛出的错误 | 捕获后重新抛出 | **不再重新抛出** | 未捕获的走 `window.reportError`，被边界捕获的走 `console.error` |
+| `createRoot` 错误回调 | — | **新增** | `onUncaughtError` / `onCaughtError` 自定义错误上报 |
+| StrictMode 双次渲染 | 已有 | **行为细化** | `useMemo` / `useCallback` 复用首次结果，ref 回调双调用 |
+| Suspense 挂起时 | 兄弟树渲染完才提交 fallback | **立即提交 fallback** | 随后再对兄弟树做 pre-warm 渲染 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 3. 总结
 
 了解组件的生命周期对于开发和维护 React 应用至关重要。类组件的生命周期方法和函数组件的 Hooks 提供了丰富的工具，帮助开发者在组件的不同阶段执行必要的操作。通过合理使用这些工具，可以提升应用的性能、可靠性和用户体验。

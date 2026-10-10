@@ -183,6 +183,21 @@ test('renders count and increments on button click', () => {
 });
 ```
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页组件写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 函数组件 `defaultProps` | 可用 | **已移除** | 改用 ES6 默认参数；类组件保留 |
+| 函数组件 `propTypes` | 运行时校验 | **被忽略** | 迁移到 TypeScript 等类型方案 |
+| `forwardRef` | 转发 ref 必需 | **不再必需** | ref 作为 prop 直接传递，`forwardRef` 仍可用 |
+| `useRef()` 无参调用 | 类型允许 | **TypeScript 要求传参** | 写作 `useRef(undefined)`；所有 ref 均可变 |
+| StrictMode 双次渲染 | 已有 | **行为细化** | `useMemo` / `useCallback` 复用首次结果，ref 回调在初始挂载时双调用 |
+| `react-test-renderer` | 可用 | **已弃用** | 测试迁移到 React Testing Library，见[测试工具](../projects/testing-tools.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 7. 总结
 
 组件化开发是 React 的核心理念之一，它使得构建用户界面变得更加模块化、可重用和可维护。通过理解组件的定义、生命周期、状态管理和测试，可以有效地开发和管理复杂的用户界面。组件化开发不仅提高了开发效率，也提升了应用的质量和可维护性。

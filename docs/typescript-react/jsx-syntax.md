@@ -138,6 +138,22 @@ class Greeting extends Component {
 export default Greeting;
 ```
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 JSX 相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 新 JSX transform | 可选 | **必须启用** | 依赖旧 transform 会告警 |
+| `React.createFactory('div')` | 可用（已弃用） | **已移除** | 改写为 `<div />` |
+| `element.ref` | 可读取 | **已弃用** | `ref` 现为普通 prop，改读 `element.props.ref` |
+| `<Child ref={r} />` | 需 `forwardRef` 透传 | **直接支持** | ref 作为 prop 直接传递 |
+| `<MyContext>` 作 Provider | 必须写 `<MyContext.Provider>` | **可直接使用** | `<MyContext value={...}>` 等价 |
+| 字符串 ref `ref="input"` | 可用 | **已移除** | 改用 ref 回调 |
+| 全局 `JSX` 命名空间（TypeScript） | 全局可用 | **移至 `React.JSX`** | 模块扩展需包在 `declare module "react"` 中 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 5. 总结
 
 JSX 是一种强大的语法扩展，使得在 JavaScript 中编写 HTML 结构更加简洁和直观。通过使用 JSX，开发者可以更轻松地描述和管理用户界面的结构。理解 JSX 的基本语法和用法是掌握 React 的重要一步。

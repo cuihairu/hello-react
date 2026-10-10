@@ -75,6 +75,19 @@ React 拥有一个庞大的生态系统，包括：
 - **Next.js**：用于服务器端渲染和静态生成。
 - **Jest/Enzyme/React Testing Library**：用于测试 React 组件和应用。
 
+## React 18 → 19 版本对照
+
+本页以 React 18 为叙述基线。React 19（2024 年 12 月）没有改变上文的核心理念，变化集中在 API 层：
+
+| 主题 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 组件化 / 声明式 / 单向数据流 / 虚拟 DOM | 核心理念 | 无变化 | 理念层面跨版本稳定 |
+| 并发与调度 | React 18 引入 | 无变化 | 见[Concurrent Mode](../architecture/concurrent-mode.md) |
+| 数据获取与表单 | 手写 `useEffect` + `onSubmit` | **新增** | `use`、Actions（`useActionState` / `useOptimistic`），见[React 19 新特性](../future/react-new-features.md) |
+| 旧版 API | 可用或已弃用 | **移除** | 字符串 ref、旧版 Context、`createFactory`、`ReactDOM.render` 等 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ---
 
 ## 3. 总结

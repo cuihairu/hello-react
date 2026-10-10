@@ -199,6 +199,21 @@ function Example() {
   }, []); // 空依赖数组，只在挂载时执行
   ```
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页挂载与卸载相关 API 对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `ReactDOM.render` / `ReactDOM.hydrate` | 已弃用 | **已移除** | 改用 `createRoot` / `hydrateRoot` |
+| `unmountComponentAtNode` | 已弃用 | **已移除** | 改用 `root.unmount()` |
+| 字符串 ref | 可用 | **已移除** | 改用 ref 回调或 `useRef` |
+| ref 回调 | 只做赋值 | **可返回清理函数** | 卸载时执行清理；TypeScript 下不得隐式返回其他值 |
+| `useEffect` 清理函数 | 稳定 | 无变化 | 仍在卸载时执行 |
+| UMD 构建 | 提供 | **已移除** | 用 script 标签加载时改用 ESM CDN（如 esm.sh） |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 4. 总结
 
 理解组件的挂载与卸载过程对于管理组件生命周期中的副作用非常重要。通过合理使用生命周期方法和 Hooks，你可以有效地管理数据获取、事件绑定、定时器和清理操作，确保组件在生命周期的不同阶段正确地执行所需的操作。

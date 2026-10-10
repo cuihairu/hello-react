@@ -163,6 +163,21 @@ function Child(props) {
 }
 ```
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 State 与 Props 写法对到 React 19：
+
+| API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useState` | 16.8 起稳定 | 无变化 | — |
+| `this.state` / `setState()` | 类组件状态 | 无变化 | — |
+| 函数组件 `defaultProps` | 可用 | **已移除** | 改用 ES6 默认参数 `function A({ x = 1 })`；类组件保留 |
+| `propTypes` | 运行时校验 | **被忽略** | 改用 TypeScript 等类型方案 |
+| `React.FC` 的 `children` | React 18 起不再隐式包含 | 无变化 | 需在 Props 中显式声明，见[在 React 项目中使用 TypeScript](react-typescript.md) |
+| `element.ref` | 可读取 | **已弃用** | `ref` 成为普通 prop，改读 `element.props.ref` |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 3. 总结
 
 在 React 中，`props` 和 `state` 是组件之间传递数据和管理状态的核心机制。`props` 用于从父组件向子组件传递数据，而 `state` 用于组件内部的状态管理。理解如何有效地使用 `props` 和 `state` 是构建 React 应用的基础，能够帮助开发者创建可维护和可重用的组件。

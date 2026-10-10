@@ -254,6 +254,23 @@ export default DataFetcher;
 
 ---
 
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表汇总本章涉及的 React 19 变化，供升级时查阅：
+
+| 主题 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 新 JSX transform | 推荐 | **必须启用** | 未启用会输出告警；`import React` 仍非必需 |
+| `React.createFactory` | 可用（已弃用） | **已移除** | 直接改写为 JSX |
+| 函数组件 `defaultProps` | 可用 | **已移除** | 改用 ES6 默认参数；类组件保留 |
+| `propTypes` | 运行时校验 | **被忽略** | 迁移到 TypeScript 等类型方案 |
+| 字符串 ref | 类组件可用 | **已移除** | 改用 ref 回调或 `useRef` |
+| 旧版 Context（`contextTypes` / `getChildContext`） | 可用 | **已移除** | 改用 `createContext` + `contextType` |
+| `ref` 作为 prop | 需 `forwardRef` 透传 | **直接支持** | 函数组件可直接接收 `ref` |
+| 新增 Hook | — | **新增** | `use`、`useActionState`、`useOptimistic`，见[React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
 ## 6. 总结
 
 在这一章中，我们介绍了 React 的基础知识，包括 JSX 语法、组件化开发、State 和 Props 的使用，以及组件的生命周期。掌握这些基础概念将帮助你在 React 中构建高效、可维护的用户界面。继续深入学习，将有助于你掌握更高级的 React 特性和最佳实践。
