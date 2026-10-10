@@ -253,7 +253,7 @@ React Native 生态：
 ### 构建工具与项目实战
 
 1. CRA 已被官方标记为不再推荐，不再接收新特性；新项目用 Vite（`npm create vite@latest`）或 Next.js，组件代码换脚手架通用。见[Todo 开发](projects/todo-development.md)、[TypeScript 基础](typescript-react/typescript-basics.md)。
-2. Enzyme 基本停止维护且无 React 18 适配器，新项目用 RTL；react-test-renderer 自 18.3 deprecated、React 19 移除，快照改用 `render(...).asFragment()`。见[React 测试工具](projects/testing-tools.md)。
+2. Enzyme 基本停止维护且无 React 18 适配器，新项目用 RTL；react-test-renderer 自 18.3 deprecated、React 19 起打印弃用告警并改为并发渲染（`/shallow` 入口已移除），快照改用 `render(...).asFragment()`。见[React 测试工具](ecosystem/testing-tools.md)。
 3. React Router 在 Taro 小程序端不可用，路由由内置 @tarojs/router 接管，用 Taro.navigateTo 跳转。见[Taro 中的 React 开发](build-tools/taro-react.md)。
 4. 微信已废弃 getUserInfo，改用 getUserProfile（desc 必填）；2022 年后进一步收紧，推荐头像昵称填写能力。见[Taro API](build-tools/taro-api.md)。
 5. react-redux v8 起内置 TypeScript 类型，无需再装 @types/react-redux（那是 v7 及更早的事）。见[Todo 开发](projects/todo-development.md)。
