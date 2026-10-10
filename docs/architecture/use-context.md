@@ -144,3 +144,19 @@ const Toolbar = React.memo(() => {
 ## 4. 总结
 
 `useContext` 提供了一种简洁的方式来在组件树中共享状态。结合 Context API，`useContext` 可以有效地解决 props 层层传递的问题，使得跨层级的状态管理变得更加直观和易于维护。在复杂的应用中，合理使用 Context 和 `useContext` 可以显著提高代码的可读性和可维护性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Context 相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useContext` | 16.8 起稳定 | 无变化 | — |
+| 旧版 Context（`contextTypes` / `getChildContext`） | 可用 | **已移除** | 改用 `createContext` + `contextType` |
+| `<Context.Provider>` | 必需 | **可简写** | `<Context value={...}>` 等价 |
+| 在异步组件中读取 Context | 需 `useContext` | **新增 `use`** | `use(SomeContext)` 可直接在组件中读取 |
+| `createContext` | 稳定 | 无变化 | 与 `useRef` 一样要求传入初始值（类型层面） |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

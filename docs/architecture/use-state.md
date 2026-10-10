@@ -112,3 +112,18 @@ function computeInitialValue() {
 ## 4. 总结
 
 `useState` 是一个简单但强大的 Hook，允许函数组件管理内部状态。它的内部实现依赖于 React 的 Fiber 架构，通过 Fiber 节点和 Hooks 链表来存储和更新状态。在实际开发中，`useState` 提供了一种直观和灵活的方式来处理组件状态，使得函数组件能够变得更加功能强大。理解 `useState` 的内部实现有助于更好地使用和优化 React 应用。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 `useState` 相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useState` 与惰性初始化 | 16.8 起稳定 | 无变化 | — |
+| 渲染阶段的状态更新 | 允许 | 无变化 | 但循环更新会被**检测并直接报错** |
+| StrictMode 双次渲染 | 已有 | **行为细化** | 更多开发期检查，正式环境行为不变 |
+| 状态类新 Hook | — | **新增** | `useOptimistic`、`useActionState`，见[React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

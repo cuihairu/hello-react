@@ -169,3 +169,18 @@ function DataFetching() {
 ## 4. 总结
 
 `useReducer` 提供了一种处理复杂状态逻辑的方式，它比 `useState` 更适合状态逻辑复杂的场景。通过将状态更新逻辑封装在 reducer 函数中，`useReducer` 可以帮助管理状态和处理复杂的状态更新，特别是在状态逻辑涉及多个子状态或异步操作时。理解和掌握 `useReducer` 可以提高 React 应用的状态管理能力，使代码更加清晰和可维护。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 `useReducer` 相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useReducer` 运行时行为 | 16.8 起稳定 | 无变化 | 惰性初始化、dispatch 批处理均不变 |
+| `useReducer` 的 TypeScript 类型 | 可传完整 reducer 类型参数 | **类型收紧** | 新写法不传类型参数：`useReducer(reducer)`，或用元组传 action 类型 |
+| `dispatch` 批处理 | 自动批处理 | 无变化 | React 19 进一步合并 sync / default / continuous lane |
+| 表单与乐观状态 | 手写组合 | **新增** | `useActionState`、`useOptimistic`，见[React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

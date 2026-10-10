@@ -138,3 +138,20 @@ function FocusInput() {
 ## 4. 总结
 
 `useEffect` 是 React 提供的一个强大的 Hook，用于处理组件的副作用。通过 `useEffect`，可以轻松地管理数据获取、订阅、手动 DOM 操作等副作用，并确保它们在正确的时机被执行和清理。理解 `useEffect` 的内部实现和使用场景，有助于更高效地管理 React 应用中的副作用。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 `useEffect` 相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `useEffect` 签名与依赖数组 | 16.8 起稳定 | 无变化 | — |
+| 清理函数执行时机 | 卸载 / 依赖变化时 | 无变化 | — |
+| StrictMode 下双次调用 | 已有 | 无变化 | 仍是开发期行为 |
+| ref 回调 | 仅赋值 | **可返回清理函数** | 与 effect 清理并列的另一种清理手段 |
+| 数据获取写在 `useEffect` | 常见写法 | **新增替代方案** | 异步组件用 `use`，提交类副作用用 Actions，见[React 19 新特性](../future/react-new-features.md) |
+| `act` 导入位置 | `react-dom/test-utils` | **改自 `react`** | 测试中的 `act` 从 `react` 包导入 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

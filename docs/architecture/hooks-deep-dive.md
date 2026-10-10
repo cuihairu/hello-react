@@ -188,3 +188,22 @@ function App() {
 ## 10.6 总结
 
 React Hooks 提供了一种全新的方式来管理组件的状态和副作用，使得函数组件变得更加强大和灵活。通过理解和使用 Hooks，你可以更好地管理组件的逻辑、优化性能，并提高代码的可维护性。本章深入解析了常用的 Hooks，如 `useState`、`useEffect`、`useContext`、`useReducer` 以及自定义 Hooks，帮助你在实际开发中更高效地使用这些工具。
+
+---
+
+## React 18 → 19 版本对照
+
+本章正文以 React 18 为准。下表汇总本章 Hooks 在 React 19 的状态，逐页细节见各页对照表：
+
+| Hook | React 19 状态 | 详见 |
+| --- | --- | --- |
+| `useState` | 无变化 | [useState](use-state.md) |
+| `useEffect` | 无变化 | [useEffect](use-effect.md) |
+| `useContext` | 无变化；`<Context>` 可直接作 Provider | [useContext](use-context.md) |
+| `useReducer` | 运行时无变化；TypeScript 类型收紧 | [useReducer](use-reducer.md) |
+| `useCallback` / `useMemo` | 无变化；StrictMode 下复用首次结果 | 见下表说明 |
+| `useRef` | TypeScript 下必须传参，全部可变 | [Refs](../typescript-react/refs.md) |
+| 自定义 Hooks | 机制无变化 | [自定义 Hooks](custom-hooks.md) |
+| 新增 | `use`、`useActionState`、`useOptimistic`、`useFormStatus` | [React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

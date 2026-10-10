@@ -155,3 +155,19 @@ test('should fetch user data', async () => {
 ## 5. 总结
 
 自定义 Hooks 提供了一种强大的方式来重用和组织组件逻辑。通过创建自定义 Hook，你可以将复杂的逻辑抽象为独立的、可重用的函数，从而使代码更具可读性和可维护性。掌握自定义 Hooks 的创建和使用能够帮助你在 React 开发中编写更清晰、更模块化的代码。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页自定义 Hook 相关内容对到 React 19：
+
+| 主题 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 自定义 Hook 的定义与调用规则 | 稳定 | 无变化 | — |
+| 内置 Hook 集合 | 11 个基本 Hook | **新增 4 个** | `use`、`useActionState`、`useOptimistic`、`useFormStatus`（react-dom） |
+| 返回 ref 的自定义 Hook | `useRef()` 可无参 | **TypeScript 要求传参** | 写作 `useRef(undefined)`，返回的 `RefObject` 全部可变 |
+| 清理类逻辑 | 只写在 `useEffect` 返回值 | **新增 ref 清理** | ref 回调可返回清理函数 |
+| StrictMode 行为 | 双次渲染 | **行为细化** | `useMemo` / `useCallback` 复用首次结果，写自定义 Hook 时更易发现副作用问题 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
