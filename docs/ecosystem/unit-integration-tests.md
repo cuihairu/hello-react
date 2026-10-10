@@ -112,3 +112,20 @@ test('submits the form with the input value', () => {
 - **集成测试** 用于验证组件之间的协作和集成，确保系统整体功能的正确性。它们通常在较大的功能或复杂的组件交互时使用。
 
 在实际项目中，通常会结合使用单元测试和集成测试，以确保代码的功能和质量。单元测试可以提供详细的功能验证，而集成测试可以确保各个部分的协同工作。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页测试策略对到 React 19：
+
+| 主题 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 单元 / 集成测试框架 | Jest + RTL | 无变化 | 策略不变，见[测试工具](testing-tools.md) |
+| Enzyme | 无 React 18 适配器 | **不可用于 React 19** | 集成测试统一迁移到 RTL |
+| `react-test-renderer` | 18.3 起弃用 | **打印弃用告警** | 用 `render(...).asFragment()` 替代 |
+| `act` 导入位置 | `react-dom/test-utils` | **改自 `react`** | 直接断言状态更新的用例需改导入 |
+| 错误路径断言 | 错误重新抛出 | **不再重新抛出** | 未捕获的走 `window.reportError`，被边界捕获的走 `console.error` |
+| CI 运行环境 | Node 16/18 | **建议 Node 20/22 LTS** | 与 React 19 升级清单一致，见[社区与生态演进](../future/react-community.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

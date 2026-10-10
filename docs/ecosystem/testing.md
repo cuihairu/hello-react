@@ -125,3 +125,20 @@
 #### 5. **总结**
 
 测试与质量保证是现代前端开发流程中不可或缺的环节。通过系统化的测试策略和工具，可以显著提升代码的可靠性和可维护性，减少生产环境中的错误发生率，并为用户提供稳定、高效的应用体验。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页测试相关内容对到 React 19：
+
+| 主题 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| RTL 的 `render` / `fireEvent` | 稳定 | 无变化 | 现有用例无需改动 |
+| `act` 导入位置 | `react-dom/test-utils` | **改自 `react`** | `import { act } from 'react'` |
+| 快照测试 | `react-test-renderer` | **渲染器已弃用** | 改用 `render(<C />).asFragment()` 配合 `toMatchSnapshot()` |
+| 错误断言 | 错误被重新抛出 | **不再重新抛出** | 未捕获的走 `window.reportError`，被边界捕获的走 `console.error` |
+| 测试环境依赖 | react 18 + @types/react 18 | **需升级到 19** | `react@19`、`react-dom@19`、`@types/react@19`、`typescript@5.5+` |
+| 严格模式双调用 | 已有 | **行为细化** | ref 回调双调用、`useMemo` / `useCallback` 复用首次结果 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

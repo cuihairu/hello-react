@@ -123,3 +123,19 @@ $ jest --updateSnapshot
 - **快照测试** 主要用于检测组件 UI 的变化，适用于检测结构和布局的意外变动。它可以提供快速的 UI 变更反馈，但需要与实际的 UI 变化保持一致。
 
 结合使用模拟和快照测试，可以全面地测试 React 组件的行为和输出，从而确保应用的稳定性和质量。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页快照与模拟相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `renderer.create(<C />).toJSON()` | 可用 | **渲染器已弃用** | `react-test-renderer` 打印弃用告警并改为并发渲染，迁移到 RTL |
+| `react-test-renderer/shallow` | 转出独立包 | **已移除** | 直接安装 `react-shallow-renderer`，或改用 RTL |
+| `render(<C />).asFragment()` | 可用 | 无变化 | 推荐的快照来源，替代 `toJSON()` |
+| `act` 导入位置 | `react-dom/test-utils` | **改自 `react`** | 涉及状态更新断言的用例需改导入 |
+| 模块与 API 模拟（`jest.mock`） | 可用 | 无变化 | — |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

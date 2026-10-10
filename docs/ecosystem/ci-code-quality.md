@@ -39,12 +39,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '16'
+        node-version: '22'
 
     - name: Install dependencies
       run: npm install
@@ -142,3 +142,18 @@ jobs:
 - **代码质量管理** 通过静态分析、格式化、代码审查和测试覆盖率等手段，确保代码的质量和稳定性。使用工具如 ESLint 和 Prettier 来维护代码的一致性，并在 CI 中集成这些工具可以自动化质量控制。
 
 通过结合使用持续集成和代码质量管理工具，开发团队可以实现高效的开发流程，减少代码缺陷，提高代码的可维护性和稳定性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 CI 配置对到 React 19：
+
+| 项目 | React 18 时期写法 | React 19 要求 | 说明 |
+| --- | --- | --- | --- |
+| CI 的 Node 版本 | 示例为 Node 16 | **建议 20/22 LTS** | React 19 升级清单硬性项，示例已同步更新 |
+| 依赖版本 | `react@18`、`@types/react@18` | **升到 `react@19` 与 `@types/react@19`** | 同时需要 `typescript@5.5+`、`eslint-plugin-react-hooks@5` |
+| 测试步骤中的 `act` | 从 `react-dom/test-utils` 导入 | **改自 `react`** | 否则 CI 中会打印弃用告警 |
+| 部署前验收 | 构建 + 测试 | **增加灰度校验** | 建议 5% 流量灰度 48 小时无异常再全量，见[社区与生态演进](../future/react-community.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

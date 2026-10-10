@@ -94,3 +94,21 @@ test('button click updates count', () => {
 - **React Testing Library** 强调从用户角度出发编写测试，适合注重用户体验的项目。
 
 在实际项目中，通常会结合使用 Jest 和 React Testing Library 或 Jest 和 Enzyme，来覆盖不同的测试需求。根据项目的特点和测试目标，可以选择最合适的工具或工具组合。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页测试工具对到 React 19：
+
+| 工具 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| React Testing Library | 推荐 | 无变化 | 官方继续推荐作为首选方案 |
+| Enzyme | 无 React 18 适配器 | **不可用于 React 19** | 停止维护，迁移到 RTL 或 `@testing-library/react-native` |
+| `react-test-renderer` | 18.3 起弃用 | **打印弃用告警并改为并发渲染** | 官方建议迁移到 RTL |
+| `react-test-renderer/shallow` | 转出 `react-shallow-renderer` | **已移除** | 需直接安装 `react-shallow-renderer`，或改用 RTL |
+| `act` 的导入位置 | `react-dom/test-utils` | **改自 `react`** | `import { act } from 'react'` |
+| `react-dom/test-utils` 其余工具（如 `Simulate`） | 可用 | **调用即报错** | 后续版本移除导出 |
+| Jest 快照 | 可用 | 无变化 | 渲染器换了，快照写法需同步调整，见[模拟与快照测试](mocks-snapshots.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
