@@ -110,7 +110,7 @@
 
 ### 时间线
 
-- 四个 Era 分期：萌芽与开源（2010-2015）、重写内核（2016-2019）、并发与服务器（2020-2024）、编译器时代（2025-2026）；全表 27 个节点、4 个主题标签。见[发展史时间线](timeline.md)。
+- 四个 Era 分期：萌芽与开源（2010-2015）、重写内核（2016-2019）、并发与服务器（2020-2024）、编译器时代（2025-2026）；全表 28 个节点、4 个主题标签。见[发展史时间线](timeline.md)。
 - 关键节点：2013 年 5 月 React 0.3.0 开源（JSConf US）；2015 年 3 月 React Native 开源、9 月拆出 react-dom；2016 年 7 月 Create React App 发布；2017 年 9 月 React 16 落地 Fiber；2019 年 2 月 React 16.8 稳定 Hooks；2020 年 10 月 React 17（零新特性）；2022 年 3 月 React 18 开放并发特性；2024 年 12 月 React 19（use、Actions、ref 作为 prop、文档化 RSC）；2025 年 10 月 React Compiler v1.0 GA、Activity 随 19.2 出货。见[发展史时间线](timeline.md)。
 - 数据口径：年份取「宣布或发布」时点而非被广泛接受时点。Hooks 2018 年 10 月 React Conf 预览、2019 年 2 月才随 16.8 稳定；Server Components 2020 年 12 月首演、规模化落地要等 2022 年 10 月的 Next.js App Router。见[关于这份数据的口径](timeline.md#关于这份数据的口径)。
 
@@ -266,7 +266,7 @@ React Native 生态：
 
 ## 资料体系
 
-- 版本口径：各部分写作时点不同。API 部分正文以 React 18 为准，各页附「React 18 → 19 版本对照」表（移除、弃用、新增与替代方案）；未来部分覆盖 React 19 系列（至 19.3 正式版）与 Canary 版本，部分 API 处于实验阶段；时间线覆盖 2010-2026 共 27 个节点。引用时以各部分标注的版本为准。
+- 版本口径：各部分写作时点不同。API 部分、第二部分第 6/7 章（React 基础、组件深度解析）与第三部分 Hooks 章正文以 React 18 为准，相关页附「React 18 → 19 版本对照」表（移除、弃用、新增与替代方案）；未来部分覆盖 React 19 系列（至 19.3 正式版）与 Canary 版本，部分 API 处于实验阶段；时间线覆盖 2010-2026 共 28 个节点。引用时以各部分标注的版本为准。
 - 弃用 API 汇总：ReactDOM.render → createRoot；函数组件 defaultProps → 默认参数（18.3 告警、19 移除）；findDOMNode → ref；合成事件池 → React 17 移除；getInitialProps → getStaticProps/getServerSideProps；react-test-renderer → 18.3 起弃用、19 起告警，迁移至 RTL；Enzyme → RTL；Flipper → RN 内置调试器；CRA → Vite/Next.js。
-- 来源未考：architecture、source-code 两个部分全部页面没有外部链接，这些页面的知识为站内整理，未考外部出处；api 部分的版本对照节引用 React 官方升级指南，其余条目仍为站内整理；basics、typescript-react、ecosystem 仅少量页面带链接，官方文档一节的 React 官方与 RFC 条目集中在 future 部分。
+- 来源未考：source-code 部分全部页面没有外部链接，这些页面的知识为站内整理，未考外部出处；api 部分与 typescript-react 第 6/7 章、architecture Hooks 章的版本对照节引用 React 官方升级指南，其余条目仍为站内整理；basics、ecosystem 仅少量页面带链接，architecture 除版本对照节外无外部链接，官方文档一节的 React 官方与 RFC 条目集中在 future 部分。
 - 交叉链接：本页所有站内链接指向正文页与锚点；各部分之间的章节对应关系见各部分 README 与[首页目录](/)。
