@@ -216,3 +216,18 @@ Portals 中的事件处理与常规的组件一样，需要确保事件能够正
 ---
 
 Portals 是一个强大的工具，用于处理需要在 DOM 结构外部渲染的场景。通过合理使用 Portals，可以提升用户体验，保持组件的结构清晰。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Portals 相关行为对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `ReactDOM.createPortal` | 稳定 | 无变化 | — |
+| 事件冒泡与 React 树关联 | 事件按 React 树传播 | 无变化 | 仍与父组件的事件处理保持关联 |
+| portal 内子组件的 `ref` | 需 `forwardRef` 透传 | **直接支持** | ref 作为 prop 传递 |
+| portal 内的 Suspense | 挂起后等待兄弟树渲染 | **立即提交 fallback** | React 19 全局行为，portal 内同样适用 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

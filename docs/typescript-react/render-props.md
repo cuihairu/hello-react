@@ -140,3 +140,19 @@ const App = () => (
 ---
 
 Render Props 模式是 React 中一种强大的模式，通过它可以实现组件逻辑和 UI 的复用与解耦。了解 Render Props 的使用和注意事项，可以帮助你更好地设计和组织 React 组件。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Render Props 相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| children 为函数 | 可用 | 无变化 | — |
+| `forwardRef` | 转发 ref 必需 | **不再必需** | ref 作为 prop 直接传递 |
+| 函数组件 `defaultProps` | 可用 | **已移除** | 改用 ES6 默认参数 |
+| `propTypes` | 运行时校验 | **被忽略** | 迁移到 TypeScript 等类型方案 |
+| 值与状态的跨层共享 | 依赖 render props / HOC | **新增 `use`** | 异步组件内可直接读取 Promise 与 Context，见[React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

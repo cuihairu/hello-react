@@ -289,3 +289,21 @@
 ### 7.10.2 使用场景
 
 - **错误处理**：用于处理组件树中的 JavaScript 错误，提供用户友好的错误信息，防止应用崩溃。
+
+---
+
+## React 18 → 19 版本对照
+
+本章正文以 React 18 为准。下表汇总本章各页涉及的 React 19 变化，逐页细节见对应页面的对照表：
+
+| 主题 | React 19 变化 | 详见 |
+| --- | --- | --- |
+| `forwardRef` | ref 作为 prop 后不再必需 | [高阶组件](hoc.md)、[Render Props](render-props.md) |
+| 字符串 ref、`findDOMNode` | **已移除**，改用 ref 回调 / `useRef` | [Refs](refs.md) |
+| `useRef` 类型 | **必须传参**，`RefObject` 全部可变 | [Refs](refs.md) |
+| 旧版 Context | **已移除**，`<Context>` 可直接作 Provider | [Context API](context-api.md) |
+| render 错误处理 | 不再重抛，新增 `onUncaughtError` / `onCaughtError` | [错误边界](error-boundaries.md) |
+| 事件 | `javascript:` URL 报错、空 `src` / `href` 告警 | [合成事件](synthetic-events.md) |
+| 状态更新 | 批处理范围扩大，循环的渲染阶段更新直接报错 | [setState](setstate.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

@@ -100,3 +100,19 @@
 ---
 
 理解 `setState` 的工作原理有助于有效管理组件状态，并优化应用性能。通过掌握 `setState` 的异步更新机制和批量处理特性，你可以编写更加高效的 React 组件。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页状态更新相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `setState` 异步更新与自动批处理 | 事件、Promise、超时中批处理 | **批处理范围再扩大** | React 19 在调度上把 sync / default / continuous lane 一并合并，更多更新路径默认批量提交 |
+| 函数组件状态 `useState` | 16.8 起稳定 | 无变化 | 新增 `useOptimistic` / `useActionState`，见[React 19 新特性](../future/react-new-features.md) |
+| 循环的 render 阶段更新 | 开发期告警 | **检测并直接报错** | 渲染阶段的无限状态更新会直接报错 |
+| 状态更新触发的错误 | 捕获后重新抛出 | **不再重新抛出** | 未捕获的走 `window.reportError` |
+| StrictMode 下的双次渲染 | 已有 | **行为细化** | `useMemo` / `useCallback` 复用首次结果 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

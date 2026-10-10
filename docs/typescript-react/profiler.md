@@ -108,3 +108,18 @@ React Profiler 组件可以在开发模式下用于测量组件的渲染性能�
 ---
 
 通过使用 Profiler，开发者可以深入了解组件的渲染性能，识别性能瓶颈，并采取相应的优化措施，以提升 React 应用的整体性能。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Profiler 相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `<Profiler>` 与 `onRender` | 稳定 | 无变化 | — |
+| 并发渲染下的采样 | React 18 起并发为默认 | 无变化 | 渲染可被打断，提交仍按边界统计 |
+| StrictMode 双次渲染 | 开发期双渲染 | **行为细化** | `useMemo` / `useCallback` 复用首次结果、ref 回调双调用，开发期采样时需注意 |
+| `react-test-renderer` | 可用 | **已弃用** | 渲染相关测试改用 React Testing Library，见[测试工具](../projects/testing-tools.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

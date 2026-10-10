@@ -305,3 +305,19 @@ export default ThemeToggle;
 ---
 
 Context API 是 React 中一种强大的工具，适用于在组件树中共享全局数据。通过正确使用 Context，可以简化组件间的数据传递和状态管理，同时保持组件的可维护性和灵活性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Context 相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 旧版 Context（`contextTypes` / `getChildContext`） | 可用 | **已移除** | 改用 `createContext` + `contextType` |
+| `<Context.Provider>` | 必需 | **可简写** | `<Context value={...}>` 等价于 `.Provider` |
+| `useContext` | 16.8 起稳定 | 无变化 | — |
+| 类组件 `contextType` | 可用 | 无变化 | 旧版 Context 移除后仍是类组件的接入方式 |
+| 读取 Context | 需组件内调用 `useContext` | **新增 `use`** | 异步组件可直接把 Context 当参数读取，见[React 19 新特性](../future/react-new-features.md) |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

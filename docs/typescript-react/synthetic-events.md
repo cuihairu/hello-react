@@ -111,3 +111,20 @@ handleClick = (event) => {
 ---
 
 理解 React 合成事件系统的工作原理，能够帮助你更好地管理和优化事件处理。在开发过程中，利用合成事件系统的特点，可以提高应用的性能和稳定性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页事件相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 合成事件系统（React 17 起委托到根节点） | 稳定 | 无变化 | — |
+| 事件池 | React 17 起已移除 | 无变化 | 异步访问事件对象依旧安全 |
+| `src` / `href` 中的 `javascript:` URL | 运行时可用 | **直接报错** | react-dom 拒绝渲染 |
+| `src` / `href` 为空字符串 | 设置为空串 | **告警且不设置** | `<a href="">` 等锚点除外 |
+| popstate 中的 transition | 异步调度 | **改为同步** | 路由前进 / 后退触发的状态更新同步提交 |
+| `defaultProps` / `propTypes`（事件组件） | 可用 | **已移除 / 被忽略** | 函数组件改用默认参数与 TypeScript |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

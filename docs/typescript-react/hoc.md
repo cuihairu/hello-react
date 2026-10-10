@@ -139,3 +139,19 @@ const withExtraProps = (WrappedComponent) => {
 ---
 
 理解高阶组件的概念和使用场景，可以帮助你更好地管理和复用 React 组件的逻辑。高阶组件是 React 中一个强大的模式，通过它可以提升代码的可复用性和可维护性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 HOC 相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `forwardRef` | 转发 ref 必需 | **不再必需** | ref 作为 prop 直接传递，`forwardRef` 仍可用 |
+| 函数组件 `defaultProps` | 可用 | **已移除** | HOC 内的默认值改用 ES6 默认参数 |
+| `propTypes` | 运行时校验 | **被忽略** | 迁移到 TypeScript 等类型方案 |
+| `element.ref` | 可读取 | **已弃用** | 改读 `element.props.ref` |
+| `React.memo` 与 HOC 模式本身 | 可用 | 无变化 | 模式层面没有 API 变化 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

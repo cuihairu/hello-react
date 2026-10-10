@@ -122,3 +122,19 @@ const App = () => (
 ---
 
 通过有效地实现和使用错误边界，你可以提升 React 应用的稳定性和用户体验，确保应用在出现错误时能够优雅地处理，并提供必要的错误信息和恢复选项。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页错误边界相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `componentDidCatch` / `getDerivedStateFromError` | 稳定 | 无变化 | — |
+| 被边界捕获的错误 | 捕获后重新抛出 | **不再重新抛出** | 走 `console.error`，开发期不再出现重复日志 |
+| 未被边界捕获的错误 | 重新抛出给宿主 | **上报 `window.reportError`** | 自定义上报可接入全局错误监控 |
+| `createRoot` 错误回调 | 无 | **新增** | `onUncaughtError` / `onCaughtError` 分别处理未捕获与已捕获错误 |
+| 声明式错误边界 | 未提供 | 无变化 | React 19 仍需用类组件实现 |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

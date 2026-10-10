@@ -201,3 +201,20 @@ const MyComponent = () => {
 ---
 
 了解 Refs 的使用与管理，可以帮助你在 React 组件中直接操作 DOM 元素和组件实例。尽管 Refs 是一种强大的工具，但应当谨慎使用，以保持 React 的声明式编程风格和组件的可维护性。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页 Refs 相关写法对到 React 19：
+
+| 写法 | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| 字符串 ref `ref="input"` | 类组件可用 | **已移除** | 改用 ref 回调或 `useRef` |
+| `ReactDOM.findDOMNode` | 已弃用 | **已移除** | 改用 DOM ref |
+| `ref` 作为 prop | 需 `forwardRef` 透传 | **直接支持** | 函数组件直接接收 `ref` |
+| ref 回调 | 只做赋值 | **可返回清理函数** | 卸载时执行清理；TypeScript 下不得隐式返回其他值 |
+| `useRef()` 无参调用 | 类型允许 | **TypeScript 要求传参** | 写作 `useRef(undefined)`；`RefObject` 全部可变，`MutableRef` 弃用 |
+| `element.ref` | 可读取 | **已弃用** | ref 成为普通 prop，改读 `element.props.ref` |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。

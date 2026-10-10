@@ -86,3 +86,20 @@
 ---
 
 理解 `render` 方法及组件渲染的过程是掌握 React 的基础。这不仅帮助你更好地控制组件的行为，还能有效地优化应用的性能。通过掌握这些概念，你可以更高效地构建和维护 React 应用。
+
+---
+
+## React 18 → 19 版本对照
+
+本页正文以 React 18 为准。下表把本页渲染相关内容对到 React 19：
+
+| 行为 / API | React 18 状态 | React 19 变化 | 说明 |
+| --- | --- | --- | --- |
+| `render()` 必须是纯函数 | 要求 | 无变化 | — |
+| render 中抛出的错误 | 捕获后重新抛出 | **不再重新抛出** | 未捕获的走 `window.reportError`，被边界捕获的走 `console.error` |
+| 循环的 render 阶段更新 | 开发期告警 | **检测并直接报错** | 避免渲染阶段无限循环 |
+| 在 render 中读取 Promise / Context | 需自定义方案 | **新增 `use`** | 见[React 19 新特性](../future/react-new-features.md) |
+| StrictMode 双次渲染 | 已有 | **行为细化** | `useMemo` / `useCallback` 复用首次渲染的结果 |
+| 新 JSX transform | 可选 | **必须启用** | ref 作为 prop 等能力依赖新 transform |
+
+依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
