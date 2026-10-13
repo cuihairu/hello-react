@@ -159,3 +159,13 @@ function MyForm() {
 ### 总结
 
 `useReducer` 是处理复杂状态逻辑的有效工具，尤其适合在状态变化逻辑复杂、状态依赖关系多的场景中使用。通过定义清晰的 reducer 函数和使用结构化的初始状态，可以使状态管理变得更为简洁和易于维护。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [README](README.md)

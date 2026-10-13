@@ -173,3 +173,13 @@ TypeScript 注意：回调 ref 若隐式返回值会被类型系统拒绝，赋�
 - **Forward Refs**：使用 `React.forwardRef` 转发 refs 到子组件。
 
 Refs 提供了一种强大而灵活的方式来直接操作 DOM 元素和 React 组件实例，但应谨慎使用以保持代码的可维护性和一致性。
+
+## 参考资料
+
+- [React 官方文档 · useRef](https://react.dev/reference/react/useRef)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)

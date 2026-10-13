@@ -412,3 +412,14 @@ UI 原语 → Server Component
 - [React Flight 协议规范](https://github.com/reactjs/rfcs/blob/main/text/0022-server-components.md)
 - [Server Actions 深度指南](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions)
 - [RSC 迁移案例：Cal.com](https://cal.com/blog/migrating-to-react-server-components)
+
+## 参考资料
+
+- [React 官方文档 · Server Components](https://react.dev/reference/rsc/server-components)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

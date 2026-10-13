@@ -139,3 +139,14 @@ $ jest --updateSnapshot
 | 模块与 API 模拟（`jest.mock`） | 可用 | 无变化 | — |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [Jest 官方文档](https://jestjs.io/docs/getting-started)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [testing-tools](testing-tools.md)
+- [glossary](/glossary.md)

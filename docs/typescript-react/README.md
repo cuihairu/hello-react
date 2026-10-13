@@ -40,3 +40,11 @@
 - 理解 Class 组件与函数组件的生命周期对应关系
 - 掌握 HOC、Render Props、Hooks 三种复用模式的取舍
 - 使用 Context、Refs、Portals 解决跨层级通信与 DOM 访问问题
+
+## 参考资料
+
+- [React 官方文档 · 参考](https://react.dev/reference/react)
+
+## 相关页面
+
+- [classes-generics](classes-generics.md)

@@ -116,3 +116,13 @@ export default ThemedComponent;
 - 函数名以 `use` 开头。
 - 充分利用内置 Hook 来管理状态和副作用。
 - 返回数据或方法，供组件使用。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [README](README.md)

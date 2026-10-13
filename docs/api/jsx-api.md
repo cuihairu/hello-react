@@ -172,3 +172,13 @@ React 19 其他相关变化：`React.createFactory` 已移除（改用 JSX）；
 #### 总结
 
 JSX 是 React 提供的一个强大的语法扩展，允许开发者以更直观的方式定义 UI 结构。它结合了 JavaScript 的表达能力和 HTML 的结构描述，使得 React 的组件化开发更加高效和易于理解。通过掌握 JSX 的语法和相关 API，可以更好地利用 React 的功能来构建复杂的用户界面。
+
+## 参考资料
+
+- [React 官方文档 · createElement](https://react.dev/reference/react/createElement)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)

@@ -83,3 +83,14 @@ Context API 适用于以下场景：
 ### 总结
 
 React 的 Context API 提供了一种强大的方式来共享组件树中的数据，而不需要逐层传递 props。通过 `createContext`、`Provider` 和 `Consumer`，开发者可以在组件中轻松访问和更新共享的状态。理解 Context API 的内部实现有助于优化应用的性能，确保高效的数据传递和更新。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

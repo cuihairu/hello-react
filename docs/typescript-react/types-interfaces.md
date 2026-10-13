@@ -206,3 +206,13 @@ TypeScript 提供了多种基本类型来表示不同的数据类型。这些基
 ### 总结
 
 基本类型和接口是 TypeScript 中最核心的概念之一。基本类型用于定义和检查简单数据的类型，而接口则用于定义对象的结构和约束类型。掌握这些基础知识可以帮助你更有效地使用 TypeScript 编写类型安全的代码。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

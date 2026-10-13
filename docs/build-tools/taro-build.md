@@ -143,3 +143,13 @@ export default {
    ```
 
 通过这些步骤，你可以成功构建和发布 Taro 项目到各大平台，并利用 CI/CD 工具实现自动化构建和发布流程。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

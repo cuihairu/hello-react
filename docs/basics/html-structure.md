@@ -118,3 +118,13 @@ HTML（HyperText Markup Language）是用于构建网页的标准标记语言。
 ### 2.2 总结
 
 掌握 HTML 的基本结构和语义化标签是创建有效和易于维护网页的基础。通过使用适当的标签，您可以确保网页的结构清晰且对用户友好，同时提高搜索引擎的索引效果。
+
+## 参考资料
+
+- [MDN HTML 入门](https://developer.mozilla.org/en-us/docs/Learn/HTML/Introduction_to_HTML)
+- [MDN HTML](https://developer.mozilla.org/en-us/docs/Web/HTML)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

@@ -253,3 +253,15 @@ fetchDataAsync();
 ### 4.5 总结
 
 本章涵盖了 JavaScript 的基础知识，包括变量声明、数据类型、运算符、控制流与循环，以及 ES6 的主要特性。理解这些基础知识是掌握 JavaScript 和现代前端开发的关键。接下来，将深入探讨《第5章：TypeScript 基础》，以扩展你的编程技能。
+
+## 参考资料
+
+- [MDN JavaScript 指南](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide)
+- [MDN let](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Statements/let)
+- [MDN const](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Statements/const)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [js-control-flow-loops](js-control-flow-loops.md)
+- [README](README.md)

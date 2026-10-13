@@ -58,3 +58,11 @@ React 19 移除与弃用的 API 汇总如下，各页的「React 18 → 19 版�
 | `react-test-renderer` | `@testing-library/react` |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · 参考](https://react.dev/reference/react)
+
+## 相关页面
+
+- [component-api](component-api.md)

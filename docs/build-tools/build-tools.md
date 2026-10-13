@@ -284,3 +284,12 @@ Babel 是一个 JavaScript 编译器，用于将 ES6+ 代码转换为向后兼�
 ### 总结
 
 构建工具和自动化是现代前端开发中至关重要的组成部分。理解并掌握 Webpack、Vite 和 Parcel 等构建工具的配置与优化，能够提高开发效率和应用性能。同时，通过自动化构建和持续集成（CI/CD）可以提升代码质量和部署的可靠性。希望本章内容能够帮助你在前端开发中更好地运用这些工具和技术。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

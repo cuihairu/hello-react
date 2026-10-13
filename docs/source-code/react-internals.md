@@ -52,3 +52,11 @@ React Fiber 是 React 的重写架构，旨在改进更新机制，提供更高�
 ### 总结
 
 通过了解 React 的内部机制，包括虚拟 DOM 的实现原理、Reconciliation 算法以及 Fiber 架构的更新机制，我们可以更好地理解 React 如何高效地管理和更新用户界面。这些知识不仅有助于优化 React 应用的性能，还能帮助我们在实际开发中做出更合理的设计决策。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+## 相关页面
+
+- [component-mounting](component-mounting.md)

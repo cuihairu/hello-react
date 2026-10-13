@@ -55,3 +55,14 @@ Fiber 的更新机制包括以下几个步骤：
 #### 5. Fiber 架构的总结
 
 React Fiber 是 React 的全新架构，旨在提高性能和灵活性。它通过将更新任务分解为多个工作单元、支持异步渲染和优先级调度来优化渲染过程。Fiber 架构使得 React 能够更好地处理复杂的更新任务，提高用户界面的流畅性和响应速度。通过这些改进，React 变得更加高效，能够满足现代 web 应用的性能需求。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

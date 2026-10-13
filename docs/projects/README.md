@@ -24,3 +24,11 @@
 - 使用 Next.js 实现 SEO 友好的服务端渲染应用
 - 理解 React Native 与 Web 开发的异同
 - 建立生产级的测试与部署自动化体系
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+## 相关页面
+
+- [ci-cd](ci-cd.md)

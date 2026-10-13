@@ -249,3 +249,12 @@ Mixin 是可以复用的样式块，可以接收参数并应用到不同的选�
 
 使用 SASS 和 LESS 的功能（如变量、Mixin、函数、嵌套规则和模块化）可以显著提升项目样式的组织性和开发效率。通过掌握这些优化技巧，可以编写更清晰、可维护的 CSS 代码，提高前端开发的效率和质量。
 
+## 参考资料
+
+- [Sass 文档](https://sass-lang.com/documentation/)
+- [Less 功能](https://lesscss.org/features/)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [css-preprocessors](css-preprocessors.md)

@@ -152,3 +152,15 @@ myPromise
 #### 7. **总结**
 
 Promise 和 `async/await` 提供了强大的工具来处理异步操作，使代码更加清晰和易于维护。Promise 通过链式调用和并行处理功能，能够有效地管理多个异步操作；`async/await` 使得异步代码看起来像同步代码一样，进一步提升了代码的可读性。掌握这些特性对于编写现代 JavaScript 应用程序至关重要。
+
+## 参考资料
+
+- [MDN Promise 的使用](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide/Using_promises)
+- [MDN Promise 对象](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [MDN async function](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Statements/async_function)
+- [MDN await](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Operators/await)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

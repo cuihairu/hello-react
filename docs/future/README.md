@@ -15,3 +15,11 @@
 - 本部分内容基于 React 18.3+ 与 Canary 版本，部分 API 可能处于实验阶段
 - 建议配合官方 RFC 仓库 (`github.com/reactjs/rfcs`) 与 React 博客同步阅读
 - 生产项目引入实验性特性前，请评估团队承受风险与回滚成本
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+## 相关页面
+
+- [react-community](react-community.md)

@@ -274,3 +274,12 @@ export default DataFetcher;
 ## 6. 总结
 
 在这一章中，我们介绍了 React 的基础知识，包括 JSX 语法、组件化开发、State 和 Props 的使用，以及组件的生命周期。掌握这些基础概念将帮助你在 React 中构建高效、可维护的用户界面。继续深入学习，将有助于你掌握更高级的 React 特性和最佳实践。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

@@ -189,3 +189,19 @@ CSS 提供了多种布局模型来控制元素的位置和排版。常见的布�
 ### 2.3 总结
 
 掌握 CSS 盒模型及布局模型是前端开发的基础，可以帮助你创建灵活且美观的网页布局。理解盒模型的组成部分和布局技巧将大大提升你在实际开发中的效率和精确度。
+
+## 参考资料
+
+- [MDN CSS 盒模型](https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_box_model)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [css-mixins-inheritance](css-mixins-inheritance.md)
+- [css-nesting-modular](css-nesting-modular.md)
+- [css-preprocessors](css-preprocessors.md)
+- [css-sass-less-optimization](css-sass-less-optimization.md)
+- [html-elements](html-elements.md)
+- [js-control-flow-loops](js-control-flow-loops.md)
+- [knowledge](/knowledge.md)

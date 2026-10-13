@@ -150,3 +150,13 @@ x %= 5; // 1
 #### 4. 总结
 
 本节介绍了 JavaScript 的变量声明方式、数据类型和常见运算符。理解这些基础知识对于编写高效、可靠的 JavaScript 代码至关重要。掌握变量、数据类型和运算符的使用，可以帮助你更好地处理数据和实现各种功能。
+
+## 参考资料
+
+- [MDN 语法与类型](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide/Grammar_and_types)
+- [MDN 箭头函数](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

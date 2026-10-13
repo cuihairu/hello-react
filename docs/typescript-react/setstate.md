@@ -116,3 +116,14 @@
 | StrictMode 下的双次渲染 | 已有 | **行为细化** | `useMemo` / `useCallback` 复用首次结果 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · useState](https://react.dev/reference/react/useState)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

@@ -83,3 +83,14 @@
   - [Expo 文档](https://docs.expo.dev/)
 
 通过 React Native，开发者可以高效地构建跨平台的移动应用，同时享受原生应用的性能和用户体验。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

@@ -306,3 +306,13 @@ npm start
 ```
 
 通过这些步骤，你可以成功地将 Redux 集成到 React 和 TypeScript 项目中，实现了更高效和集中化的状态管理。
+
+## 参考资料
+
+- [Redux 官方文档](https://redux.js.org/introduction/getting-started)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

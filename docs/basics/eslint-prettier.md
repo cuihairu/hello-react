@@ -155,3 +155,14 @@ npm install eslint-config-prettier eslint-plugin-prettier --save-dev
 
 配置 ESLint 和 Prettier 是提高代码质量和一致性的关键步骤。通过安装和配置 ESLint，您可以进行代码静态分析，识别潜在问题；通过安装和配置 Prettier，您可以自动格式化代码，确保代码风格一致。将这两个工具结合使用，可以帮助您保持高质量的代码，并提升开发效率。
 
+## 参考资料
+
+- [ESLint 配置](https://eslint.org/docs/latest/use/configure/)
+- [Prettier 文档](https://prettier.io/docs/en/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

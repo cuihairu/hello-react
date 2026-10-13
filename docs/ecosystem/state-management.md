@@ -222,3 +222,13 @@ export default App;
 - **性能优化与最佳实践**：尽量减少状态更新的频率，使用 memoization 优化计算属性，避免不必要的重新渲染。
 
 **总结**：本章详细介绍了 React 应用中的状态管理方法，从 Context API 到 Redux 和 MobX，再到 React Query，每种工具都有其适用的场景。理解和正确使用这些工具将帮助你在开发复杂应用时保持代码的清晰和性能的高效。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

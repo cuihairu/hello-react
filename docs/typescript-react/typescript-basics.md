@@ -287,3 +287,13 @@ TypeScript 对 JavaScript 的类进行了扩展，支持更多的面向对象编
 #### 5.7 **总结**
 
 TypeScript 提供了静态类型检查和现代 JavaScript 的特性，使得编写和维护大型代码库变得更加容易和安全。掌握 TypeScript 的基础知识将帮助你编写更可靠的代码，并提升你的开发效率。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

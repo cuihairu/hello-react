@@ -276,3 +276,14 @@ React 19 新增的 `use`、`useActionState`、`useOptimistic` 与 react-dom 的 
 - **`useLayoutEffect`** 用于在 DOM 更新后立即执行副作用。
 
 这些 Hooks 提供了强大的功能，使函数组件能够处理各种状态和副作用逻辑，同时保持代码的简洁和可维护性。
+
+## 参考资料
+
+- [React 官方文档 · Hooks 参考](https://react.dev/reference/react/apis)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

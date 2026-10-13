@@ -153,3 +153,4 @@
         - [测试工具与方法](projects/testing-tools.md)
         - [持续集成与自动化部署](projects/ci-cd.md)
 
+- [术语表](./glossary.md)

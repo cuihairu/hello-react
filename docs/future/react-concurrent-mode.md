@@ -212,3 +212,14 @@ React 19+ use/useOptimistic/useActionState 进一步简化模式
 - [React 18 发布：并发特性](https://react.dev/blog/2022/03/29/react-v18)
 - [深入 React Fiber 与并发调度](https://github.com/acdlite/rfcs/blob/main/text/0008-concurrent-mode.md)
 - [useTransition 与 useDeferredValue 实战](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-keys)
+
+## 参考资料
+
+- [React 官方文档 · React Compiler](https://react.dev/learn/react-compiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

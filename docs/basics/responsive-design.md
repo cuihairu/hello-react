@@ -100,3 +100,12 @@
 
 响应式设计和媒体查询是创建适应各种设备和屏幕尺寸的网页的重要工具。通过掌握媒体查询的使用和响应式设计的原则，你可以确保你的网页在所有设备上都能够提供良好的用户体验。
 
+## 参考资料
+
+- [MDN 响应式设计与媒体查询](https://developer.mozilla.org/en-us/docs/Learn/CSS/CSS_layout/Responsive_Design)
+- [MDN @media](https://developer.mozilla.org/en-us/docs/Web/CSS/@media)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

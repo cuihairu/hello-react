@@ -151,3 +151,13 @@ function applyUpdates(patch) {
 ---
 
 通过对 Diff 算法的理解，我们可以更好地优化 React 应用的性能，并深入理解 React 如何高效地处理 UI 更新。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

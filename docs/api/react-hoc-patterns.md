@@ -261,3 +261,13 @@ export default MyComponent;
 - **React.memo**：用于优化函数组件性能。
 
 这些模式和 API 可以帮助你提升代码的复用性、性能和可维护性。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)

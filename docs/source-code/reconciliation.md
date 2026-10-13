@@ -57,3 +57,13 @@ Reconciliation 算法主要涉及以下几个核心概念：
 #### 总结
 
 Reconciliation 算法是 React 的核心性能优化技术，通过比较虚拟 DOM 树的差异和计算最小的 DOM 更新操作来提高用户界面的渲染性能。算法包括节点比较、分层比较、节点标记和子节点优化等策略。通过这些优化，React 能够高效地更新用户界面，并保持应用的响应性和一致性。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [README](README.md)

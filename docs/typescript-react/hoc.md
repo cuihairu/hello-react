@@ -155,3 +155,15 @@ const withExtraProps = (WrappedComponent) => {
 | `React.memo` 与 HOC 模式本身 | 可用 | 无变化 | 模式层面没有 API 变化 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

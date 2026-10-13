@@ -229,3 +229,13 @@ const numberArray = createArray(3, 42); // T 被推断为 number，默认类型�
 ## 总结
 
 类和泛型是 TypeScript 中强大的功能，它们允许你编写结构化的、可维护的和类型安全的代码。类提供了面向对象编程的特性，而泛型则增强了代码的复用性和灵活性。理解这些功能将帮助你在 TypeScript 中更有效地创建复杂的应用程序。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

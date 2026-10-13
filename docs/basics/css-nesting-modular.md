@@ -163,3 +163,12 @@ SASS 使用 `@import` 或 `@use` 语句来引入多个 SCSS 文件，从而实�
 ### 3.4.3 总结
 
 嵌套规则和模块化是 CSS 预处理器中提升样式组织和维护的重要功能。嵌套规则使得样式与 HTML 结构一致，模块化提高了样式的组织性和重用性。掌握这些技术，将帮助你编写更高效、可维护的 CSS 代码。
+
+## 参考资料
+
+- [Sass 文档 · 样式规则](https://sass-lang.com/documentation/style-rules)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [css-preprocessors](css-preprocessors.md)

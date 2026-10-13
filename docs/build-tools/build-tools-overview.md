@@ -128,3 +128,13 @@
 - **Parcel**：适合需要快速启动和零配置的项目，自动处理文件和依赖，适合快速原型开发。
 
 选择合适的构建工具可以显著提升开发效率和应用性能，根据项目需求和个人偏好选择最合适的工具是前端开发中的重要决策。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

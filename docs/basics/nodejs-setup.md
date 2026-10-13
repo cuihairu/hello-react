@@ -142,3 +142,15 @@ npm -v
 #### 直接升级
 
 对于 Windows 和 macOS，您可以从 [Node.js 官方网站](https://nodejs.org/) 下载并安装最新版本的 Node.js。对于 Linux，可以使用包管理工具更新 Node.js。
+
+## 参考资料
+
+- [Node.js 文档](https://nodejs.org/en/docs)
+- [Node.js 下载](https://nodejs.org/en/download)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

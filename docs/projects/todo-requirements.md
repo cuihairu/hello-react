@@ -78,3 +78,13 @@
 ---
 
 通过上述需求分析和设计步骤，你可以清晰地了解多功能 Todo 应用的功能需求和设计方案。接下来的开发过程将依据这些需求和设计进行实现。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

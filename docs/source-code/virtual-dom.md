@@ -51,3 +51,13 @@
 #### 总结
 
 虚拟 DOM 是 React 性能优化的核心技术之一，通过在内存中维护一个轻量级的 DOM 树来减少对实际 DOM 的操作。虚拟 DOM 的实现原理包括创建虚拟 DOM 树、比较虚拟 DOM 树的差异、更新真实 DOM 以及一些优化策略。这些机制共同作用，提高了 React 应用的渲染性能和响应速度。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [README](README.md)

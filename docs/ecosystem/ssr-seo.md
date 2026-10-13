@@ -142,3 +142,14 @@ module.exports = {
 #### 4. **总结**
 
 通过 SSR 技术，结合各种 SEO 优化实践，能够大大提升网站在搜索引擎中的排名和用户体验。Next.js 提供了强大的工具集，帮助开发者轻松实现这些优化，从而打造高性能、高可见度的 Web 应用。
+
+## 参考资料
+
+- [React 官方文档 · 服务端渲染](https://react.dev/reference/react-dom/server)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

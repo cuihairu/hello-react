@@ -197,3 +197,12 @@ CSS 的优先级决定了当多个样式规则应用于同一元素时，哪一�
 
 掌握 CSS 的基本语法和选择器是创建和优化网页样式的基础。通过合理使用选择器和声明，您可以精确控制网页的外观和布局。接下来，您可以继续深入学习 CSS 的其他高级特性和技术。
 
+## 参考资料
+
+- [MDN CSS 选择器](https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_selectors)
+- [MDN 属性选择器](https://developer.mozilla.org/en-us/docs/Web/CSS/Attribute_selectors)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

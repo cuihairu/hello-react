@@ -253,3 +253,13 @@ export default App;
 - **`React.Profiler`**：进行性能分析和优化。
 - **`ReactDOM.unstable_batchedUpdates`**：批量更新组件状态。
 - **`React.lazy` 和 `Suspense`**：动态加载组件，提高性能。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

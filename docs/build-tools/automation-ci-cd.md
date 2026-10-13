@@ -181,3 +181,13 @@ jobs:
 ### 总结
 
 通过自动化构建和 CI/CD 集成，你可以提高开发效率，确保代码质量，并实现自动化部署。使用工具如 Webpack 和 Gulp 来进行自动化构建，利用 CI/CD 服务如 GitHub Actions、GitLab CI、Travis CI 来实现持续集成和部署。根据项目需求，调整和扩展配置，以实现最佳的开发和部署流程。
+
+## 参考资料
+
+- [ESLint 官方文档](https://eslint.org/docs/latest/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

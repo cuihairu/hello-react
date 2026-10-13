@@ -77,3 +77,11 @@ Diff 算法的主要任务是找到两个虚拟 DOM 树之间的差异，并将�
 ---
 
 通过理解旧版架构中的虚拟 DOM 和 Diff 算法的工作原理及其优劣，我们可以更好地理解 React 的演变和改进。同时，这也为理解新版架构（如 Fiber）奠定了基础。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+## 相关页面
+
+- [architecture-comparison](architecture-comparison.md)

@@ -80,3 +80,14 @@ Taro 的核心是将统一的代码通过不同的编译器转换为各个平台
 ---
 
 通过 Taro，你可以更加高效地进行多平台开发，实现“一次编码，多端适配”的目标。无论是小程序、H5 还是移动端应用，Taro 都能帮助你在统一的代码库中完成开发工作。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

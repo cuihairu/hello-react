@@ -176,3 +176,17 @@ pnpm 是一个性能优化的包管理工具，使用硬链接来节省磁盘空
 ### 4. 总结
 
 掌握 npm 及其他包管理工具的使用，将帮助您更高效地管理项目依赖和开发环境。您可以根据项目需求选择合适的包管理工具，并熟练运用其功能来提高开发效率。
+
+## 参考资料
+
+- [npm 官方文档](https://docs.npmjs.com/)
+- [npm 命令行](https://docs.npmjs.com/cli/v10/commands/npm)
+- [Yarn 文档](https://classic.yarnpkg.com/en/docs)
+- [pnpm 介绍](https://pnpm.io/motivation)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

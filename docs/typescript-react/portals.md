@@ -231,3 +231,14 @@ Portals 是一个强大的工具，用于处理需要在 DOM 结构外部渲染�
 | portal 内的 Suspense | 挂起后等待兄弟树渲染 | **立即提交 fallback** | React 19 全局行为，portal 内同样适用 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · DOM 组件](https://react.dev/reference/react-dom/components/common)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

@@ -190,3 +190,13 @@ TypeScript 可以通过 npm（Node.js 的包管理器）进行安装。可以选
 #### 7. **总结**
 
 安装和配置 TypeScript 使得你可以利用其类型系统和现代 JavaScript 特性来提高开发效率和代码质量。通过正确的配置和工具集成，你可以充分发挥 TypeScript 的优势，提升项目的可靠性和可维护性。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

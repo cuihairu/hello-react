@@ -133,3 +133,12 @@ npm run build:weapp
 ### 总结
 
 通过以上步骤，你可以成功初始化和配置一个 Taro 项目，并开始进行跨端开发。Taro 的强大功能和灵活配置使得多端开发变得更加高效和一致。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

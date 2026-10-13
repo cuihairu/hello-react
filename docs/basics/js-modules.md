@@ -106,3 +106,12 @@
 #### 4. **总结**
 
 ES6 的模块化语法通过 `import` 和 `export` 关键字提供了一个强大而灵活的方式来组织和管理 JavaScript 代码。理解和使用这些模块化特性能够使得代码更加模块化、清晰，并且易于维护和扩展。
+
+## 参考资料
+
+- [MDN ES 模块](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide/Modules)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

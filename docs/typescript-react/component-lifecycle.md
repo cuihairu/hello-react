@@ -174,3 +174,14 @@ function Example() {
 ## 3. 总结
 
 了解组件的生命周期对于开发和维护 React 应用至关重要。类组件的生命周期方法和函数组件的 Hooks 提供了丰富的工具，帮助开发者在组件的不同阶段执行必要的操作。通过合理使用这些工具，可以提升应用的性能、可靠性和用户体验。
+
+## 参考资料
+
+- [React 官方文档 · 提交与挂载](https://react.dev/learn/render-and-commit)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

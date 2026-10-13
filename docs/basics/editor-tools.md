@@ -95,3 +95,14 @@
 ### 3. 总结
 
 选择合适的代码编辑器和开发工具是提升开发效率的关键。Visual Studio Code、Sublime Text 和 Atom 是广受欢迎的代码编辑器，各具特点。Git、nvm、Docker 和 Postman 是推荐的开发工具，它们能帮助您更高效地管理版本、环境和容器化应用。根据个人需求选择和配置这些工具，将大大提高您的开发效率。
+
+## 参考资料
+
+- [Visual Studio Code 文档](https://code.visualstudio.com/docs)
+- [MDN 工具与测试](https://developer.mozilla.org/en-us/docs/Learn/Tools_and_testing)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [knowledge](/knowledge.md)

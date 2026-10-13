@@ -130,3 +130,14 @@ npx webpack --config webpack.config.js
 ### 总结
 
 通过以上步骤，你可以将现代 JavaScript（ES6+）代码使用 Babel 转换为兼容老旧浏览器的代码，从而保证更广泛的兼容性。这种配置不仅适用于普通 JavaScript，还支持 React 的 JSX 语法和其他现代特性。根据项目需求，你可以调整 Babel 配置来满足不同的转译要求。
+
+## 参考资料
+
+- [Babel 官方文档](https://babeljs.io/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

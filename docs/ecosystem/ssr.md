@@ -178,3 +178,13 @@ export default Home;
 - **管理客户端状态**：SSR 后，客户端需要接管页面的交互性，因此需要考虑如何在服务器端和客户端之间同步状态，如使用同构的状态管理库（如 Redux 或 MobX）。
 
 **总结**：服务器端渲染（SSR）在提升首屏加载速度和改善 SEO 方面具有显著的优势。React 提供了简单的 API 实现 SSR，而 Next.js 则进一步简化了 SSR 的开发流程。通过合理的架构设计和性能优化，可以在 SSR 项目中获得良好的用户体验和可维护性。
+
+## 参考资料
+
+- [React 官方文档 · renderToPipeableStream](https://react.dev/reference/react-dom/server/renderToPipeableStream)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

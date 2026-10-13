@@ -140,3 +140,12 @@ Mixin 是一种可以复用的样式块，通过参数化的方式可以生成�
 
 Mixin 和继承是 CSS 预处理器中重要的功能，通过提升样式的复用性和组织性，帮助开发者编写更高效、可维护的 CSS 代码。掌握这两种功能，可以有效减少代码重复和提高开发效率。
 
+## 参考资料
+
+- [Sass 文档 · 样式规则](https://sass-lang.com/documentation/style-rules)
+- [Less 功能](https://lesscss.org/features/)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [css-preprocessors](css-preprocessors.md)

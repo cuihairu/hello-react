@@ -106,3 +106,13 @@ React Fiber 是 React 16 引入的全新架构，旨在解决旧版架构中的�
 ## 4. 总结
 
 旧版架构和新版架构（React Fiber）在性能、响应性、复杂性和可维护性等方面存在显著差异。新版架构通过引入增量渲染、优先级调度和 Concurrent Mode，解决了旧版架构中的性能瓶颈和局限性，提供了更高效、灵活和响应迅速的 UI 更新机制。了解这些差异有助于开发者在使用 React 时更好地利用其功能，提升应用的性能和用户体验。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+## 相关页面
+
+- [README](README.md)
+- [new-architecture](new-architecture.md)
+- [old-architecture](old-architecture.md)

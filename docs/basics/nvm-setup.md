@@ -131,3 +131,13 @@ nvm use
 ### 4. 总结
 
 nvm 是一个强大的工具，可以方便地管理和切换不同版本的 Node.js。掌握 nvm 的基本用法将帮助您在多个项目中高效地处理不同的 Node.js 版本需求。
+
+## 参考资料
+
+- [nvm 仓库](https://github.com/nvm-sh/nvm)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [knowledge](/knowledge.md)

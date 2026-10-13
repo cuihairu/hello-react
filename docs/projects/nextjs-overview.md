@@ -78,3 +78,14 @@
   - 确保网站对搜索引擎友好，生成有效的 HTML 和元数据。
 
 通过 Next.js，你可以利用其强大的服务器端渲染和静态生成功能来优化应用性能，并提高用户体验和 SEO 效果。
+
+## 参考资料
+
+- [Next.js 官方文档](https://nextjs.org/docs)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

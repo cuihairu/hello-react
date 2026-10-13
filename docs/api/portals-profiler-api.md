@@ -134,3 +134,14 @@ Profiler API 用于分析 React 应用的性能。React Profiler 允许开发者
 - **Profiler**：用于收集和分析组件的渲染性能数据，以优化应用的性能。通过 `Profiler` 组件和 `onRender` 回调获取详细的渲染时间和性能信息。
 
 这两种 API 提供了有力的工具来帮助开发者管理和优化 React 应用的渲染性能和 DOM 操作。
+
+## 参考资料
+
+- [React 官方文档 · Profiler](https://react.dev/reference/react/Profiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

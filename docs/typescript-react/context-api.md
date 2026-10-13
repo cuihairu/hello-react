@@ -321,3 +321,14 @@ Context API 是 React 中一种强大的工具，适用于在组件树中共享�
 | 读取 Context | 需组件内调用 `useContext` | **新增 `use`** | 异步组件可直接把 Context 当参数读取，见[React 19 新特性](../future/react-new-features.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · Context](https://react.dev/learn/scaling-up-with-reducer-and-context)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

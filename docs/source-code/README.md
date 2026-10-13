@@ -31,3 +31,11 @@
 ## 前置要求
 
 建议先阅读「第三部分：React 的架构演变」建立整体认知框架，再深入源码细节。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+## 相关页面
+
+- [component-mounting](component-mounting.md)

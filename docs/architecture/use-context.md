@@ -160,3 +160,14 @@ const Toolbar = React.memo(() => {
 | `createContext` | 稳定 | 无变化 | 与 `useRef` 一样要求传入初始值（类型层面） |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · useContext](https://react.dev/reference/react/useContext)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [hooks-deep-dive](hooks-deep-dive.md)
+- [glossary](/glossary.md)

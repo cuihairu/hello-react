@@ -155,3 +155,15 @@ function FocusInput() {
 | `act` 导入位置 | `react-dom/test-utils` | **改自 `react`** | 测试中的 `act` 从 `react` 包导入 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · useEffect](https://react.dev/reference/react/useEffect)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [hooks-deep-dive](hooks-deep-dive.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

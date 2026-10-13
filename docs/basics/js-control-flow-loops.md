@@ -157,3 +157,13 @@
 #### 4. 总结
 
 本节介绍了 JavaScript 中的控制流和循环结构。控制流语句用于根据条件执行不同的代码路径，而循环结构用于重复执行代码块。掌握这些基本控制结构是编写高效 JavaScript 代码的关键。通过合理使用这些语句，你可以实现复杂的逻辑处理和数据操作。
+
+## 参考资料
+
+- [MDN 控制流与错误处理](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [MDN 循环与迭代](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide/Loops_and_iteration)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [js-es6-basics](js-es6-basics.md)

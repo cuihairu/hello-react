@@ -42,3 +42,12 @@
 - 理解和应用 HTML 和 CSS 的基本概念和技术。
 - 掌握 JavaScript 的基础知识及其现代特性。
 - 熟悉常用的工具和技术，提高开发效率和代码质量。
+
+## 参考资料
+
+- [MDN Web 开发学习路径](https://developer.mozilla.org/en-us/docs/Learn/Getting_started_with_the_web)
+- [MDN Web 参考](https://developer.mozilla.org/en-us/docs/Web)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)

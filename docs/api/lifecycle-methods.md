@@ -214,3 +214,13 @@ React 19 与生命周期相关的行为变化在错误处理：渲染期未捕�
 ### 总结
 
 React 的生命周期方法使得组件能够在其生命周期的各个阶段执行特定的操作。掌握这些方法可以帮助你更好地管理组件的行为和性能。了解每个生命周期方法的用途和调用时机，可以帮助你构建更高效和健壮的 React 组件。
+
+## 参考资料
+
+- [React 官方文档 · 提交与挂载](https://react.dev/learn/render-and-commit)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)

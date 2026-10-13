@@ -208,3 +208,14 @@ module.exports = {
 ### 总结
 
 通过 Webpack 的基本配置、模块解析、插件使用、优化策略和开发环境配置，可以构建出高效、性能优越的前端应用。根据项目需求，调整 Webpack 配置，以满足不同的构建和优化需求。
+
+## 参考资料
+
+- [Webpack 官方文档](https://webpack.js.org/concepts/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

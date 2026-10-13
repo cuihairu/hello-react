@@ -128,3 +128,13 @@ export default App;
 ### 总结
 
 通过路由参数，你可以在 URL 中传递动态数据，创建更为灵活的用户界面。动态加载组件则有助于提高应用性能，通过按需加载减少初始加载时间。这些功能结合起来，使得 React Router 成为一个强大且灵活的路由解决方案。
+
+## 参考资料
+
+- [React Router 官方文档](https://reactrouter.com/home)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

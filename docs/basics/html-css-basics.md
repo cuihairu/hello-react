@@ -144,3 +144,12 @@ body {
 
 掌握 HTML 和 CSS 的基础知识是前端开发的第一步。HTML 提供了网页的结构，而 CSS 控制了网页的外观和布局。了解 HTML 标签、CSS 语法、选择器、布局模型和响应式设计，将帮助您创建功能强大且视觉吸引人的网页。
 
+## 参考资料
+
+- [MDN 开始使用 Web](https://developer.mozilla.org/en-us/docs/Learn/Getting_started_with_the_web)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [html-elements](html-elements.md)
+- [README](README.md)

@@ -142,3 +142,13 @@
 | 严格模式双调用 | 已有 | **行为细化** | ref 回调双调用、`useMemo` / `useCallback` 复用首次结果 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [Testing Library 官方文档](https://testing-library.com/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

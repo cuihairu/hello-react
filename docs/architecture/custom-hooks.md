@@ -171,3 +171,15 @@ test('should fetch user data', async () => {
 | StrictMode 行为 | 双次渲染 | **行为细化** | `useMemo` / `useCallback` 复用首次结果，写自定义 Hook 时更易发现副作用问题 |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · Hooks 参考](https://react.dev/reference/react/apis)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [hooks-deep-dive](hooks-deep-dive.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

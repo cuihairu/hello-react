@@ -192,3 +192,13 @@ namespace Shapes {
 
 - **模块**：现代 JavaScript 和 TypeScript 中用于组织和管理代码的机制，通过 `export` 和 `import` 关键字实现。
 - **命名空间**：旧的代码组织机制，用于在一个文件或多个文件中组织代码，使用 `namespace` 关键字定义和使用。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

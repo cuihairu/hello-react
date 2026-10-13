@@ -382,3 +382,12 @@
 ### 总结
 
 通过这个多功能的 Todo 应用项目，你可以学习到 React 和 TypeScript 的核心概念和实用技巧。项目涵盖了组件开发、状态管理、测试和部署等关键领域，为你提供了全面的实践经验。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

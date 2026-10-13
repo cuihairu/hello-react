@@ -26,3 +26,11 @@
 - 使用 Babel 处理最新 ECMAScript 与 TypeScript
 - 设计多环境 CI/CD 流水线并实现自动化部署
 - 用 Taro 开发一套代码多端运行的小程序应用
+
+## 参考资料
+
+- [React 官方文档 · 参考](https://react.dev/reference/react)
+
+## 相关页面
+
+- [automation-ci-cd](automation-ci-cd.md)

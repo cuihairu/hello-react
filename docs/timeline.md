@@ -25,3 +25,12 @@ React 的每个大版本都是对上一个时代痛点的回答：2013 年开源
 年份取的是「宣布或发布」的时点，不是它被广泛接受的时点：Hooks 在 2018 年 10 月的 React Conf 上预览，2019 年 2 月才随 16.8 稳定；Server Components 2020 年 12 月首演，规模化落地要等到 Next.js App Router。所以这条线标出的是「方向被公开承诺」的时刻，共识的形成通常还要再等一两年。各节点的技术细节与本站正文（如[发展历程与核心理念](/typescript-react/react-history-principles)、[React Fiber 架构详解](/architecture/react-fiber)、[React 的未来](/future/react-future)）口径一致，冲突时以正文为准。
 
 <DevTimeline />
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](knowledge.md)

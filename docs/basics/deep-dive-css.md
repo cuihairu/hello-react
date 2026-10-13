@@ -206,3 +206,13 @@ CSS 模块化将样式分割成更小的可重用模块，使维护和管理变�
 
 深入理解 CSS 的高级功能，如预处理器、变量、混合宏、继承、嵌套规则和模块化，可以大大提高样式表的可维护性和灵活性。掌握这些概念，将使你能够编写更高效、更易于管理的 CSS 代码。
 
+## 参考资料
+
+- [MDN CSS](https://developer.mozilla.org/en-us/docs/Web/CSS)
+- [MDN CSS 入门](https://developer.mozilla.org/en-us/docs/Learn/CSS/First_steps)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [css-preprocessors](css-preprocessors.md)
+- [README](README.md)

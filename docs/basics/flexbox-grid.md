@@ -129,3 +129,13 @@ Grid 布局是一种二维布局模型，允许在行和列上创建复杂的布
 ### 2.3 总结
 
 Flexbox 和 Grid 布局为前端开发提供了强大且灵活的布局选项。Flexbox 适用于一维布局（行或列），而 Grid 布局适用于二维布局（行和列）。掌握这两种布局方式将使你能够创建复杂且响应式的网页设计。
+
+## 参考资料
+
+- [MDN Flexbox 布局](https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_flexible_box_layout)
+- [MDN Grid 布局](https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_grid_layout)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

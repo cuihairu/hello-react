@@ -157,3 +157,13 @@ jobs:
 | 部署前验收 | 构建 + 测试 | **增加灰度校验** | 建议 5% 流量灰度 48 小时无异常再全量，见[社区与生态演进](../future/react-community.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [ESLint 官方文档](https://eslint.org/docs/latest/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

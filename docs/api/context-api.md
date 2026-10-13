@@ -133,3 +133,15 @@ const MainComponent = React.memo(() => {
 - **消费 Context**：使用 `useContext` 钩子在函数组件中消费 context。
 - **优化性能**：使用 `React.memo` 和 `useMemo` 减少不必要的渲染。
 - **最佳实践**：避免频繁更新、使用多个 context 进行分层管理。
+
+## 参考资料
+
+- [React 官方文档 · Context](https://react.dev/learn/scaling-up-with-reducer-and-context)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [hooks-api](hooks-api.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

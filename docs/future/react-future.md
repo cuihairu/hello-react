@@ -203,3 +203,14 @@ function Parent() {
 - [Server Components RFC](https://github.com/reactjs/rfcs/pull/227)
 - [Offscreen API 探索](https://github.com/reactjs/rfcs/pull/309)
 - [React Conf 2024 回顾](https://conf.react.dev/)
+
+## 参考资料
+
+- [React 官方文档 · React Compiler](https://react.dev/learn/react-compiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)
+- [timeline](/timeline.md)

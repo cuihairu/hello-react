@@ -139,3 +139,13 @@ Taro 提供了一套封装好的 API，用于跨平台调用。这些 API 是基
 - **平台测试**：在多个平台上测试你的应用，确保小程序 API 的调用在所有目标平台上都能正常工作。
 
 通过这些步骤，你可以在 Taro 项目中有效地集成小程序 API，实现不同平台间的兼容性和功能支持。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

@@ -218,3 +218,16 @@ const MyComponent = () => {
 | `element.ref` | 可读取 | **已弃用** | ref 成为普通 prop，改读 `element.props.ref` |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · useRef](https://react.dev/reference/react/useRef)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [hooks-deep-dive](/architecture/hooks-deep-dive.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

@@ -123,3 +123,14 @@ React Profiler 组件可以在开发模式下用于测量组件的渲染性能�
 | `react-test-renderer` | 可用 | **已弃用** | 渲染相关测试改用 React Testing Library，见[测试工具](../projects/testing-tools.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · Profiler](https://react.dev/reference/react/Profiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

@@ -89,3 +89,15 @@ root.render(<App />);
 ## 4. 总结
 
 Concurrent Mode 和调度器（Scheduler）是 React 提升应用响应性和性能的关键技术。Concurrent Mode 通过增量渲染和优先级调度，确保应用在处理任务时能够保持流畅性，而调度器则负责任务的优先级管理和调度。了解和应用这些技术，可以帮助开发者构建更高效、响应迅速的用户界面。
+
+## 参考资料
+
+- [React 官方文档 · React Compiler](https://react.dev/learn/react-compiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [react-history-principles](/typescript-react/react-history-principles.md)

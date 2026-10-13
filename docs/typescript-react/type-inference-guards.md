@@ -166,3 +166,12 @@ function processValue(value: string | number) {
 - **类型推断**：TypeScript 能够根据变量的初始值、函数的返回值等自动推断类型，从而减少显式指定类型的需要。
 - **类型守卫**：在运行时检查变量的类型，并根据检查结果缩小变量的类型范围，以提高类型安全性和代码的准确性。
 
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

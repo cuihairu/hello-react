@@ -176,3 +176,14 @@ React 19 的其他相关变化：新增 `react-dom/static` 的 `prerender` / `pr
 - **`ReactDOM.createPortal()`** 用于将组件渲染到 DOM 的不同位置。
 
 这些 API 提供了强大的功能来处理 React 组件的渲染和操作，帮助开发者更灵活地管理组件的生命周期和 DOM 操作。
+
+## 参考资料
+
+- [React 官方文档 · ReactDOM 参考](https://react.dev/reference/react-dom)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

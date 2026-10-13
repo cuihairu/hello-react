@@ -184,3 +184,12 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 各 API 的完整对照见本部分对应章节页。
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

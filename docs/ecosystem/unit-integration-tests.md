@@ -129,3 +129,12 @@ test('submits the form with the input value', () => {
 | CI 运行环境 | Node 16/18 | **建议 Node 20/22 LTS** | 与 React 19 升级清单一致，见[社区与生态演进](../future/react-community.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [Testing Library 官方文档](https://testing-library.com/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

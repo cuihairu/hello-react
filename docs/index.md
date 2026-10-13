@@ -26,3 +26,12 @@ features:
     details: React 十六年（2010 → 2026）：从 FaxJS 原型到 Fiber 重写、Hooks、并发渲染与 React Compiler 的 27 个关键节点。
     link: /timeline
 ---
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](knowledge.md)

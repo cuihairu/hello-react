@@ -173,3 +173,25 @@ function Tabs({ tab, children }) {
 - [React 19.3 发布日志](https://react.dev/blog/2026/09/09/react-19-3)
 - [RFC: use Hook](https://github.com/reactjs/rfcs/pull/229)
 - [RFC: Server Actions](https://github.com/reactjs/rfcs/pull/271)
+
+## 参考资料
+
+- [React 官方文档 · React Compiler](https://react.dev/learn/react-compiler)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [context-api](/api/context-api.md)
+- [hooks-api](/api/hooks-api.md)
+- [hooks-deep-dive](/architecture/hooks-deep-dive.md)
+- [use-effect](/architecture/use-effect.md)
+- [use-reducer](/architecture/use-reducer.md)
+- [use-state](/architecture/use-state.md)
+- [README](README.md)
+- [knowledge](/knowledge.md)
+- [context-api](/typescript-react/context-api.md)
+- [react-basics](/typescript-react/react-basics.md)
+- [react-history-principles](/typescript-react/react-history-principles.md)
+- [render-method](/typescript-react/render-method.md)
+- [render-props](/typescript-react/render-props.md)
+- [setstate](/typescript-react/setstate.md)

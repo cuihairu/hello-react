@@ -61,3 +61,13 @@ JavaScript 是现代 Web 开发中不可或缺的编程语言。它的历史可�
 #### 5. 总结
 
 JavaScript 的发展历程展示了其从一个简单的脚本语言到现代全栈编程语言的演变过程。通过了解 JavaScript 的历史，我们可以更好地把握其现代特性，并充分利用其在开发中的强大功能。
+
+## 参考资料
+
+- [MDN JavaScript](https://developer.mozilla.org/en-us/docs/Web/JavaScript)
+- [ECMAScript 规范](https://tc39.es/ecma262/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

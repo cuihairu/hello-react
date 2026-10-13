@@ -32,3 +32,14 @@
 ### 总结
 
 服务器端渲染是一种在服务器上生成页面内容并直接发送给客户端的渲染方式。它能够提升首屏加载速度、改善 SEO，并为社交媒体提供更好的预览效果。尽管 SSR 会增加服务器负载和开发复杂度，但在需要快速页面加载和良好 SEO 的场景下，它是一种非常有效的技术方案。
+
+## 参考资料
+
+- [React 官方文档 · 服务端渲染](https://react.dev/reference/react-dom/server)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

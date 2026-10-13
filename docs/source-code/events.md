@@ -83,3 +83,13 @@ React 的事件系统是其核心功能之一，提供了一种高效且跨浏�
 ### 总结
 
 React 的合成事件系统提供了一种一致且高效的方式来处理用户交互。通过合成事件，React 能够简化事件处理并提高性能。理解合成事件的工作原理和优化事件处理的最佳实践，可以帮助开发者更好地管理组件的用户交互，提升应用的性能和用户体验。
+
+## 参考资料
+
+- [React 官方文档 · 响应事件](https://react.dev/learn/responding-to-events)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

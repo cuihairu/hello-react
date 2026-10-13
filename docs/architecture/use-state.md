@@ -127,3 +127,15 @@ function computeInitialValue() {
 | 状态类新 Hook | — | **新增** | `useOptimistic`、`useActionState`，见[React 19 新特性](../future/react-new-features.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · useState](https://react.dev/reference/react/useState)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [hooks-deep-dive](hooks-deep-dive.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

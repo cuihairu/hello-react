@@ -201,3 +201,13 @@ test('renders count and increments on button click', () => {
 ## 7. 总结
 
 组件化开发是 React 的核心理念之一，它使得构建用户界面变得更加模块化、可重用和可维护。通过理解组件的定义、生命周期、状态管理和测试，可以有效地开发和管理复杂的用户界面。组件化开发不仅提高了开发效率，也提升了应用的质量和可维护性。
+
+## 参考资料
+
+- [React 官方文档 · 描述 UI](https://react.dev/learn/describing-the-ui)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [README](README.md)

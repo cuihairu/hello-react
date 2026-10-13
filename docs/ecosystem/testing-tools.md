@@ -112,3 +112,15 @@ test('button click updates count', () => {
 | Jest 快照 | 可用 | 无变化 | 渲染器换了，快照写法需同步调整，见[模拟与快照测试](mocks-snapshots.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [Testing Library 官方文档](https://testing-library.com/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [unit-integration-tests](unit-integration-tests.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

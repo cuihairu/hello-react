@@ -167,3 +167,13 @@ const navigateToPage = () => {
 ### 总结
 
 通过以上步骤，你可以在 Taro 中使用 React.js 开发小程序，充分利用 React 的组件化开发方式，同时实现多端适配。Taro 的灵活性和跨端能力使得开发和维护变得更加高效。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

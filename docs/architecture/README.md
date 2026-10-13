@@ -29,3 +29,11 @@
 - 理解 Fiber 如何实现可中断渲染与优先级调度
 - 区分 Concurrent Mode 与传统渲染的行为差异
 - 从架构层面理解 Hooks 的设计动机与约束
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+## 相关页面
+
+- [architecture-comparison](architecture-comparison.md)

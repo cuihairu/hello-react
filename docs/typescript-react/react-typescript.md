@@ -208,3 +208,14 @@ TypeScript 的类型注解也起到了代码文档的作用，帮助开发者更
 ## 总结
 
 在 React 项目中使用 TypeScript 可以带来更好的类型安全、代码提示和重构支持。通过合理配置 TypeScript 和使用最佳实践，可以提高项目的可维护性和开发效率。创建 TypeScript 的 React 项目时，注意配置好 `tsconfig.json` 文件，并使用类型定义来确保代码的正确性。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [state-props](state-props.md)

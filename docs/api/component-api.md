@@ -90,3 +90,14 @@ React 19 影响类组件写法的变化集中在 props 校验与默认值：函�
 - **`React.PureComponent`**：适用于需要性能优化且其 props 和 state 变更较少的组件。它通过浅层比较减少不必要的渲染，提高了渲染效率。
 
 选择使用 `React.Component` 还是 `React.PureComponent` 主要取决于组件的具体需求和性能要求。`React.PureComponent` 在大多数情况下能有效提高性能，但要确保其比较机制适用于组件的 props 和 state 结构。
+
+## 参考资料
+
+- [React 官方文档 · Component](https://react.dev/reference/react/Component)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [react-extensions](react-extensions.md)
+- [glossary](/glossary.md)- [knowledge](/knowledge.md)

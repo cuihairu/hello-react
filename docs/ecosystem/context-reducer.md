@@ -138,3 +138,14 @@ function UserProfile() {
   - **状态共享的范围**：需要注意 `Context` 的作用范围，不要过度滥用全局状态，应根据实际需求进行设计。
 
 **总结**：通过结合使用 `Context API` 和 `useReducer`，你可以在 React 应用中实现一个简单但强大的全局状态管理系统。它非常适合那些状态逻辑复杂但不需要完整状态管理库的小型项目。在实际开发中，可以根据项目的规模和复杂度选择合适的状态管理方案。
+
+## 参考资料
+
+- [React 官方文档 · Context + useReducer](https://react.dev/learn/scaling-up-with-reducer-and-context)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

@@ -310,3 +310,12 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 #### 总结
 
 本章介绍了 React 的核心 API，从 JSX 语法到组件相关 API，再到生命周期方法、Hooks、Context API、Refs、Portals 和 Profiler。了解和掌握这些 API 能够帮助开发者高效地创建和管理 React 组件、优化应用性能，并提升开发体验。
+
+## 参考资料
+
+- [React 官方文档 · React 参考](https://react.dev/reference/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

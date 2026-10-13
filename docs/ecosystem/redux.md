@@ -169,3 +169,14 @@ Redux 是一个用于管理 JavaScript 应用程序全局状态的预测式状�
 - **样板代码**：Redux 的结构化方式需要编写较多的样板代码。
 
 **总结**：Redux 提供了一个强大的状态管理解决方案，适用于复杂的 React 应用程序。通过严格遵循 Redux 的核心原则和使用流程，可以使应用的状态管理更加可控和高效。
+
+## 参考资料
+
+- [Redux 官方文档](https://redux.js.org/introduction/getting-started)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

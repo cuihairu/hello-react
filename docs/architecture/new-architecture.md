@@ -122,3 +122,11 @@ unstable_scheduleCallback(unstable_ImmediatePriority, () => {
 ---
 
 新版架构通过引入 Fiber 和 Concurrent Mode，显著提高了 React 的性能和用户体验。理解新版架构的工作原理和优化机制，有助于开发者更好地利用 React 的新特性，构建高效、流畅的用户界面。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+## 相关页面
+
+- [architecture-comparison](architecture-comparison.md)

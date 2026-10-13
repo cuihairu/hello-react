@@ -231,3 +231,12 @@ npx taro build --type rn     # 构建 React Native 应用
 ### 总结
 
 通过使用 Taro，你可以在一个代码库中开发多个平台的应用，显著提高开发效率并减少维护成本。掌握 Taro 的项目初始化、配置、兼容性处理以及构建发布流程，将帮助你更高效地进行多端开发。
+
+## 参考资料
+
+- [Taro 官方文档](https://docs.taro.zone/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

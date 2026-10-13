@@ -181,3 +181,14 @@ function Child(props) {
 ## 3. 总结
 
 在 React 中，`props` 和 `state` 是组件之间传递数据和管理状态的核心机制。`props` 用于从父组件向子组件传递数据，而 `state` 用于组件内部的状态管理。理解如何有效地使用 `props` 和 `state` 是构建 React 应用的基础，能够帮助开发者创建可维护和可重用的组件。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

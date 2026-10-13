@@ -120,3 +120,14 @@ export default TodoList;
 - **与 Context API 的比较**：Context API 更加轻量级，但不具备 MobX 那样的自动响应和计算属性的功能。对于简单的全局状态共享，Context API 是一个不错的选择，但对于复杂状态管理，MobX 提供了更强大的功能。
 
 **总结**：MobX 提供了一种简洁、高效的方式来管理 React 应用中的状态，特别适合那些需要灵活处理状态变化的应用。通过可观察状态、计算属性和动作，MobX 实现了自动化的响应式编程，极大地提升了开发体验和代码可维护性。在选择状态管理工具时，可以根据项目的复杂度和团队的需求来决定是否使用 MobX。
+
+## 参考资料
+
+- [MobX 官方文档](https://mobx.js.org/README.html)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

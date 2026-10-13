@@ -152,3 +152,13 @@ SASS 也支持嵌套规则，语法类似于 LESS，但支持更复杂的嵌套�
 ### 3.2.4 总结
 
 CSS 变量和嵌套规则是提升样式表管理和维护的重要工具。CSS 变量支持动态样式调整，而预处理器如 LESS 和 SASS 提供了丰富的功能来增强 CSS 的表达能力和组织性。掌握这些技术，将帮助你编写更高效、易于维护的 CSS 代码。
+
+## 参考资料
+
+- [MDN CSS 自定义属性（变量）](https://developer.mozilla.org/en-us/docs/Web/CSS/Using_CSS_custom_properties)
+- [MDN CSS 变量](https://developer.mozilla.org/en-us/docs/Web/CSS/CSS_cascading_variables)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

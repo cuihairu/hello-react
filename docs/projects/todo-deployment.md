@@ -82,3 +82,13 @@ const App = () => (
 - **安全性**：确保你应用的安全性，包括使用 HTTPS，防止 XSS 和 CSRF 攻击。
 
 通过这些步骤，你可以有效地部署和优化你的 React 应用，以确保其在生产环境中的高效运行和良好的用户体验。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

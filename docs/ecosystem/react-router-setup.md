@@ -132,3 +132,14 @@ export default App;
 ### 总结
 
 通过以上步骤，你可以成功安装和配置 React Router，并创建一个简单的多页面应用。掌握这些基本用法之后，你可以进一步探索 React Router 的高级功能，如路由参数、嵌套路由和动态加载等。
+
+## 参考资料
+
+- [React Router 官方文档](https://reactrouter.com/start/framework/installation)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

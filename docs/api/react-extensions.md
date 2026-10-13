@@ -237,3 +237,11 @@ export default MyComponent;
 - **React.memo**：用于优化函数组件性能。
 
 这些扩展 API 和模式可以帮助你更高效地管理组件、提升应用性能和代码可维护性。
+
+## 参考资料
+
+- [React 官方文档 · 规则参考](https://react.dev/reference/rules)
+
+## 相关页面
+
+- [component-api](component-api.md)

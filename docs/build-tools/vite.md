@@ -178,3 +178,14 @@ export default defineConfig({
 ### 总结
 
 Vite 通过优化开发服务器、提高构建速度和支持现代框架，显著提升了前端开发效率。通过快速的热更新和高效的生产构建，Vite 可以帮助开发团队更高效地开发和维护应用。利用 Vite 的插件系统，你还可以根据项目需求扩展功能，进一步提升开发体验。
+
+## 参考资料
+
+- [Vite 官方文档](https://vite.dev/guide/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

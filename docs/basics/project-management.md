@@ -182,3 +182,15 @@ git push -u origin main
 ### 6. 总结
 
 创建和管理 Node.js 项目涉及多个方面，从初始化项目、组织文件结构到配置文件和版本控制。通过熟练掌握这些基本操作，您可以高效地管理项目，并确保代码的质量和一致性。
+
+## 参考资料
+
+- [Git 官方文档](https://git-scm.com/doc)
+- [npm 关于](https://docs.npmjs.com/about-npm)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [environment-setup](environment-setup.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

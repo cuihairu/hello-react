@@ -93,3 +93,15 @@ React 拥有一个庞大的生态系统，包括：
 ## 3. 总结
 
 React 的核心理念包括组件化、声明式编程、单向数据流和虚拟 DOM。通过这些理念，React 提供了一种高效、可维护的方式来构建用户界面。React 的不断发展和成熟使其成为现代前端开发的主流选择，拥有强大的生态系统和社区支持。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [timeline](/timeline.md)
+- [README](README.md)

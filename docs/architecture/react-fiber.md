@@ -110,3 +110,15 @@ class MyComponent extends React.Component {
 ---
 
 React Fiber 架构通过引入增量更新、优先级调度和时间切片，显著提高了 React 的性能和用户体验。理解 Fiber 的工作原理和优化机制，有助于开发者更好地利用 React 的新特性，构建高效、流畅的用户界面。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [timeline](/timeline.md)

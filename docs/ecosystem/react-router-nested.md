@@ -199,3 +199,12 @@ export default App;
 - **页面跳转**：使用 `Link` 组件进行链接导航，或使用 `useNavigate` 钩子进行编程式导航。
 
 这些功能使得你能够创建更加灵活和动态的用户界面，增强用户体验。
+
+## 参考资料
+
+- [React Router 官方文档](https://reactrouter.com/home)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

@@ -116,3 +116,15 @@ React 19 的错误处理行为变化：渲染期错误不再重抛，未被边�
 - **限制**：不能捕获事件处理、异步代码中的错误，以及服务器渲染中的错误。
 
 通过使用错误边界，可以提升 React 应用的健壮性和用户体验，确保即使在组件发生错误时，应用依然可以继续运行。
+
+## 参考资料
+
+- [React 官方文档 · 描述 UI](https://react.dev/learn/describing-the-ui)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [lifecycle-methods](lifecycle-methods.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

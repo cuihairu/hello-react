@@ -129,7 +129,7 @@ React 官方：
 - [React 官方文档·列表渲染](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-keys)：key 与列表顺序的官方说明。见[并发渲染](future/react-concurrent-mode.md)。
 - [React 官方博客](https://react.dev/blog)：版本与特性信息源。见[社区与 RFC](future/react-community.md)。
 - [React Conf](https://conf.react.dev/)：Compiler 与 Activity 的发布场合。见[React Compiler 与新方向](future/react-future.md)。
-- [React DevTools](https://github.com/facebook/react-devtools)：Profiler 数据的图形界面。见[社区与 RFC](future/react-community.md)。
+- [React DevTools](https://github.com/react/react-devtools)：Profiler 数据的图形界面。见[社区与 RFC](future/react-community.md)。
 - [reactjs.org 文档](https://reactjs.org/docs/getting-started.html)：安装 React DevTools 的说明页。见[Profiler](typescript-react/profiler.md)。
 
 RFC 仓库（React 特性从提案到落地的标准路径）：
@@ -270,3 +270,9 @@ React Native 生态：
 - 弃用 API 汇总：ReactDOM.render → createRoot；函数组件 defaultProps → 默认参数（18.3 告警、19 移除）；findDOMNode → ref；合成事件池 → React 17 移除；getInitialProps → getStaticProps/getServerSideProps；react-test-renderer → 18.3 起弃用、19 起告警，迁移至 RTL；Enzyme → RTL；Flipper → RN 内置调试器；CRA → Vite/Next.js。
 - 来源未考：source-code 部分全部页面没有外部链接，这些页面的知识为站内整理，未考外部出处；api 部分与 typescript-react 第 6/7 章、architecture Hooks 章的版本对照节引用 React 官方升级指南，其余条目仍为站内整理；basics、ecosystem 仅少量页面带链接，architecture 除版本对照节外无外部链接，官方文档一节的 React 官方与 RFC 条目集中在 future 部分。
 - 交叉链接：本页所有站内链接指向正文页与锚点；各部分之间的章节对应关系见各部分 README 与[首页目录](/)。
+
+- [术语速查：术语表](./glossary.md)（中英对照、一句话定义、权威出处与相关页）。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)

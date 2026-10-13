@@ -307,3 +307,12 @@
 | 状态更新 | 批处理范围扩大，循环的渲染阶段更新直接报错 | [setState](setstate.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · 描述 UI](https://react.dev/learn/describing-the-ui)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

@@ -103,3 +103,14 @@
 | 新 JSX transform | 可选 | **必须启用** | ref 作为 prop 等能力依赖新 transform |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · Component](https://react.dev/reference/react/Component)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

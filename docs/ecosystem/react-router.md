@@ -230,3 +230,12 @@ function NavigateButton() {
 ### 总结
 
 本章介绍了如何在 React 应用中使用 React Router 实现路由功能，包括基本配置、路由参数、动态加载、嵌套路由、页面跳转、路由保护和编程式导航。掌握这些技术可以帮助你创建更复杂和动态的单页面应用。
+
+## 参考资料
+
+- [React Router 官方文档](https://reactrouter.com/home)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)

@@ -63,3 +63,13 @@ TypeScript 拥有一个活跃的社区和良好的支持，持续更新和改进
 ### 总结
 
 选择 TypeScript 的主要原因包括静态类型检查、强大的工具支持、现代 JavaScript 特性、类型推断、对大型项目的支持、增强的代码文档以及广泛的社区和企业支持。TypeScript 的这些优势可以显著提高开发效率和代码质量，使其成为现代前端和后端开发中的热门选择。
+
+## 参考资料
+
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

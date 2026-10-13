@@ -32,3 +32,11 @@
 - 配置 Next.js 实现 SSR/SSG/ISR 混合渲染
 - 建立分层测试策略（单元→集成→E2E）
 - 搭建包含类型检查、Lint、测试、构建的 CI 流水线
+
+## 参考资料
+
+- [React 官方文档 · 参考](https://react.dev/reference/react)
+
+## 相关页面
+
+- [ci-code-quality](ci-code-quality.md)

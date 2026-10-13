@@ -122,3 +122,12 @@ const memoizedCallback = useCallback(() => { /* handler */ }, [dependencies]);
 ### 总结
 
 本章深入探讨了 React Hooks 的源码实现，包括 `useState`、`useEffect`、`useContext`、`useReducer` 和自定义 Hooks。理解这些 Hooks 的内部实现有助于开发者更好地使用它们，并优化 React 应用的性能。通过源码分析，可以更深入地了解 React 的 Hooks 如何管理状态和副作用，提供了更强的工具来构建复杂的用户界面。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

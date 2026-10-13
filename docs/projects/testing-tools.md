@@ -130,3 +130,14 @@
     - **Husky**：用于在 Git 提交和推送时自动运行 lint 和测试脚本。
 
 通过使用这些测试工具和方法，可以有效地提高 React 应用的质量和稳定性，确保在不同环境下的功能正常。
+
+## 参考资料
+
+- [Testing Library 官方文档](https://testing-library.com/docs/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [component-development](/typescript-react/component-development.md)
+- [profiler](/typescript-react/profiler.md)

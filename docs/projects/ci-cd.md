@@ -168,3 +168,14 @@
 5. **监控和反馈**：监控部署过程，获取部署结果的反馈，确保应用程序正常运行。
 
 通过持续集成和自动化部署，可以显著提高开发效率，减少手动操作的错误，并确保应用程序的质量和稳定性。
+
+## 参考资料
+
+- [ESLint 官方文档](https://eslint.org/docs/latest/)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [react-ecosystem](react-ecosystem.md)
+- [knowledge](/knowledge.md)

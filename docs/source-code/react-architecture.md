@@ -44,3 +44,12 @@ React 的组件模型是构建用户界面的核心。组件是 React 应用的�
 #### 总结
 
 React 的架构设计通过虚拟 DOM、Reconciliation 和 Fiber 等技术实现了高效的用户界面更新。虚拟 DOM 减少了对真实 DOM 的操作，Reconciliation 算法优化了更新的性能，而 Fiber 架构则引入了任务分解和优先级调度，提高了应用的响应性。了解这些核心概念有助于我们更好地使用和优化 React 应用。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

@@ -259,3 +259,13 @@ ECMAScript 6（ES6），也称为 ECMAScript 2015，是 JavaScript 语言的一�
 #### 15. 总结
 
 ES6 及之后版本引入了许多新的特性，显著提升了 JavaScript 的表达能力和开发体验。这些特性包括新的语法、数据结构、异步处理机制、模块化支持等。掌握这些特性有助于编写更简洁、可维护和高效的代码。
+
+## 参考资料
+
+- [ECMAScript 规范](https://tc39.es/ecma262/)
+- [MDN JavaScript 指南](https://developer.mozilla.org/en-us/docs/Web/JavaScript/Guide)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)

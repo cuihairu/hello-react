@@ -151,3 +151,14 @@
 - **Props**：用于从父组件传递数据和回调函数到子组件，确保组件的配置和行为可以通过外部数据进行控制。
 
 理解 `state` 和 `props` 的使用和区别，是构建和管理 React 组件的基础。`state` 管理组件的内部状态，`props` 使组件能够接收外部数据并根据这些数据进行渲染。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [component-api](component-api.md)
+- [glossary](/glossary.md)

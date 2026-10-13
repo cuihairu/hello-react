@@ -66,3 +66,14 @@ function useEffect(create, deps) {
 - **`useEffect`**：用于处理副作用。它的内部实现涉及副作用函数的注册、执行和清理。副作用的执行时机和依赖关系由 React 的调度机制控制。
 
 了解这两个 Hook 的内部工作原理可以帮助开发者更高效地使用它们，并在构建复杂应用时更好地管理状态和副作用。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)

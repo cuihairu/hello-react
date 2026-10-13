@@ -156,3 +156,15 @@ Render Props 模式是 React 中一种强大的模式，通过它可以实现组
 | 值与状态的跨层共享 | 依赖 render props / HOC | **新增 `use`** | 异步组件内可直接读取 Promise 与 Context，见[React 19 新特性](../future/react-new-features.md) |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · 管理状态](https://react.dev/learn/managing-state)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

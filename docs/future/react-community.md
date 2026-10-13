@@ -178,7 +178,7 @@ npx react-codemod update-react-imports .
 |------|------|------|----------|
 | [React 官方博客](https://react.dev/blog) | 官方发布 | 重大版本 | 发布日志、迁移指南、新特性演示 |
 | [React RFCs](https://github.com/reactjs/rfcs) | 设计讨论 | 持续 | 提案状态、破坏性变更预警 |
-| [React DevTools 更新](https://github.com/facebook/react-devtools) | 工具 | 月度 | 调试新功能、性能分析增强 |
+| [React DevTools 更新](https://github.com/react/react-devtools) | 工具 | 月度 | 调试新功能、性能分析增强 |
 | [Next.js 博客](https://nextjs.org/blog) | 框架标杆 | 月度 | RSC 落地实践、Compiler 集成 |
 | [TanStack 博客](https://tanstack.com/blog) | 生态库 | 月度 | 数据获取、路由、表单最佳实践 |
 | [Reactiflux Discord](https://discord.gg/reactiflux) | 社区即时 | 实时 | 疑难解答、早期反馈 |
@@ -196,3 +196,13 @@ npx react-codemod update-react-imports .
 ---
 
 > **原则**：**跟进不等于追新**。每项新特性/库升级都要经过「收益评估 → 试用验证 → 灰度发布」三步走，核心业务优先稳定，边缘场景先试新。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [ci-code-quality](/ecosystem/ci-code-quality.md)- [unit-integration-tests](/ecosystem/unit-integration-tests.md)- [knowledge](/knowledge.md)

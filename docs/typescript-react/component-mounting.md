@@ -217,3 +217,12 @@ function Example() {
 ## 4. 总结
 
 理解组件的挂载与卸载过程对于管理组件生命周期中的副作用非常重要。通过合理使用生命周期方法和 Hooks，你可以有效地管理数据获取、事件绑定、定时器和清理操作，确保组件在生命周期的不同阶段正确地执行所需的操作。
+
+## 参考资料
+
+- [React 官方文档 · 提交与挂载](https://react.dev/learn/render-and-commit)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

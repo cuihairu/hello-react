@@ -128,3 +128,15 @@ handleClick = (event) => {
 | `defaultProps` / `propTypes`（事件组件） | 可用 | **已移除 / 被忽略** | 函数组件改用默认参数与 TypeScript |
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
+
+## 参考资料
+
+- [React 官方文档 · 响应事件](https://react.dev/learn/responding-to-events)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)
+- [README](README.md)
+- [deep-dive-components](deep-dive-components.md)

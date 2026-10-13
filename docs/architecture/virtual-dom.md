@@ -86,3 +86,14 @@ function applyUpdates(patch) {
 ---
 
 了解 Virtual DOM 的概念和实现方式有助于更好地理解 React 的性能优化策略以及 React 在处理复杂 UI 更新时的工作原理。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

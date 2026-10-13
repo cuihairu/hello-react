@@ -70,3 +70,13 @@ React 最初发布于 2013 年，其核心理念是通过 Virtual DOM 来优化 
 为了解决这些问题，React 团队在 2017 年引入了 Fiber 架构，提供了更灵活和高效的更新机制。Fiber 架构通过引入可中断的、渐进式的更新策略，解决了旧版架构的一些性能问题，并改进了组件生命周期管理。
 
 理解旧版架构的优劣以及历史背景，有助于更好地理解 React 的发展历程和当前架构的改进方向。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [knowledge](/knowledge.md)

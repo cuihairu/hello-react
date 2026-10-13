@@ -170,3 +170,16 @@ npm install -g sass
 ### 3.1.6 总结
 
 LESS 和 SASS 是强大的 CSS 预处理器，通过提供变量、混合宏、嵌套规则等功能，使 CSS 编写更加高效和模块化。根据项目的需求和团队的熟悉程度选择合适的预处理器，可以大大提高样式开发的效率和维护性。
+
+## 参考资料
+
+- [Sass 文档](https://sass-lang.com/documentation/)
+- [Less 功能](https://lesscss.org/features/)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [css-mixins-inheritance](css-mixins-inheritance.md)
+- [css-nesting-modular](css-nesting-modular.md)
+- [deep-dive-css](deep-dive-css.md)
+- [css-sass-less-optimization](css-sass-less-optimization.md)

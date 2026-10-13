@@ -255,3 +255,12 @@ HTML 提供了许多标签，用于定义网页的各种内容和结构。了解
 ### 2.2 总结
 
 掌握常用的 HTML 元素和属性对于创建结构良好、功能完整的网页至关重要。通过合理使用这些元素和属性，您可以构建出高效、用户友好的网页内容。
+
+## 参考资料
+
+- [MDN HTML 元素](https://developer.mozilla.org/en-us/docs/Web/HTML/Element)
+
+## 相关页面
+
+- [css-box-model-layout](css-box-model-layout.md)
+- [html-css-basics](html-css-basics.md)

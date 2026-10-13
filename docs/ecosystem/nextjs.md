@@ -177,3 +177,14 @@ npm run export
 ```
 
 这些基础用法可以帮助你快速上手 Next.js 开发。你可以根据项目需求深入探索 Next.js 提供的其他高级功能，如增量静态再生（ISR）、自定义 webpack 配置、国际化支持等。
+
+## 参考资料
+
+- [Next.js 官方文档](https://nextjs.org/docs)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [glossary](/glossary.md)
+- [knowledge](/knowledge.md)

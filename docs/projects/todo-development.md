@@ -323,3 +323,13 @@ npm start
 ```
 
 通过这些步骤，你将能够使用 React 和 TypeScript 开发一个功能完善的 Todo 应用。这不仅提供了良好的用户体验，还利用 TypeScript 的类型安全性提高了代码的可靠性和维护性。
+
+## 参考资料
+
+- [React 官方文档 · 学习路径](https://react.dev/learn)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [knowledge](/knowledge.md)
+- [README](README.md)

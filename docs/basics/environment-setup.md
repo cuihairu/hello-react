@@ -48,3 +48,12 @@ ESLint 和 Prettier 是两种重要的工具，用于保持代码风格的一致
 - 选择和配置合适的代码编辑器与开发工具。
 - 配置 ESLint 和 Prettier，确保代码风格一致性和高质量代码。
 
+## 参考资料
+
+- [MDN 开始使用 Web](https://developer.mozilla.org/en-us/docs/Learn/Getting_started_with_the_web)
+- [Node.js 下载](https://nodejs.org/en/download)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)

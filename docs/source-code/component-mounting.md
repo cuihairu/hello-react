@@ -72,3 +72,14 @@
 #### 总结
 
 理解组件挂载与更新的流程及其生命周期方法的调用顺序是编写高效、可维护的 React 组件的基础。通过正确地使用这些方法，可以有效管理组件的状态、优化性能，并处理各种副作用和错误情况。
+
+## 参考资料
+
+- [React 仓库](https://github.com/react/react)
+
+<!-- BACKLINKS-AUTO -->
+## 相关页面
+
+- [README](README.md)
+- [react-internals](react-internals.md)
+- [glossary](/glossary.md)
