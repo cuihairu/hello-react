@@ -1,4 +1,4 @@
-第13章：深入理解 React 内部机制
+深入理解 React 内部机制
 
 在这一章，我们将深入探讨 React 的内部机制，特别是虚拟 DOM 的实现原理、Reconciliation 算法的工作方式以及 React Fiber 架构的更新机制。这些知识有助于我们更好地理解 React 如何高效地更新和渲染组件。
 

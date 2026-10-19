@@ -116,7 +116,7 @@
 
 ## 权威书籍要点
 
-九个部分全部正文页通读后没有发现任何书籍引用。正文里的书名号只出现本站自己的章节名（如《React.js 全面指南》《第5章：TypeScript 基础》），不是外部书目。本节照实记空：站内知识来自官方文档、RFC 与社区文章，没有书目支撑，来源未考。
+现有主题正文页中没有发现书籍引用。正文里的书名号只出现本站自己的章节名（如《React.js 全面指南》《TypeScript 基础》），不是外部书目。本节照实记空：站内知识来自官方文档、RFC 与社区文章，没有书目支撑，来源未考。
 
 ## 官方文档要点（带链接）
 
@@ -266,10 +266,10 @@ React Native 生态：
 
 ## 资料体系
 
-- 版本口径：各部分写作时点不同。API 部分、第二部分第 6/7 章（React 基础、组件深度解析）与第三部分 Hooks 章正文以 React 18 为准，相关页附「React 18 → 19 版本对照」表（移除、弃用、新增与替代方案）；未来部分覆盖 React 19 系列（至 19.3 正式版）与 Canary 版本，部分 API 处于实验阶段；时间线覆盖 2010-2026 共 28 个节点。引用时以各部分标注的版本为准。
+- 版本口径：各专题写作时点不同。React 基础、组件与 Hooks 专题正文以 React 18 为准，相关页附「React 18 → 19 版本对照」表；未来专题覆盖 React 19 与 Canary 版本，部分 API 处于实验阶段。引用时以页面标注的版本为准。
 - 弃用 API 汇总：ReactDOM.render → createRoot；函数组件 defaultProps → 默认参数（18.3 告警、19 移除）；findDOMNode → ref；合成事件池 → React 17 移除；getInitialProps → getStaticProps/getServerSideProps；react-test-renderer → 18.3 起弃用、19 起告警，迁移至 RTL；Enzyme → RTL；Flipper → RN 内置调试器；CRA → Vite/Next.js。
 - 来源未考：source-code 部分全部页面没有外部链接，这些页面的知识为站内整理，未考外部出处；api 部分与 typescript-react 第 6/7 章、architecture Hooks 章的版本对照节引用 React 官方升级指南，其余条目仍为站内整理；basics、ecosystem 仅少量页面带链接，architecture 除版本对照节外无外部链接，官方文档一节的 React 官方与 RFC 条目集中在 future 部分。
-- 交叉链接：本页所有站内链接指向正文页与锚点；各部分之间的章节对应关系见各部分 README 与[首页目录](/)。
+- 交叉链接：本页所有站内链接指向正文页与锚点；各主题之间的对应关系见主题索引与[首页](/)。
 
 - [术语速查：术语表](./glossary.md)（中英对照、一句话定义、权威出处与相关页）。
 

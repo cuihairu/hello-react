@@ -3,11 +3,11 @@ layout: home
 
 hero:
   name: Hello React
-  text: React 知识体系
-  tagline: 从前端基础到工程实战：TypeScript、架构演变、Hooks、构建工具、源码与生态。
+  text: React 开发笔记
+  tagline: 个人学习笔记、心得与开发经验分享：TypeScript、架构、Hooks、构建工具、源码与生态。
   actions:
     - theme: brand
-      text: 开始阅读
+      text: 浏览笔记
       link: /basics/README
     - theme: alt
       text: GitHub
@@ -29,7 +29,7 @@ features:
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档](https://react.dev/learn)
 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面

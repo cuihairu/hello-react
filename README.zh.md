@@ -37,46 +37,26 @@ npm run audit:links # 扫描构建产物中的死链与失效锚点
 
 ```
 hello-react/
-├── book.toml                 # mdbook 配置（保留不动）
-├── src/                      # mdbook 源文件（保留不动）
-│   ├── SUMMARY.md            # 目录映射底稿
-│   ├── basics/               # 第一部分：前端基础
-│   ├── typescript-react/     # 第二部分：TypeScript 与 React
-│   ├── architecture/         # 第三部分：架构演变
-│   ├── build-tools/          # 第四部分：构建工具
-│   ├── source-code/          # 第五部分：源码解析
-│   ├── ecosystem/            # 第六部分：生态系统
-│   ├── api/                  # 第七部分：API 参考
-│   ├── projects/             # 第八部分：项目实战
-│   └── future/               # 未入目录（附录）
-├── docs/                     # VitePress 源文件（src/ 的副本 + 配置）
-│   ├── public/               # 静态资产
-│   │   ├── logo.svg          # 品牌 Logo
-│   │   └── favicon.svg       # Favicon
-│   ├── .vitepress/
-│   │   ├── config.mts        # 站点配置
-│   │   ├── sidebar.json      # 侧边栏（由 parse_summary.py 生成）
-│   │   └── theme/            # 主题扩展
-│   │       ├── index.mjs
-│   │       └── style.css     # 品牌色、中文排印、代码样式
-│   └── index.md              # 首页（layout: home）
+├── docs/                     # VitePress 内容与站点配置（主编辑源）
+│   ├── .vitepress/sidebar.json # 站点侧栏权威源
+│   ├── api/ architecture/ basics/ build-tools/ ecosystem/
+│   ├── future/ projects/ source-code/ typescript-react/
+│   ├── public/ review/        # 静态资源与审计报告
+│   ├── index.md              # 首页
+│   ├── knowledge.md / timeline.md / glossary.md
+│   └── SUMMARY.md            # mdBook 遗留说明，不是导航副本
+├── src/                      # mdBook 遗留源文件，非站点编辑源
+├── scripts/audit-links.mjs   # 构建产物站内链接审计
 ├── package.json              # 依赖与脚本
-├── scripts/
-│   └── audit-links.mjs       # 构建产物死链门禁
-├── .github/workflows/
-│   └── deploy-docs.yml       # Pages 部署工作流
-└── README.md                 # 仓库说明
+└── README.md / README.zh.md  # 项目说明（中英文）
 ```
+
+VitePress 从 `docs/` 构建；新增或修改站点内容请编辑 `docs/`。`src/` 与 `book.toml` 为遗留 mdBook 文件，保留原状。站点侧栏只维护在 `docs/.vitepress/sidebar.json`；`docs/SUMMARY.md` 仅说明这一规则。`docs/` 下现有 154 个可构建 Markdown 页面，另有被排除的 `SUMMARY.md`。
 
 ## 迁移说明
 
-本站已从 mdbook 迁移至 VitePress：
-- 内容完整保留，151 页文档无丢失
-- 侧边栏由 `src/SUMMARY.md` 自动映射生成
-- 中文正文首行缩进 2em、行高 1.75、留白充足
-- 品牌色源自 Logo 主色 #087EA4 / 强调色 #61DAFB，亮暗两套 Token
-- 标题与表格移除装饰性 emoji，保留语义性标记
+本站由 mdBook 迁移至 VitePress。内容按主题目录存放，侧栏用于浏览；它是个人学习笔记、心得与开发经验分享，不按课程或学习阶段组织。
 
-## License
+## 许可协议
 
 本作品采用 [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) 许可协议发布。
