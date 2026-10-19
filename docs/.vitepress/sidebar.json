@@ -8,12 +8,12 @@
     "link": "/knowledge"
   },
   {
-    "text": "第一部分：前端基础",
+    "text": "前端基础",
     "link": "/basics/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第1章：开发环境搭建",
+        "text": "开发环境搭建",
         "link": "/basics/environment-setup",
         "collapsed": true,
         "items": [
@@ -44,7 +44,7 @@
         ]
       },
       {
-        "text": "第2章：HTML 与 CSS 基础",
+        "text": "HTML 与 CSS 基础",
         "link": "/basics/html-css-basics",
         "collapsed": true,
         "items": [
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "text": "第3章：深入理解 CSS",
+        "text": "深入理解 CSS",
         "link": "/basics/deep-dive-css",
         "collapsed": true,
         "items": [
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "text": "第4章：JavaScript 与 ES6+ 基础",
+        "text": "JavaScript 与 ES6+ 基础",
         "link": "/basics/js-es6-basics",
         "collapsed": true,
         "items": [
@@ -135,12 +135,12 @@
     ]
   },
   {
-    "text": "第二部分：TypeScript 与 React.js 入门",
+    "text": "TypeScript 与 React.js",
     "link": "/typescript-react/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第5章：TypeScript 基础",
+        "text": "TypeScript 基础",
         "link": "/typescript-react/typescript-basics",
         "collapsed": true,
         "items": [
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "text": "第6章：React 基础",
+        "text": "React 基础",
         "link": "/typescript-react/react-basics",
         "collapsed": true,
         "items": [
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "text": "第7章：组件深度解析",
+        "text": "组件深度解析",
         "link": "/typescript-react/deep-dive-components",
         "collapsed": true,
         "items": [
@@ -255,12 +255,12 @@
     ]
   },
   {
-    "text": "第三部分：React 的架构演变",
+    "text": "React 架构",
     "link": "/architecture/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第8章：旧版架构",
+        "text": "旧版架构",
         "link": "/architecture/old-architecture",
         "collapsed": true,
         "items": [
@@ -279,7 +279,7 @@
         ]
       },
       {
-        "text": "第9章：新版架构",
+        "text": "新版架构",
         "link": "/architecture/new-architecture",
         "collapsed": true,
         "items": [
@@ -302,7 +302,7 @@
         ]
       },
       {
-        "text": "第10章：Hooks 的深度解析",
+        "text": "Hooks 的深度解析",
         "link": "/architecture/hooks-deep-dive",
         "collapsed": true,
         "items": [
@@ -331,12 +331,12 @@
     ]
   },
   {
-    "text": "第四部分：编译系统与构建工具",
+    "text": "构建工具",
     "link": "/build-tools/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第11章：构建工具与自动化",
+        "text": "构建工具与自动化",
         "link": "/build-tools/build-tools",
         "collapsed": true,
         "items": [
@@ -363,7 +363,7 @@
         ]
       },
       {
-        "text": "第12章：Taro 与多端开发",
+        "text": "Taro 与多端开发",
         "link": "/build-tools/taro",
         "collapsed": true,
         "items": [
@@ -396,12 +396,12 @@
     ]
   },
   {
-    "text": "第五部分：React.js 源码解析",
+    "text": "React 源码",
     "link": "/source-code/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第13章：深入理解 React 内部机制",
+        "text": "深入理解 React 内部机制",
         "link": "/source-code/react-internals",
         "collapsed": true,
         "items": [
@@ -424,7 +424,7 @@
         ]
       },
       {
-        "text": "第14章：React 生命周期的内部实现",
+        "text": "React 生命周期的内部实现",
         "link": "/source-code/lifecycle",
         "collapsed": true,
         "items": [
@@ -443,7 +443,7 @@
         ]
       },
       {
-        "text": "第15章：React Hooks 源码分析",
+        "text": "React Hooks 源码分析",
         "link": "/source-code/hooks-source",
         "collapsed": true,
         "items": [
@@ -464,12 +464,12 @@
     ]
   },
   {
-    "text": "第六部分：React 生态系统",
+    "text": "React 生态",
     "link": "/ecosystem/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第16章：React 路由",
+        "text": "React 路由",
         "link": "/ecosystem/react-router",
         "collapsed": true,
         "items": [
@@ -488,7 +488,7 @@
         ]
       },
       {
-        "text": "第17章：状态管理与数据流",
+        "text": "状态管理与数据流",
         "link": "/ecosystem/state-management",
         "collapsed": true,
         "items": [
@@ -507,7 +507,7 @@
         ]
       },
       {
-        "text": "第18章：服务器端渲染（SSR）",
+        "text": "服务器端渲染（SSR）",
         "link": "/ecosystem/ssr",
         "collapsed": true,
         "items": [
@@ -526,7 +526,7 @@
         ]
       },
       {
-        "text": "第19章：测试与质量保证",
+        "text": "测试与质量保证",
         "link": "/ecosystem/testing",
         "collapsed": true,
         "items": [
@@ -551,12 +551,12 @@
     ]
   },
   {
-    "text": "第七部分：React API 参考",
+    "text": "React API 参考",
     "link": "/api/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第20章：React 核心 API 参考",
+        "text": "React 核心 API 参考",
         "link": "/api/react-core",
         "collapsed": true,
         "items": [
@@ -607,7 +607,7 @@
         ]
       },
       {
-        "text": "第21章：React 扩展 API",
+        "text": "React 扩展 API",
         "link": "/api/react-extensions",
         "collapsed": true,
         "items": [
@@ -624,12 +624,12 @@
     ]
   },
   {
-    "text": "第八部分：项目实战与生态系统",
+    "text": "项目与生态",
     "link": "/projects/README",
     "collapsed": true,
     "items": [
       {
-        "text": "第22章：项目实战 - 多功能 Todo 应用",
+        "text": "项目实战 - 多功能 Todo 应用",
         "link": "/projects/todo-app",
         "collapsed": true,
         "items": [
@@ -652,7 +652,7 @@
         ]
       },
       {
-        "text": "第23章：React 生态系统",
+        "text": "React 生态系统",
         "link": "/projects/react-ecosystem",
         "collapsed": true,
         "items": [

@@ -1,10 +1,10 @@
-# 第七部分：React API 参考
+# React API 参考
 
 本部分提供 React 核心与扩展 API 的系统性参考，适合查阅与速查。
 
 ## 章节概览
 
-### 第20章：React 核心 API 参考
+### React 核心 API 参考
 - [React 核心概念与 API 概述](react-overview.md) —— 组件化、JSX、虚拟 DOM 等核心概念与主要 API 一览
 - [JSX 语法与 JSX 相关 API](jsx-api.md) —— createElement、cloneElement、createContext、forwardRef、Fragment
 - [组件相关 API：React.Component、PureComponent](component-api.md) —— 类组件基类、浅比较优化、用法对比
@@ -17,7 +17,7 @@
 - [Portals 与 Profiler API](portals-profiler-api.md) —— createPortal、Profiler、onRender 回调参数
 - [错误边界相关 API](error-boundaries-api.md) —— componentDidCatch、getDerivedStateFromError、限制场景
 
-### 第21章：React 扩展 API
+### React 扩展 API
 - [React 的高阶函数与模式](react-hoc-patterns.md) —— HOC、Render Props、Context、lazy/Suspense、错误边界、memo
 - [其他常用的辅助 API](other-apis.md) —— Fragment、StrictMode、createRef、forwardRef、Profiler、batchedUpdates
 
@@ -25,7 +25,7 @@
 
 - **开发时查阅**：配合 IDE 类型提示使用，本文档补充官方文档未覆盖的细节与陷阱
 - **版本对照**：正文以 React 18 为准，各页附「React 18 → 19 版本对照」表，列出版本变化与替代方案
-- **源码对照**：每个 API 条目关联「第五部分：源码解析」对应章节，便于深入理解实现
+- **源码对照**：每个 API 条目关联源码专题对应页面，便于深入理解实现
 
 ## React 19 速查
 
@@ -66,3 +66,4 @@ React 19 移除与弃用的 API 汇总如下，各页的「React 18 → 19 版�
 ## 相关页面
 
 - [component-api](component-api.md)
+- Hooks 设计与实践见[架构专题](../architecture/README.md)，内部调用机制见[源码专题](../source-code/README.md)。
