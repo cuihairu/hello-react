@@ -51,7 +51,7 @@ hello-react/
 └── README.md / README.zh.md  # 项目说明（中英文）
 ```
 
-VitePress 从 `docs/` 构建；新增或修改站点内容请编辑 `docs/`。`src/` 与 `book.toml` 为遗留 mdBook 文件，保留原状。站点侧栏只维护在 `docs/.vitepress/sidebar.json`；`docs/SUMMARY.md` 仅说明这一规则。`docs/` 下现有 154 个可构建 Markdown 页面，另有被排除的 `SUMMARY.md`。
+VitePress 从 `docs/` 构建；新增或修改站点内容请编辑 `docs/`。`src/` 与 `book.toml` 为遗留 mdBook 文件，保留原状。站点侧栏只维护在 `docs/.vitepress/sidebar.json`；`docs/SUMMARY.md` 仅说明这一规则。`docs/` 下现有 156 个可构建 Markdown 页面，另有被排除的 `SUMMARY.md`。
 
 ## 迁移说明
 

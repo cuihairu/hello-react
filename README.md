@@ -51,7 +51,7 @@ hello-react/
 └── README.md / README.zh.md  # project notes (English and Chinese)
 ```
 
-VitePress builds from `docs/`; edit `docs/` for site content. `src/` and `book.toml` are retained mdBook artifacts. Maintain site navigation only in `docs/.vitepress/sidebar.json`; `docs/SUMMARY.md` documents that rule. There are 154 buildable Markdown pages under `docs/`, plus the excluded `SUMMARY.md`.
+VitePress builds from `docs/`; edit `docs/` for site content. `src/` and `book.toml` are retained mdBook artifacts. Maintain site navigation only in `docs/.vitepress/sidebar.json`; `docs/SUMMARY.md` documents that rule. There are 156 buildable Markdown pages under `docs/`, plus the excluded `SUMMARY.md`.
 
 ## About These Notes
 
