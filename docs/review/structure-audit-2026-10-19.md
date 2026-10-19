@@ -86,10 +86,12 @@
 
 ## 判断与推荐
 
+> **审计时的原始建议（执行时已按用户口径修订）：** 下列“课程阅读轴”是报告初稿中的建议，本次不采纳；站点定位以个人学习笔记、心得与经验分享为准。
+
 建议把 **5 套并行入口/索引轴收敛为 3 套**，实体文件仍按主题组织：
 
 1. **主题内容目录作为唯一存储轴**：保持现有九个主题目录与 URL，不按章节移动文件。
-2. **课程阅读轴作为唯一教学导航轴**：保留 8 部分/23 章侧栏顺序，让初学者可顺读；章节标签只在导航/聚合页维护，不把序号塞进文件名。
+2. **主题浏览作为导航轴**：保留主题目录、稳定 URL 与跨角度互链；不按课程顺序或学习阶段组织。
 3. **参考与辅助入口作为同一类入口**：API、源码专题分别保留为主题分类；时间线、总纲、术语表及未来专题作为“参考/附录”入口，不再成为额外的平行章节系统。
 
 推荐上述方案，因为它保住了已有主题 URL 与顺序学习体验，同时让“存放位置”和“阅读路径”职责清晰。**不建议把 23 章强行转成 23 个编号目录**：这会制造大量移动和链接风险，也不解决概念/API/源码的多视角需求。
@@ -116,3 +118,28 @@
 1. **先确认 `src/` 与 `docs/` 的关系及唯一编辑源**，这是最高风险的结构问题（`docs/api/hooks-api.md` 与 `src/api/hooks-api.md` 是可核查的同名例子）。
 2. **在现有目录 README 中写清主题边界与阅读顺序**，先减少“同主题散落”的认知成本，不动路径。
 3. **恢复可重复的本地构建/链接核验环境**，使 `npm run docs:build` 能运行；当前仅有旧 dist 审计通过，源码死链未核实。
+
+## 收口执行记录（2026-10-19）
+
+本次按“个人学习笔记、心得与开发经验分享”的口径处理导航与内容。侧栏仍按主题浏览，未新增课程顺序、学习阶段或讲次骨架；原有路径保持不变。
+
+### A：导航权威源
+
+- 权威源为 `docs/.vitepress/sidebar.json`：`docs/.vitepress/config.mts` 将其导入并作为 `themeConfig.sidebar`（配置行 2、25–27）。
+- `docs/SUMMARY.md` 原为重复目录副本（原始行 1–156），已改为维护说明，明确 sidebar 是唯一编辑入口、SUMMARY 不参与构建；见 `docs/SUMMARY.md:1–5`。
+- 侧栏 153 个链接项均唯一（自检：153 项、153 个唯一值、0 个同侧栏重复）。分类标签移除“第 N 部分/第 N 章”，保留原链接；见 `docs/.vitepress/sidebar.json:1–8` 及各主题分组。
+
+### B：跨轴重复分组与证据
+
+| 分类 | 页面与改动 | 两处文本对比证据 |
+|---|---|---|
+| 真重复，收敛 1 组 | SSR 定义、CSR/SSR 对比及优缺点以 `docs/ecosystem/what-is-ssr.md` 为权威；`docs/ecosystem/ssr.md` 改为摘要并链接权威页，保留 React SSR API 与实现笔记。 | 修改前 `what-is-ssr.md:1–29` 概述 SSR 生成 HTML、CSR 对比、首屏/SEO/社交预览及服务端负载/复杂度/交互缺点；`ssr.md:1–25` 逐项重述相同定义、优点和缺点。修改后 `ssr.md:3–5` 只保留要点摘要并链接 `what-is-ssr.md`，API 内容从 `ssr.md:7` 起保留。 |
+| 不同角度，保留 3 组 | Hooks 概念/实践、测试工具/测试方法、Next.js 框架概览/使用笔记均保留并在对应索引中互链。 | Hooks：`architecture/hooks-deep-dive.md` 关注设计与实践，`source-code/hooks-source.md` 关注 Dispatcher/源码分发；`api/hooks-api.md` 是公开 API 查询，结论和用途不同。测试：`ecosystem/testing-tools.md` 着重工具比较，`projects/testing-tools.md` 着重项目安装/配置示例，`ecosystem/testing.md` 讨论测试类型与策略。Next.js：`ecosystem/nextjs.md` 记录创建、路由与数据获取细节，`projects/nextjs-overview.md` 放在项目生态语境概览；保留并由两侧索引交叉发现，不硬并。 |
+
+以上保留组不是对同一事实复制后择一删减；不同页面承担概念、API、源码、工具选择或项目应用角度。URL 与文件均保留。
+
+### C：口径与入口校准
+
+- `README.md:20–42`、`README.zh.md:20–42` 已改为真实目录：列出 `docs/` 当前目录、将 `docs/` 说明为 VitePress 编辑源、将 `src/` 和 `book.toml` 标为 mdBook 遗留文件，并将可构建 Markdown 数修正为 154（不含被排除的 SUMMARY）。
+- `docs/.vitepress/sidebar.json` 分类标签已不再使用讲次编号；未发现死条目，153 个链接均映射至现存 Markdown。
+- `docs/index.md` 继续作为 `/` 首页入口，不需加入侧栏；`docs/knowledge.md`、`timeline.md` 与 `glossary.md` 已在侧栏根级入口。
