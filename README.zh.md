@@ -13,13 +13,13 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React 知识体系 · [在线阅读](https://cuihairu.github.io/hello-react/) · [知识点总纲](https://cuihairu.github.io/hello-react/knowledge)
+React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/) · [知识点总纲](https://cuihairu.github.io/hello-react/knowledge)
 
 </div>
 
 ---
 
-从前端基础到工程实战的 React 知识站点，覆盖 TypeScript、架构演变、Hooks 深度解析、构建工具、源码内幕、生态系统与项目实战。
+个人学习笔记、心得与开发经验分享，来自游戏开发者视角，涉及 TypeScript、架构、Hooks、构建工具、源码与生态。
 
 ## 本地开发
 

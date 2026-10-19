@@ -5,7 +5,7 @@ import sidebar from './sidebar.json' with { type: 'json' }
 export default defineConfig({
   lang: 'zh-CN',
   title: 'Hello React',
-  description: 'React 知识体系——从前端基础到 TypeScript、架构演变、Hooks、构建工具、源码解析、生态系统与项目实战',
+  description: '游戏开发者的 React 学习笔记、心得与开发经验分享，涉及 TypeScript、架构、Hooks、构建工具、源码与生态',
   base: '/hello-react/',
   cleanUrls: true,
   lastUpdated: true,

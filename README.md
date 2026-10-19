@@ -13,13 +13,13 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React knowledge base · [Read online](https://cuihairu.github.io/hello-react/) · [Knowledge map](https://cuihairu.github.io/hello-react/knowledge)
+React development notes · [Read online](https://cuihairu.github.io/hello-react/) · [Knowledge map](https://cuihairu.github.io/hello-react/knowledge)
 
 </div>
 
 ---
 
-A React knowledge site spanning frontend fundamentals to engineering practice, covering TypeScript, architecture evolution, in-depth Hooks, build tools, source code internals, the ecosystem, and hands-on projects.
+A personal collection of React learning notes, takeaways, and development experience from a game developer, covering TypeScript, architecture, Hooks, build tools, source code, and the ecosystem.
 
 ## Local Development
 
