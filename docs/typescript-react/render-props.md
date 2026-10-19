@@ -139,7 +139,7 @@ const App = () => (
 
 ---
 
-Render Props 模式是 React 中一种强大的模式，通过它可以实现组件逻辑和 UI 的复用与解耦。了解 Render Props 的使用和注意事项，可以帮助你更好地设计和组织 React 组件。
+Render Props 模式是 React 中一种强大的模式，通过它可以实现组件逻辑和 UI 的复用与解耦。Render Props 能把渲染逻辑交给调用方；使用时需要留意函数 prop 的可读性和渲染频率。
 
 ---
 

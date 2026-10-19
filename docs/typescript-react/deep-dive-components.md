@@ -1,6 +1,6 @@
 ### 组件深度解析
 
-在本章中，我们将深入探讨 React 组件的核心概念和功能。我们将详细解析 `render` 方法、`setState` 的工作原理、合成事件系统、高阶组件（HOC）、渲染属性（Render Props）、`refs` 的使用、`Context API`、`Portals`、`Profiler` 和错误边界。通过这些内容，你将能够更深入地理解组件的内部机制，并在开发中应用这些知识来提升组件的功能和性能。
+这里整理 React 组件的核心概念和功能，涉及 `render` 方法、`setState` 的工作原理、合成事件系统、高阶组件（HOC）、渲染属性（Render Props）、`refs` 的使用、`Context API`、`Portals`、`Profiler` 和错误边界。这些机制在组件复用、更新和性能排查时都能派上用场。
 
 ---
 

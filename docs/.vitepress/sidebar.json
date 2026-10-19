@@ -4,7 +4,7 @@
     "link": "/timeline"
   },
   {
-    "text": "知识点总纲",
+    "text": "技术索引",
     "link": "/knowledge"
   },
   {
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "text": "深入理解 CSS",
+        "text": "CSS 进阶记录",
         "link": "/basics/deep-dive-css",
         "collapsed": true,
         "items": [

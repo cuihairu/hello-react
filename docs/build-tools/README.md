@@ -1,8 +1,8 @@
 # 编译系统与构建工具
 
-本部分系统讲解前端构建工具链，从 Webpack 到 Vite，再到 Taro 多端开发，覆盖配置、优化与 CI/CD 集成。
+这里整理我在项目里接触过的前端构建工具：Webpack、Vite、Taro，以及配置、优化和 CI/CD 的实践。
 
-## 章节概览
+## 页面索引
 
 ### 构建工具与自动化
 - [前端构建工具概述：Webpack、Vite、Parcel](build-tools-overview.md) —— 架构差异、冷启动/热更新、插件生态、选型建议

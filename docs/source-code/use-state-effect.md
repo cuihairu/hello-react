@@ -1,6 +1,6 @@
 ### `useState` 和 `useEffect` 的内部工作原理
 
-`useState` 和 `useEffect` 是 React Hooks 的两个核心 API，它们使函数组件能够拥有状态管理和副作用处理能力。理解这两个 Hook 的内部工作原理可以帮助开发者更好地利用它们，并优化 React 应用的性能。
+`useState` 和 `useEffect` 是 React Hooks 的两个核心 API，它们使函数组件能够拥有状态管理和副作用处理能力。对照实现细节看这两个 Hook，有助于解释状态更新和副作用调度的行为。
 
 #### 1. `useState` 的内部工作原理
 

@@ -81,11 +81,11 @@ const App = () => (
 
 - **安全性**：确保你应用的安全性，包括使用 HTTPS，防止 XSS 和 CSRF 攻击。
 
-通过这些步骤，你可以有效地部署和优化你的 React 应用，以确保其在生产环境中的高效运行和良好的用户体验。
+这些步骤覆盖 Todo 应用的部署和性能检查，生产环境表现还取决于托管平台与实际流量。
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面

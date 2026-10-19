@@ -1,8 +1,8 @@
 # 展望与未来
 
-本部分跟踪 React 前沿提案与社区动态，帮助你提前布局新特性迁移与技术选型。
+这里记录 React 提案与社区动态，以及它们对升级和技术选型可能产生的影响。
 
-## 章节概览
+## 页面索引
 
 - [React 新特性速览](react-new-features.md) —— React 19/20 候选特性：use、useOptimistic、useActionState、表单 Action、文档元数据
 - [React Concurrent Mode 深度解析](react-concurrent-mode.md) —— 并发渲染原理、Suspense 数据获取、useDeferredValue、startTransition 进阶模式
@@ -12,13 +12,13 @@
 
 ## 阅读建议
 
-- 本部分内容基于 React 18.3+ 与 Canary 版本，部分 API 可能处于实验阶段
+- 这里的记录基于 React 18.3+ 与 Canary 版本，部分 API 仍可能处于实验阶段
 - 建议配合官方 RFC 仓库 (`github.com/reactjs/rfcs`) 与 React 博客同步阅读
 - 生产项目引入实验性特性前，请评估团队承受风险与回滚成本
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 ## 相关页面
 

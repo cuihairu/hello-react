@@ -156,7 +156,7 @@ export default Greeting;
 
 ## 5. 总结
 
-JSX 是一种强大的语法扩展，使得在 JavaScript 中编写 HTML 结构更加简洁和直观。通过使用 JSX，开发者可以更轻松地描述和管理用户界面的结构。理解 JSX 的基本语法和用法是掌握 React 的重要一步。
+JSX 是一种强大的语法扩展，使得在 JavaScript 中编写 HTML 结构更加简洁和直观。通过使用 JSX，开发者可以更轻松地描述和管理用户界面的结构。JSX 是 React 组件中描述 UI 的常见语法。
 
 ## 参考资料
 

@@ -1,10 +1,10 @@
-# 项目实战与生态系统
+# 项目记录与生态系统
 
-本部分通过完整的 TodoMVC 进阶项目，串联 React + TypeScript + Redux + 测试 + CI/CD 全流程，并拓展 Next.js、React Native、自动化部署等生态实战。
+这里用 TodoMVC 记录 React、TypeScript、Redux、测试和 CI/CD 的项目实践，也整理 Next.js、React Native 与自动化部署相关经验。
 
-## 章节概览
+## 页面索引
 
-### 项目实战 - 多功能 Todo 应用
+### 多功能 Todo 应用记录
 - [需求分析与设计](todo-requirements.md) —— 用户故事、数据模型、状态流向、组件拆分、技术选型
 - [使用 React 与 TypeScript 开发应用](todo-development.md) —— 项目脚手架、组件实现、表单处理、本地存储、类型安全
 - [集成 Redux 进行状态管理](todo-redux.md) —— Store 设计、Slice、Thunk 异步、Selector、DevTools、持久化
@@ -22,7 +22,7 @@
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 ## 相关页面
 

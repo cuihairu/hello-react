@@ -275,4 +275,4 @@ React Native 生态：
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)

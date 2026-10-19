@@ -96,7 +96,7 @@ React 的核心理念包括组件化、声明式编程、单向数据流和虚�
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面

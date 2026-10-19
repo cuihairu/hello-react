@@ -1,6 +1,6 @@
 ### 项目实战 - 多功能 Todo 应用
 
-在这一章节中，我们将通过创建一个多功能的 Todo 应用来实践 React 和 TypeScript 的知识。这个应用将涵盖需求分析、设计、开发、状态管理、测试和部署等多个方面。下面是本章节的详细内容。
+这个 Todo 应用记录了我用 React 和 TypeScript 处理需求、设计、开发、状态管理、测试与部署的过程。
 
 ---
 
@@ -385,7 +385,7 @@
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面

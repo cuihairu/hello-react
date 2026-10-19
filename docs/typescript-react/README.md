@@ -1,14 +1,14 @@
-# TypeScript 与 React.js 入门
+# TypeScript 与 React 开发
 
-本部分引导你从零构建 TypeScript + React 开发能力，覆盖类型系统、组件模式与核心 API。
+这里记录 TypeScript 与 React 项目中用到的类型系统、组件模式和核心 API。
 
-## 章节概览
+## 页面索引
 
 ### TypeScript 基础
 - [为什么选择 TypeScript](why-typescript.md) —— 静态类型、工具链、大型项目支撑
 - [TypeScript 安装与配置](setup.md) —— tsconfig.json 关键选项、编译目标、严格模式
 - [基本类型与接口](types-interfaces.md) —— 原始类型、对象类型、接口 vs 类型别名
-- [类与泛型](classes-generics.md) —— 类类型、泛型约束、工具类型入门
+- [类与泛型](classes-generics.md) —— 类类型、泛型约束、工具类型概览
 - [类型推断与类型守卫](type-inference-guards.md) —— 推断流向、is 类型谓词、in/typeof/narrowing
 - [TypeScript 中的模块与命名空间](modules-namespaces.md) —— ESM/CommonJS 互操作、路径映射、声明合并
 - [在 React 项目中使用 TypeScript](react-typescript.md) —— 组件类型、Props/State 泛型、事件处理器类型

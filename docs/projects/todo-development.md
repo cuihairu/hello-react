@@ -14,7 +14,7 @@ cd todo-app
 ```
 
 ::: warning 关于 create-react-app
-CRA 已被 React 官方标记为不再推荐（deprecated），不再接收新特性。新项目建议改用 Vite（`npm create vite@latest todo-app -- --template react-ts`）或 Next.js；本文示例为保持教程独立性仍以 CRA 目录结构讲解，换用其他脚手架时组件代码完全通用。
+CRA 已被 React 官方标记为不再推荐（deprecated），不再接收新特性。新项目建议改用 Vite（`npm create vite@latest todo-app -- --template react-ts`）或 Next.js；本文示例为保持目录结构一致仍以 CRA 为例，换用其他脚手架时组件代码完全通用。
 :::
 
 #### 2. 安装所需依赖
@@ -326,7 +326,7 @@ npm start
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面

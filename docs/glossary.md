@@ -8,7 +8,7 @@
 
 ### React（React）
 用于构建用户界面的 JavaScript 库，采用组件化与声明式编程模型。
-**出处**：[React 官方文档 · 学习路径](https://react.dev/learn)
+**出处**：[React 官方文档（外部链接）](https://react.dev/learn)
 **相关页**：[typescript-react/react-basics](/typescript-react/react-basics)、[typescript-react/react-history-principles](/typescript-react/react-history-principles)
 
 ### 组件（Component）

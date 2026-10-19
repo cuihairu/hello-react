@@ -1,8 +1,8 @@
 # React 生态系统
 
-本部分覆盖 React 周边主流库与工程化体系，解决路由、状态、SSR、测试、CI/CD 等实战问题。
+这里记录 React 周边常用库和工程实践，涉及路由、状态、SSR、测试与 CI/CD。
 
-## 章节概览
+## 页面索引
 
 ### React 路由
 - [React Router 的安装与基本配置](react-router-setup.md) —— v6 API、Routes/Route/Link/Outlet、懒加载

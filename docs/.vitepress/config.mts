@@ -32,7 +32,7 @@ export default defineConfig({
       { text: '源码解析', link: '/source-code/README' },
       { text: '生态系统', link: '/ecosystem/README' },
       { text: 'API 参考', link: '/api/README' },
-      { text: '项目实战', link: '/projects/README' },
+      { text: '项目记录', link: '/projects/README' },
     ],
 
     // 由 mdbook SUMMARY.md 结构映射而来（scripts: parse_summary.py），

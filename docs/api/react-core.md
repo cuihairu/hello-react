@@ -1,6 +1,6 @@
 ### React 核心 API 参考
 
-本章将详细介绍 React 的核心 API，包括 JSX 语法、组件相关 API、生命周期方法、Hooks、Context API、Refs、Portals 和 Profiler 等。每个部分将包括其定义、用法以及常见示例，以帮助读者深入理解 React 的功能和如何在实际项目中应用这些 API。
+这里按用途整理 React 的核心 API，包含 JSX、组件、生命周期、Hooks、Context、Refs、Portals 和 Profiler，并附上常见用法示例。
 
 #### 20.1 JSX 语法与 JSX 相关 API
 
@@ -309,7 +309,7 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 
 #### 总结
 
-本章介绍了 React 的核心 API，从 JSX 语法到组件相关 API，再到生命周期方法、Hooks、Context API、Refs、Portals 和 Profiler。了解和掌握这些 API 能够帮助开发者高效地创建和管理 React 组件、优化应用性能，并提升开发体验。
+这里按 JSX、组件、生命周期、Hooks、Context、Refs、Portals 和 Profiler 整理 React 核心 API，记录它们在组件开发和性能分析中的用途。
 
 ## 参考资料
 

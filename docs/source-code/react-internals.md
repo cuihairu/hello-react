@@ -1,6 +1,6 @@
-深入理解 React 内部机制
+理解 React 内部机制
 
-在这一章，我们将深入探讨 React 的内部机制，特别是虚拟 DOM 的实现原理、Reconciliation 算法的工作方式以及 React Fiber 架构的更新机制。这些知识有助于我们更好地理解 React 如何高效地更新和渲染组件。
+我读 React 源码时主要沿着虚拟 DOM、Reconciliation 和 Fiber 更新机制这几条线索看；这里记下它们如何共同参与组件更新与渲染。
 
 ### 13.1 React 的架构概览
 

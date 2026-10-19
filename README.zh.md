@@ -13,7 +13,7 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/) · [知识点总纲](https://cuihairu.github.io/hello-react/knowledge)
+游戏开发者的 React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/) · [技术索引](https://cuihairu.github.io/hello-react/knowledge)
 
 </div>
 
@@ -55,7 +55,7 @@ VitePress 从 `docs/` 构建；新增或修改站点内容请编辑 `docs/`。`s
 
 ## 迁移说明
 
-本站由 mdBook 迁移至 VitePress。内容按主题目录存放，侧栏用于浏览；它是个人学习笔记、心得与开发经验分享，不按课程或学习阶段组织。
+本站由 mdBook 迁移至 VitePress。内容按主题目录存放，侧栏用于浏览；这里是个人开发笔记与经验记录，内容按主题浏览。
 
 ## 许可协议
 

@@ -1,7 +1,7 @@
 
 ## JavaScript 与 ES6+ 基础
 
-JavaScript 是前端开发的核心语言，ES6（ECMAScript 2015）引入了许多强大的新特性，使得编写现代 JavaScript 代码更加高效和简洁。本章将深入探讨 JavaScript 的基本概念以及 ES6 的主要特性。
+JavaScript 是前端开发的核心语言，ES6（ECMAScript 2015）引入了许多强大的新特性，使得编写现代 JavaScript 代码更加高效和简洁。我把 JavaScript 的基本概念和 ES6 主要特性放在这里，作为项目代码的查阅记录。
 
 ### 4.1 JavaScript 简史与发展
 
@@ -252,7 +252,7 @@ fetchDataAsync();
 
 ### 4.5 总结
 
-本章涵盖了 JavaScript 的基础知识，包括变量声明、数据类型、运算符、控制流与循环，以及 ES6 的主要特性。理解这些基础知识是掌握 JavaScript 和现代前端开发的关键。接下来，将深入探讨《TypeScript 基础》，以扩展你的编程技能。
+这里整理了变量声明、数据类型、运算符、控制流、循环和 ES6 特性；相关 TypeScript 类型实践见《TypeScript 基础》。
 
 ## 参考资料
 

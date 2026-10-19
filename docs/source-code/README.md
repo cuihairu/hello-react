@@ -1,10 +1,10 @@
 # React.js 源码解析
 
-本部分深入剖析 React 内部机制，带你从源码层面理解 React 的核心原理。
+我把读 React 源码时关注的内部机制和关键实现记在这里，方便对照源码查阅。
 
-## 章节概览
+## 页面索引
 
-### 深入理解 React 内部机制
+### 理解 React 内部机制
 - [React 的架构概览](react-architecture.md) —— React 整体架构分层与数据流向
 - [虚拟 DOM 的实现原理](virtual-dom.md) —— Fiber 节点结构、元素创建与 diff 入口
 - [Reconciliation 算法解析](reconciliation.md) —— 协调算法核心逻辑、副作用收集与提交

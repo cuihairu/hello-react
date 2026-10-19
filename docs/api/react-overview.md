@@ -168,7 +168,7 @@ const MyContext = React.createContext(defaultValue);
 ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal-root'));
 ```
 
-这些核心概念和 API 是 React 的基础，掌握它们可以帮助开发者更高效地使用 React 构建和管理复杂的用户界面。
+这些概念和 API 构成了 React 的常用工作模型，组合方式会影响复杂界面的状态边界与更新路径。
 
 ### React 18 → 19 版本对照
 
@@ -181,7 +181,7 @@ ReactDOM.createPortal(<div>Portal Content</div>, document.getElementById('portal
 | `useState` / `useEffect` | 16.8 起稳定 | 无变化 | — |
 | `ReactDOM.createPortal` | 稳定 | 无变化 | — |
 
-各 API 的完整对照见本部分对应章节页。
+各 API 的完整对照见对应主题页。
 
 依据：[React 19 升级指南](https://react.dev/blog/2024/04/25/react-19-upgrade-guide)。
 

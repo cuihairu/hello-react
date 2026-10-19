@@ -1,8 +1,8 @@
 # React 的架构演变
 
-本部分梳理 React 从 Stack Reconciler 到 Fiber、再到并发模式的架构演进脉络，建立宏观认知框架。
+这里按时间梳理 React 从 Stack Reconciler 到 Fiber 和并发渲染的架构变化，记录各阶段的实现取舍。
 
-## 章节概览
+## 页面索引
 
 ### 旧版架构
 - [Virtual DOM 的概念与实现](virtual-dom.md) —— 元素描述、树构建、diff 入口、局限性
@@ -28,7 +28,7 @@
 
 ## 参考资料
 
-- [React 官方文档 · 学习路径](https://react.dev/learn)
+- [React 官方文档（外部链接）](https://react.dev/learn)
 
 ## 相关页面
 

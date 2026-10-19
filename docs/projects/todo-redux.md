@@ -305,7 +305,7 @@ export default Filters;
 npm start
 ```
 
-通过这些步骤，你可以成功地将 Redux 集成到 React 和 TypeScript 项目中，实现了更高效和集中化的状态管理。
+以上实现将 Todo 状态集中到 Redux store，并由 reducer 处理更新。
 
 ## 参考资料
 
