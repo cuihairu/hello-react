@@ -1,5 +1,4 @@
 # What Is Server-Side Rendering
-
 Server-Side Rendering (SSR) is a technique where the complete HTML page is generated on the server and sent directly to the client (such as a browser). When a user requests a webpage, the server renders the page content into an HTML string and returns it as the response. After receiving the response, the browser displays the already-rendered page without waiting for the client to download and execute JavaScript files to generate the page content.
 
 ### Comparison with Client-Side Rendering
@@ -11,7 +10,7 @@ Server-Side Rendering (SSR) is a technique where the complete HTML page is gener
 ### Advantages of Server-Side Rendering
 
 1. **Faster first-screen load**: Because page content is already generated on the server, the browser can display content faster, especially under slow networks or on lower-performance devices.
-
+   
 2. **Better SEO (search engine optimization)**: Search engine crawlers can more easily crawl and index already-rendered HTML content, improving site visibility and ranking.
 
 3. **Improved social media previews**: When social media platforms crawl page content, SSR ensures page metadata (titles, descriptions, images, etc.) is rendered correctly, providing better link previews.
@@ -19,7 +18,7 @@ Server-Side Rendering (SSR) is a technique where the complete HTML page is gener
 ### Disadvantages of Server-Side Rendering
 
 1. **Increased server load**: SSR moves the rendering workload to the server, which can increase server load, especially under high concurrency.
-
+   
 2. **Greater development complexity**: SSR requires handling more frontend-backend synchronization and interaction concerns, increasing development and debugging complexity.
 
 3. **Delayed interaction**: Although SSR improves first-screen load speed, page interactivity may be delayed because the client still needs to wait for JavaScript to load and execute.
