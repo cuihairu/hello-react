@@ -140,4 +140,4 @@ nvm 是一个强大的工具，可以方便地管理和切换不同版本的 Nod
 ## 相关页面
 
 - [environment-setup](environment-setup.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

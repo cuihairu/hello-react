@@ -140,4 +140,4 @@ Taro 提供了一些内置的适配工具和功能，帮助你处理平台间的
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

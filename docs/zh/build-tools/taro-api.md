@@ -148,4 +148,4 @@ Taro 提供了一套封装好的 API，用于跨平台调用。这些 API 是基
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

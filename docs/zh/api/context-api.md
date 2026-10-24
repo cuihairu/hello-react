@@ -143,5 +143,5 @@ const MainComponent = React.memo(() => {
 
 - [README](README.md)
 - [hooks-api](hooks-api.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

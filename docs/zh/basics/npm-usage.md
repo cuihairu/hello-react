@@ -188,5 +188,5 @@ pnpm 是一个性能优化的包管理工具，使用硬链接来节省磁盘空
 ## 相关页面
 
 - [environment-setup](environment-setup.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

@@ -161,4 +161,4 @@
 
 - [README](README.md)
 - [component-api](component-api.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

@@ -178,5 +178,5 @@ Redux 是一个用于管理 JavaScript 应用程序全局状态的预测式状�
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

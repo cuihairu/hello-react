@@ -100,4 +100,4 @@ React 19 影响类组件写法的变化集中在 props 校验与默认值：函�
 
 - [README](README.md)
 - [react-extensions](react-extensions.md)
-- [glossary](/glossary.md)- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))- [knowledge](/zh/knowledge.md))

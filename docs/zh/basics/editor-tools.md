@@ -105,4 +105,4 @@
 ## 相关页面
 
 - [environment-setup](environment-setup.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

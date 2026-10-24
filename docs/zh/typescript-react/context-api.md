@@ -329,6 +329,6 @@ Context API 是 React 中一种强大的工具，适用于在组件树中共享�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)
 - [deep-dive-components](deep-dive-components.md)

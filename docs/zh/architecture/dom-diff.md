@@ -160,4 +160,4 @@ Diff 算法的实现能解释 React 如何比较树并提交 UI 更新，也能�
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

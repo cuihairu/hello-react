@@ -101,7 +101,7 @@ React 的核心理念包括组件化、声明式编程、单向数据流和虚�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
-- [timeline](/timeline.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
+- [timeline](/zh/timeline.md))
 - [README](README.md)

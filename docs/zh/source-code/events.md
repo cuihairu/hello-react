@@ -91,5 +91,5 @@ React 的合成事件系统提供了一种一致且高效的方式来处理用�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

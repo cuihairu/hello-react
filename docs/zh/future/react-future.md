@@ -212,5 +212,5 @@ function Parent() {
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
-- [timeline](/timeline.md)
+- [knowledge](/zh/knowledge.md))
+- [timeline](/zh/timeline.md))

@@ -192,5 +192,5 @@ Node.js 项目管理涉及初始化、文件组织、配置和版本控制；复
 ## 相关页面
 
 - [environment-setup](environment-setup.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

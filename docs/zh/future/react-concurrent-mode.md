@@ -221,5 +221,5 @@ React 19+ use/useOptimistic/useActionState 进一步简化模式
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

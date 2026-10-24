@@ -216,6 +216,6 @@ TypeScript 类型注解也可作为代码文档，直接呈现组件接口和用
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)
 - [state-props](state-props.md)

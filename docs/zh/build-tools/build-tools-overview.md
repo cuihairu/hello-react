@@ -137,4 +137,4 @@
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

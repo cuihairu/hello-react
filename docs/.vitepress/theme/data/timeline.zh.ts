@@ -1,18 +1,15 @@
+// React 发展史时间线（2010 → 2026）· 中文数据
+// 每条记录回答：这件事为什么发生在那个时点，它回应了上一阶段的什么痛点。
+// field 用于筛选：core 核心版本 / concurrent 并发与渲染 / ecosystem 生态与工具 / future 走向未来
+// link 一律指向站内真实章节（语言相对路径，组件按 locale 补前缀），冲突时以各章正文核实口径为准。
+import type { TimelineEvent, TimelineField, TimelineLocaleData } from './timeline.types'
+
 // React 发展史时间线（2010 → 2026）
 // 每条记录回答：这件事为什么发生在那个时点，它回应了上一阶段的什么痛点。
 // field 用于筛选：core 核心版本 / concurrent 并发与渲染 / ecosystem 生态与工具 / future 走向未来
 // link 一律指向站内真实章节，冲突时以各章正文核实口径为准。
 
-export interface TimelineEvent {
-  year: number
-  title: string
-  who: string
-  field: 'core' | 'concurrent' | 'ecosystem' | 'future'
-  why: string
-  link?: string
-}
-
-export const FIELD_LABELS: Record<TimelineEvent['field'], string> = {
+export const FIELD_LABELS: Record<TimelineField, string> = {
   core: '核心版本',
   concurrent: '并发与渲染',
   ecosystem: '生态与工具',
@@ -264,3 +261,21 @@ export const TIMELINE: TimelineEvent[] = [
     link: '/future/react-new-features',
   },
 ]
+
+// 组件模板 UI 文案（中文）
+export const UI = {
+  filterAria: '按主题筛选',
+  all: '全部',
+  today: '今天',
+  hint: (total: number) => `一共 ${total} 个节点。点任意一行展开它「为什么是这个时候」；筛选标签只看一条线。`,
+  nodes: (count: number) => `${count} 个节点`,
+  more: '进入相关章节',
+  readAll: (count: number) => `按时期通读全部 ${count} 个节点`,
+} satisfies TimelineLocaleData['ui']
+
+export const localeData: TimelineLocaleData = {
+  fieldLabels: FIELD_LABELS,
+  eras: ERAS,
+  timeline: TIMELINE,
+  ui: UI,
+}

@@ -182,6 +182,6 @@ function Example() {
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

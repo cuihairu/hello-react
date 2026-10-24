@@ -181,4 +181,4 @@ JSX 是 React 提供的一个强大的语法扩展，允许开发者以更直观
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

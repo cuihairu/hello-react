@@ -215,4 +215,4 @@ React Hooks 提供了一种全新的方式来管理组件的状态和副作用�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

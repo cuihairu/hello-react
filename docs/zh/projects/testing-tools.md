@@ -139,5 +139,5 @@
 ## 相关页面
 
 - [README](README.md)
-- [component-development](/typescript-react/component-development.md)
-- [profiler](/typescript-react/profiler.md)
+- [component-development](/zh/typescript-react/component-development.md))
+- [profiler](/zh/typescript-react/profiler.md))

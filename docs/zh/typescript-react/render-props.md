@@ -164,7 +164,7 @@ Render Props 模式是 React 中一种强大的模式，通过它可以实现组
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)
 - [deep-dive-components](deep-dive-components.md)

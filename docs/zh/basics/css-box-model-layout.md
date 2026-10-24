@@ -204,4 +204,4 @@ CSS 盒模型和布局模型决定元素尺寸与排布方式；实际调试时�
 - [css-sass-less-optimization](css-sass-less-optimization.md)
 - [html-elements](html-elements.md)
 - [js-control-flow-loops](js-control-flow-loops.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

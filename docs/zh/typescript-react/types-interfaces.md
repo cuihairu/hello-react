@@ -214,5 +214,5 @@ TypeScript 提供了多种基本类型来表示不同的数据类型。这些基
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

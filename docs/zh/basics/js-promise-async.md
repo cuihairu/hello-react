@@ -163,4 +163,4 @@ Promise 和 `async/await` 提供了强大的工具来处理异步操作，使代
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

@@ -119,4 +119,4 @@ Reconciliation 机制的演变从 Virtual DOM 和 Diff 算法到 Fiber 架构，
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

@@ -139,5 +139,5 @@ npx webpack --config webpack.config.js
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

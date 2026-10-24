@@ -198,5 +198,5 @@ TypeScript 可以通过 npm（Node.js 的包管理器）进行安装。可以选
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

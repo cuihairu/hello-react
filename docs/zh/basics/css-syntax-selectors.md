@@ -205,4 +205,4 @@ CSS 的优先级决定了当多个样式规则应用于同一元素时，哪一�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

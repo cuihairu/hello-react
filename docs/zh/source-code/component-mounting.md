@@ -82,4 +82,4 @@
 
 - [README](README.md)
 - [react-internals](react-internals.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

@@ -165,5 +165,5 @@ function FocusInput() {
 
 - [README](README.md)
 - [hooks-deep-dive](hooks-deep-dive.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

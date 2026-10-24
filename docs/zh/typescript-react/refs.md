@@ -226,8 +226,8 @@ const MyComponent = () => {
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [hooks-deep-dive](/architecture/hooks-deep-dive.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [hooks-deep-dive](/zh/architecture/hooks-deep-dive.md))
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)
 - [deep-dive-components](deep-dive-components.md)

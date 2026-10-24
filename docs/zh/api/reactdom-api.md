@@ -185,5 +185,5 @@ React 19 的其他相关变化：新增 `react-dom/static` 的 `prerender` / `pr
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

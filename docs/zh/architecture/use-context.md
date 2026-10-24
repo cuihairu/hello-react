@@ -170,4 +170,4 @@ const Toolbar = React.memo(() => {
 
 - [README](README.md)
 - [hooks-deep-dive](hooks-deep-dive.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

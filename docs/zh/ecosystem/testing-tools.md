@@ -122,5 +122,5 @@ test('button click updates count', () => {
 
 - [README](README.md)
 - [unit-integration-tests](unit-integration-tests.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

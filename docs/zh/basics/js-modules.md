@@ -114,4 +114,4 @@ ES6 的模块化语法通过 `import` 和 `export` 关键字提供了一个强�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

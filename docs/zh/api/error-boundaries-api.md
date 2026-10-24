@@ -126,5 +126,5 @@ React 19 的错误处理行为变化：渲染期错误不再重抛，未被边�
 
 - [README](README.md)
 - [lifecycle-methods](lifecycle-methods.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

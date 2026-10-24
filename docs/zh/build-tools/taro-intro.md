@@ -89,5 +89,5 @@ Taro 的核心是将统一的代码通过不同的编译器转换为各个平台
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

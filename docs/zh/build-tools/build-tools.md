@@ -292,4 +292,4 @@ Babel 是一个 JavaScript 编译器，用于将 ES6+ 代码转换为向后兼�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

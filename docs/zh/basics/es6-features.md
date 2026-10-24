@@ -268,4 +268,4 @@ ES6 及之后版本引入了许多新的特性，显著提升了 JavaScript 的�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

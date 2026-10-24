@@ -295,5 +295,5 @@ TypeScript 提供了静态类型检查和现代 JavaScript 的特性，使得编
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

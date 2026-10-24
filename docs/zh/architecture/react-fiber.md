@@ -119,6 +119,6 @@ React Fiber 架构通过引入增量更新、优先级调度和时间切片，�
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
-- [timeline](/timeline.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
+- [timeline](/zh/timeline.md))

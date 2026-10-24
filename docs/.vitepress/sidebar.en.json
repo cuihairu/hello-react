@@ -1,133 +1,133 @@
 [
   {
-    "text": "发展史时间线",
+    "text": "History Timeline",
     "link": "/timeline"
   },
   {
-    "text": "技术索引",
+    "text": "Knowledge Map",
     "link": "/knowledge"
   },
   {
-    "text": "前端基础",
+    "text": "Web Basics",
     "link": "/basics/README",
     "collapsed": true,
     "items": [
       {
-        "text": "开发环境搭建",
+        "text": "Development Environment Setup",
         "link": "/basics/environment-setup",
         "collapsed": true,
         "items": [
           {
-            "text": "安装与配置 Node.js",
+            "text": "Installing and Configuring Node.js",
             "link": "/basics/nodejs-setup"
           },
           {
-            "text": "npm 与包管理工具的使用",
+            "text": "Using npm and Package Managers",
             "link": "/basics/npm-usage"
           },
           {
-            "text": "创建与管理项目",
+            "text": "Creating and Managing Projects",
             "link": "/basics/project-management"
           },
           {
-            "text": "使用 nvm 管理 Node.js 版本",
+            "text": "Managing Node.js Versions with nvm",
             "link": "/basics/nvm-setup"
           },
           {
-            "text": "代码编辑器与开发工具推荐",
+            "text": "Code Editors and Dev Tool Recommendations",
             "link": "/basics/editor-tools"
           },
           {
-            "text": "ESLint 与 Prettier 配置",
+            "text": "ESLint and Prettier Configuration",
             "link": "/basics/eslint-prettier"
           }
         ]
       },
       {
-        "text": "HTML 与 CSS 基础",
+        "text": "HTML and CSS Basics",
         "link": "/basics/html-css-basics",
         "collapsed": true,
         "items": [
           {
-            "text": "HTML 的结构与语义化标签",
+            "text": "HTML Structure and Semantic Tags",
             "link": "/basics/html-structure"
           },
           {
-            "text": "常用 HTML 元素与属性",
+            "text": "Common HTML Elements and Attributes",
             "link": "/basics/html-elements"
           },
           {
-            "text": "CSS 的基本语法与选择器",
+            "text": "CSS Syntax and Selectors",
             "link": "/basics/css-syntax-selectors"
           },
           {
-            "text": "CSS 盒模型与布局",
+            "text": "CSS Box Model and Layout",
             "link": "/basics/css-box-model-layout"
           },
           {
-            "text": "Flexbox 与 Grid 布局",
+            "text": "Flexbox and Grid Layout",
             "link": "/basics/flexbox-grid"
           },
           {
-            "text": "响应式设计与媒体查询",
+            "text": "Responsive Design and Media Queries",
             "link": "/basics/responsive-design"
           }
         ]
       },
       {
-        "text": "CSS 进阶记录",
+        "text": "Advanced CSS Notes",
         "link": "/basics/deep-dive-css",
         "collapsed": true,
         "items": [
           {
-            "text": "CSS 预处理器：LESS 与 SASS",
+            "text": "CSS Preprocessors: LESS and SASS",
             "link": "/basics/css-preprocessors"
           },
           {
-            "text": "变量与嵌套规则",
+            "text": "Variables and Nesting Rules",
             "link": "/basics/css-variables-nesting"
           },
           {
-            "text": "Mixin 与继承",
+            "text": "Mixins and Inheritance",
             "link": "/basics/css-mixins-inheritance"
           },
           {
-            "text": "嵌套规则与模块化",
+            "text": "Nesting Rules and Modularity",
             "link": "/basics/css-nesting-modular"
           },
           {
-            "text": "使用 SASS/LESS 优化项目样式",
+            "text": "Optimizing Project Styles with SASS/LESS",
             "link": "/basics/css-sass-less-optimization"
           }
         ]
       },
       {
-        "text": "JavaScript 与 ES6+ 基础",
+        "text": "JavaScript and ES6+ Basics",
         "link": "/basics/js-es6-basics",
         "collapsed": true,
         "items": [
           {
-            "text": "JavaScript 简史与发展",
+            "text": "A Brief History of JavaScript",
             "link": "/basics/js-history-development"
           },
           {
-            "text": "变量、数据类型与运算符",
+            "text": "Variables, Data Types, and Operators",
             "link": "/basics/js-variables-types-operators"
           },
           {
-            "text": "控制流与循环",
+            "text": "Control Flow and Loops",
             "link": "/basics/js-control-flow-loops"
           },
           {
-            "text": "ES6+ 的主要特性",
+            "text": "Key ES6+ Features",
             "link": "/basics/es6-features"
           },
           {
-            "text": "模块化：import 与 export",
+            "text": "Modules: import and export",
             "link": "/basics/js-modules"
           },
           {
-            "text": "Promise 与异步编程",
+            "text": "Promises and Asynchronous Programming",
             "link": "/basics/js-promise-async"
           }
         ]
@@ -135,119 +135,119 @@
     ]
   },
   {
-    "text": "TypeScript 与 React.js",
+    "text": "TypeScript and React.js",
     "link": "/typescript-react/README",
     "collapsed": true,
     "items": [
       {
-        "text": "TypeScript 基础",
+        "text": "TypeScript Basics",
         "link": "/typescript-react/typescript-basics",
         "collapsed": true,
         "items": [
           {
-            "text": "为什么选择 TypeScript",
+            "text": "Why TypeScript",
             "link": "/typescript-react/why-typescript"
           },
           {
-            "text": "TypeScript 安装与配置",
+            "text": "TypeScript Installation and Setup",
             "link": "/typescript-react/setup"
           },
           {
-            "text": "基本类型与接口",
+            "text": "Basic Types and Interfaces",
             "link": "/typescript-react/types-interfaces"
           },
           {
-            "text": "类与泛型",
+            "text": "Classes and Generics",
             "link": "/typescript-react/classes-generics"
           },
           {
-            "text": "类型推断与类型守卫",
+            "text": "Type Inference and Type Guards",
             "link": "/typescript-react/type-inference-guards"
           },
           {
-            "text": "TypeScript 中的模块与命名空间",
+            "text": "Modules and Namespaces in TypeScript",
             "link": "/typescript-react/modules-namespaces"
           },
           {
-            "text": "在 React 项目中使用 TypeScript",
+            "text": "Using TypeScript in React Projects",
             "link": "/typescript-react/react-typescript"
           }
         ]
       },
       {
-        "text": "React 基础",
+        "text": "React Basics",
         "link": "/typescript-react/react-basics",
         "collapsed": true,
         "items": [
           {
-            "text": "React 的发展历程与核心理念",
+            "text": "React's History and Core Principles",
             "link": "/typescript-react/react-history-principles"
           },
           {
-            "text": "JSX 语法与基本用法",
+            "text": "JSX Syntax and Usage",
             "link": "/typescript-react/jsx-syntax"
           },
           {
-            "text": "组件化开发",
+            "text": "Component-Based Development",
             "link": "/typescript-react/component-development"
           },
           {
-            "text": "State 与 Props 的使用",
+            "text": "Using State and Props",
             "link": "/typescript-react/state-props"
           },
           {
-            "text": "组件的生命周期",
+            "text": "Component Lifecycle",
             "link": "/typescript-react/component-lifecycle"
           },
           {
-            "text": "组件挂载与卸载",
+            "text": "Mounting and Unmounting Components",
             "link": "/typescript-react/component-mounting"
           }
         ]
       },
       {
-        "text": "组件深度解析",
+        "text": "Deep Dive into Components",
         "link": "/typescript-react/deep-dive-components",
         "collapsed": true,
         "items": [
           {
-            "text": "render 方法与组件渲染",
+            "text": "The render Method and Rendering",
             "link": "/typescript-react/render-method"
           },
           {
-            "text": "setState 的工作原理",
+            "text": "How setState Works",
             "link": "/typescript-react/setstate"
           },
           {
-            "text": "合成事件系统",
+            "text": "The Synthetic Event System",
             "link": "/typescript-react/synthetic-events"
           },
           {
-            "text": "高阶组件（HOC）",
+            "text": "Higher-Order Components (HOC)",
             "link": "/typescript-react/hoc"
           },
           {
-            "text": "Render Props 模式",
+            "text": "The Render Props Pattern",
             "link": "/typescript-react/render-props"
           },
           {
-            "text": "Refs 的使用与管理",
+            "text": "Using and Managing Refs",
             "link": "/typescript-react/refs"
           },
           {
-            "text": "Context API 的应用",
+            "text": "Using the Context API",
             "link": "/typescript-react/context-api"
           },
           {
-            "text": "Portals 的使用场景与实现",
+            "text": "Portals: Use Cases and Implementation",
             "link": "/typescript-react/portals"
           },
           {
-            "text": "Profiler 的使用与性能分析",
+            "text": "Using the Profiler for Performance",
             "link": "/typescript-react/profiler"
           },
           {
-            "text": "错误边界的实现与最佳实践",
+            "text": "Error Boundaries: Implementation and Best Practices",
             "link": "/typescript-react/error-boundaries"
           }
         ]
@@ -255,75 +255,75 @@
     ]
   },
   {
-    "text": "React 架构",
+    "text": "React Architecture",
     "link": "/architecture/README",
     "collapsed": true,
     "items": [
       {
-        "text": "旧版架构",
+        "text": "Legacy Architecture",
         "link": "/architecture/old-architecture",
         "collapsed": true,
         "items": [
           {
-            "text": "Virtual DOM 的概念与实现",
+            "text": "Virtual DOM Concepts and Implementation",
             "link": "/architecture/virtual-dom"
           },
           {
-            "text": "DOM Diff 算法解析",
+            "text": "The DOM Diff Algorithm",
             "link": "/architecture/dom-diff"
           },
           {
-            "text": "旧版架构的优劣与历史背景",
+            "text": "Legacy Architecture: Pros, Cons, and History",
             "link": "/architecture/old-architecture-comparison"
           }
         ]
       },
       {
-        "text": "新版架构",
+        "text": "Modern Architecture",
         "link": "/architecture/new-architecture",
         "collapsed": true,
         "items": [
           {
-            "text": "React Fiber 架构详解",
+            "text": "The React Fiber Architecture",
             "link": "/architecture/react-fiber"
           },
           {
-            "text": "Reconciliation 机制的演变",
+            "text": "The Evolution of Reconciliation",
             "link": "/architecture/reconciliation"
           },
           {
-            "text": "Concurrent Mode 与调度器（Scheduler）",
+            "text": "Concurrent Mode and the Scheduler",
             "link": "/architecture/concurrent-mode"
           },
           {
-            "text": "旧版与新版架构的对比分析",
+            "text": "Legacy vs. Modern Architecture Compared",
             "link": "/architecture/architecture-comparison"
           }
         ]
       },
       {
-        "text": "Hooks 的深度解析",
+        "text": "Deep Dive into Hooks",
         "link": "/architecture/hooks-deep-dive",
         "collapsed": true,
         "items": [
           {
-            "text": "useState 的内部实现与使用",
+            "text": "useState Internals and Usage",
             "link": "/architecture/use-state"
           },
           {
-            "text": "useEffect 与副作用管理",
+            "text": "useEffect and Side Effects",
             "link": "/architecture/use-effect"
           },
           {
-            "text": "useContext 与状态共享",
+            "text": "useContext and State Sharing",
             "link": "/architecture/use-context"
           },
           {
-            "text": "useReducer 与复杂状态管理",
+            "text": "useReducer and Complex State Management",
             "link": "/architecture/use-reducer"
           },
           {
-            "text": "自定义 Hooks 的创建与使用",
+            "text": "Creating and Using Custom Hooks",
             "link": "/architecture/custom-hooks"
           }
         ]
@@ -331,64 +331,64 @@
     ]
   },
   {
-    "text": "构建工具",
+    "text": "Build Tools",
     "link": "/build-tools/README",
     "collapsed": true,
     "items": [
       {
-        "text": "构建工具与自动化",
+        "text": "Build Tools and Automation",
         "link": "/build-tools/build-tools",
         "collapsed": true,
         "items": [
           {
-            "text": "前端构建工具概述：Webpack、Vite、Parcel",
+            "text": "Frontend Build Tools Overview: Webpack, Vite, Parcel",
             "link": "/build-tools/build-tools-overview"
           },
           {
-            "text": "Webpack 的配置与优化",
+            "text": "Webpack Configuration and Optimization",
             "link": "/build-tools/webpack"
           },
           {
-            "text": "使用 Babel 转译 ES6+ 代码",
+            "text": "Transpiling ES6+ with Babel",
             "link": "/build-tools/babel"
           },
           {
-            "text": "自动化构建与 CI/CD 集成",
+            "text": "Automated Builds and CI/CD Integration",
             "link": "/build-tools/automation-ci-cd"
           },
           {
-            "text": "使用 Vite 提升开发效率",
+            "text": "Boosting Development with Vite",
             "link": "/build-tools/vite"
           }
         ]
       },
       {
-        "text": "Taro 与多端开发",
+        "text": "Taro and Multi-Platform Development",
         "link": "/build-tools/taro",
         "collapsed": true,
         "items": [
           {
-            "text": "什么是 Taro：一套代码，多端适配",
+            "text": "What is Taro: One Codebase, Many Platforms",
             "link": "/build-tools/taro-intro"
           },
           {
-            "text": "Taro 项目的初始化与配置",
+            "text": "Initializing and Configuring Taro Projects",
             "link": "/build-tools/taro-setup"
           },
           {
-            "text": "在 Taro 中使用 React.js 进行小程序开发",
+            "text": "Building Mini Programs with React.js in Taro",
             "link": "/build-tools/taro-react"
           },
           {
-            "text": "处理不同平台的兼容性问题",
+            "text": "Handling Platform Compatibility",
             "link": "/build-tools/taro-compatibility"
           },
           {
-            "text": "Taro 与小程序 API 的集成",
+            "text": "Taro and Mini Program API Integration",
             "link": "/build-tools/taro-api"
           },
           {
-            "text": "Taro 项目的构建与发布",
+            "text": "Building and Publishing Taro Projects",
             "link": "/build-tools/taro-build"
           }
         ]
@@ -396,67 +396,67 @@
     ]
   },
   {
-    "text": "React 源码",
+    "text": "Source Code",
     "link": "/source-code/README",
     "collapsed": true,
     "items": [
       {
-        "text": "深入理解 React 内部机制",
+        "text": "Understanding React Internals",
         "link": "/source-code/react-internals",
         "collapsed": true,
         "items": [
           {
-            "text": "React 的架构概览",
+            "text": "React Architecture Overview",
             "link": "/source-code/react-architecture"
           },
           {
-            "text": "虚拟 DOM 的实现原理",
+            "text": "How the Virtual DOM Works",
             "link": "/source-code/virtual-dom"
           },
           {
-            "text": "Reconciliation 算法解析",
+            "text": "The Reconciliation Algorithm",
             "link": "/source-code/reconciliation"
           },
           {
-            "text": "React Fiber 架构与更新机制",
+            "text": "React Fiber and the Update Mechanism",
             "link": "/source-code/react-fiber"
           }
         ]
       },
       {
-        "text": "React 生命周期的内部实现",
+        "text": "React Lifecycle Internals",
         "link": "/source-code/lifecycle",
         "collapsed": true,
         "items": [
           {
-            "text": "组件挂载与更新的流程",
+            "text": "The Mounting and Update Process",
             "link": "/source-code/component-mounting"
           },
           {
-            "text": "React 事件系统与合成事件",
+            "text": "React Events and Synthetic Events",
             "link": "/source-code/events"
           },
           {
-            "text": "Context API 的内部实现",
+            "text": "Context API Internals",
             "link": "/source-code/context-api"
           }
         ]
       },
       {
-        "text": "React Hooks 源码分析",
+        "text": "React Hooks Source Code Analysis",
         "link": "/source-code/hooks-source",
         "collapsed": true,
         "items": [
           {
-            "text": "useState、useEffect 的内部工作原理",
+            "text": "How useState and useEffect Work",
             "link": "/source-code/use-state-effect"
           },
           {
-            "text": "如何实现一个自定义 Hook",
+            "text": "Implementing a Custom Hook",
             "link": "/source-code/custom-hooks"
           },
           {
-            "text": "useReducer 与复杂状态管理的实现",
+            "text": "useReducer and Complex State Management",
             "link": "/source-code/use-reducer"
           }
         ]
@@ -464,86 +464,86 @@
     ]
   },
   {
-    "text": "React 生态",
+    "text": "React Ecosystem",
     "link": "/ecosystem/README",
     "collapsed": true,
     "items": [
       {
-        "text": "React 路由",
+        "text": "React Routing",
         "link": "/ecosystem/react-router",
         "collapsed": true,
         "items": [
           {
-            "text": "React Router 的安装与基本配置",
+            "text": "React Router Setup and Configuration",
             "link": "/ecosystem/react-router-setup"
           },
           {
-            "text": "路由参数与动态加载",
+            "text": "Route Params and Dynamic Loading",
             "link": "/ecosystem/react-router-params"
           },
           {
-            "text": "嵌套路由与页面跳转",
+            "text": "Nested Routes and Navigation",
             "link": "/ecosystem/react-router-nested"
           }
         ]
       },
       {
-        "text": "状态管理与数据流",
+        "text": "State Management and Data Flow",
         "link": "/ecosystem/state-management",
         "collapsed": true,
         "items": [
           {
-            "text": "Redux 的基本原理与使用",
+            "text": "Redux Basics",
             "link": "/ecosystem/redux"
           },
           {
-            "text": "Context API 与 useReducer 的组合使用",
+            "text": "Combining the Context API and useReducer",
             "link": "/ecosystem/context-reducer"
           },
           {
-            "text": "MobX 与状态管理",
+            "text": "MobX and State Management",
             "link": "/ecosystem/mobx"
           }
         ]
       },
       {
-        "text": "服务器端渲染（SSR）",
+        "text": "Server-Side Rendering (SSR)",
         "link": "/ecosystem/ssr",
         "collapsed": true,
         "items": [
           {
-            "text": "什么是服务器端渲染",
+            "text": "What Is Server-Side Rendering",
             "link": "/ecosystem/what-is-ssr"
           },
           {
-            "text": "Next.js 的基本用法",
+            "text": "Next.js Basics",
             "link": "/ecosystem/nextjs"
           },
           {
-            "text": "SSR 与 SEO 优化",
+            "text": "SSR and SEO",
             "link": "/ecosystem/ssr-seo"
           }
         ]
       },
       {
-        "text": "测试与质量保证",
+        "text": "Testing and Quality Assurance",
         "link": "/ecosystem/testing",
         "collapsed": true,
         "items": [
           {
-            "text": "React 测试工具：Jest、Enzyme、React Testing Library",
+            "text": "React Testing Tools: Jest, Enzyme, and React Testing Library",
             "link": "/ecosystem/testing-tools"
           },
           {
-            "text": "单元测试与集成测试",
+            "text": "Unit and Integration Testing",
             "link": "/ecosystem/unit-integration-tests"
           },
           {
-            "text": "模拟与快照测试",
+            "text": "Mocks and Snapshot Testing",
             "link": "/ecosystem/mocks-snapshots"
           },
           {
-            "text": "持续集成与代码质量管理",
+            "text": "CI and Code Quality Management",
             "link": "/ecosystem/ci-code-quality"
           }
         ]
@@ -551,72 +551,72 @@
     ]
   },
   {
-    "text": "React API 参考",
+    "text": "React API Reference",
     "link": "/api/README",
     "collapsed": true,
     "items": [
       {
-        "text": "React 核心 API 参考",
+        "text": "React Core API Reference",
         "link": "/api/react-core",
         "collapsed": true,
         "items": [
           {
-            "text": "React 核心概念与 API 概述",
+            "text": "React Core Concepts and API Overview",
             "link": "/api/react-overview"
           },
           {
-            "text": "JSX 语法与 JSX 相关 API",
+            "text": "JSX Syntax and JSX-Related APIs",
             "link": "/api/jsx-api"
           },
           {
-            "text": "组件相关 API：React.Component、PureComponent",
+            "text": "Component APIs: React.Component and PureComponent",
             "link": "/api/component-api"
           },
           {
-            "text": "生命周期方法：componentDidMount、shouldComponentUpdate 等",
+            "text": "Lifecycle Methods: componentDidMount, shouldComponentUpdate, etc.",
             "link": "/api/lifecycle-methods"
           },
           {
-            "text": "State 与 Props API",
+            "text": "State and Props APIs",
             "link": "/api/state-props"
           },
           {
-            "text": "ReactDOM 与渲染相关 API",
+            "text": "ReactDOM and Rendering APIs",
             "link": "/api/reactdom-api"
           },
           {
-            "text": "Hooks API：useState、useEffect、useContext、useReducer 等",
+            "text": "Hooks API: useState, useEffect, useContext, useReducer, etc.",
             "link": "/api/hooks-api"
           },
           {
-            "text": "Context API 与相关用法",
+            "text": "Context API and Related Usage",
             "link": "/api/context-api"
           },
           {
-            "text": "Refs 与 DOM 交互 API",
+            "text": "Refs and DOM Interaction APIs",
             "link": "/api/refs-api"
           },
           {
-            "text": "Portals 与 Profiler API",
+            "text": "Portals and Profiler APIs",
             "link": "/api/portals-profiler-api"
           },
           {
-            "text": "错误边界相关 API",
+            "text": "Error Boundary APIs",
             "link": "/api/error-boundaries-api"
           }
         ]
       },
       {
-        "text": "React 扩展 API",
+        "text": "React Extension APIs",
         "link": "/api/react-extensions",
         "collapsed": true,
         "items": [
           {
-            "text": "React 的高阶函数与模式",
+            "text": "Higher-Order Functions and Patterns",
             "link": "/api/react-hoc-patterns"
           },
           {
-            "text": "其他常用的辅助 API",
+            "text": "Other Common Utility APIs",
             "link": "/api/other-apis"
           }
         ]
@@ -624,52 +624,52 @@
     ]
   },
   {
-    "text": "项目与生态",
+    "text": "Projects and Ecosystem",
     "link": "/projects/README",
     "collapsed": true,
     "items": [
       {
-        "text": "项目实战 - 多功能 Todo 应用",
+        "text": "Project: A Full-Featured Todo App",
         "link": "/projects/todo-app",
         "collapsed": true,
         "items": [
           {
-            "text": "需求分析与设计",
+            "text": "Requirements Analysis and Design",
             "link": "/projects/todo-requirements"
           },
           {
-            "text": "使用 React 与 TypeScript 开发应用",
+            "text": "Building the App with React and TypeScript",
             "link": "/projects/todo-development"
           },
           {
-            "text": "集成 Redux 进行状态管理",
+            "text": "Integrating Redux for State Management",
             "link": "/projects/todo-redux"
           },
           {
-            "text": "部署与性能优化",
+            "text": "Deployment and Performance Optimization",
             "link": "/projects/todo-deployment"
           }
         ]
       },
       {
-        "text": "React 生态系统",
+        "text": "React Ecosystem",
         "link": "/projects/react-ecosystem",
         "collapsed": true,
         "items": [
           {
-            "text": "Next.js 与服务端渲染（SSR）",
+            "text": "Next.js and Server-Side Rendering (SSR)",
             "link": "/projects/nextjs-overview"
           },
           {
-            "text": "React Native 简介与移动开发",
+            "text": "React Native Introduction and Mobile Development",
             "link": "/projects/react-native"
           },
           {
-            "text": "测试工具与方法",
+            "text": "Testing Tools and Methods",
             "link": "/projects/testing-tools"
           },
           {
-            "text": "持续集成与自动化部署",
+            "text": "CI and Automated Deployment",
             "link": "/projects/ci-cd"
           }
         ]
@@ -677,7 +677,7 @@
     ]
   },
   {
-    "text": "附录 · 未入目录",
+    "text": "Appendix · Not in TOC",
     "collapsed": true,
     "items": [
       {
@@ -713,7 +713,7 @@
     ]
   },
   {
-    "text": "术语表",
+    "text": "Glossary",
     "link": "/glossary"
   }
 ]

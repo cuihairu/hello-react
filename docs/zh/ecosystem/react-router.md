@@ -238,4 +238,4 @@ function NavigateButton() {
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

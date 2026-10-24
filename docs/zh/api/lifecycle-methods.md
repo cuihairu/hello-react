@@ -223,4 +223,4 @@ React 生命周期方法让类组件在不同阶段执行特定操作。维护�
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

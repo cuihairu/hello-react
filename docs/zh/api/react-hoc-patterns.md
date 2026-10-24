@@ -270,4 +270,4 @@ export default MyComponent;
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

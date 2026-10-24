@@ -187,5 +187,5 @@ Vite 通过优化开发服务器、提高构建速度和支持现代框架，显
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

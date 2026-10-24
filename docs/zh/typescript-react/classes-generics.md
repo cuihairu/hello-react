@@ -238,4 +238,4 @@ const numberArray = createArray(3, 42); // T 被推断为 number，默认类型�
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

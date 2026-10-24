@@ -71,5 +71,5 @@ TypeScript 拥有一个活跃的社区和良好的支持，持续更新和改进
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

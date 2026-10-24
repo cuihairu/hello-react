@@ -104,4 +104,4 @@ React 组件的生命周期方法是管理组件状态和行为的重要工具�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

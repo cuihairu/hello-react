@@ -91,6 +91,6 @@ React 的 Context API 提供了一种强大的方式来共享组件树中的数�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

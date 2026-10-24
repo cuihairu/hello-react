@@ -239,6 +239,6 @@ Portals 是一个强大的工具，用于处理需要在 DOM 结构外部渲染�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)

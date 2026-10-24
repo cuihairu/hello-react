@@ -4,33 +4,43 @@
 //   · 四个 Era 各带导语；点节点展开「为什么是这个时候」与站内章节
 //   · 进场动画走 IntersectionObserver，prefers-reduced-motion 下整体旁路
 // 页面底部 <details> 是同一份数据的文本形态，可整段通读。
+// 多语言：页面把对应语言的 localeData（timeline.zh / timeline.en）经 :data 传入，
+// 组件只消费 prop，不做语言判断；事件 link 是语言相对路径，这里按 locale 补前缀。
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { withBase } from 'vitepress'
-import { ERAS, FIELD_LABELS, TIMELINE, type TimelineEvent } from '../data/timeline'
+import { useData, withBase } from 'vitepress'
+import type { TimelineEvent, TimelineLocaleData } from '../data/timeline.types'
 
 type Field = TimelineEvent['field']
 type Filter = 'all' | Field
 
+const props = defineProps<{ data: TimelineLocaleData }>()
+
+const { locale } = useData()
+const localeHref = (link: string) =>
+  withBase((locale.value === '/' ? '' : locale.value.replace(/\/+$/, '')) + link)
+
 const filter = ref<Filter>('all')
 const selected = ref<number | null>(null)
 
-const fields = Object.keys(FIELD_LABELS) as Field[]
+const fields = Object.keys(props.data.fieldLabels) as Field[]
 const filterOptions: Filter[] = ['all', ...fields]
 
 const countOf = (f: Filter) =>
-  f === 'all' ? TIMELINE.length : TIMELINE.filter((e) => e.field === f).length
+  f === 'all'
+    ? props.data.timeline.length
+    : props.data.timeline.filter((e) => e.field === f).length
 
 const filtered = computed(() =>
-  TIMELINE.map((e, i) => ({ e, i })).filter(
+  props.data.timeline.map((e, i) => ({ e, i })).filter(
     ({ e }) => filter.value === 'all' || e.field === filter.value,
   ),
 )
 
 const eraGroups = computed(() =>
-  ERAS.map((era) => ({
+  props.data.eras.map((era) => ({
     ...era,
-    label: `${era.from} → ${era.to >= 2026 ? '今天' : era.to}`,
-    count: TIMELINE.filter((e) => e.year >= era.from && e.year <= era.to).length,
+    label: `${era.from} → ${era.to >= 2026 ? props.data.ui.today : era.to}`,
+    count: props.data.timeline.filter((e) => e.year >= era.from && e.year <= era.to).length,
     events: filtered.value.filter(({ e }) => e.year >= era.from && e.year <= era.to),
   })).filter((g) => g.events.length > 0),
 )
@@ -100,7 +110,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div ref="rootEl" class="dev-tl">
-    <div class="chips" role="group" aria-label="按主题筛选">
+    <div class="chips" role="group" :aria-label="data.ui.filterAria">
       <button
         v-for="f in filterOptions"
         :key="f"
@@ -109,13 +119,13 @@ onBeforeUnmount(() => {
         :aria-pressed="filter === f"
         @click="filter = f"
       >
-        {{ f === 'all' ? '全部' : FIELD_LABELS[f] }}
+        {{ f === 'all' ? data.ui.all : data.fieldLabels[f] }}
         <span class="count">{{ countOf(f) }}</span>
       </button>
     </div>
 
     <p class="hint">
-      一共 {{ TIMELINE.length }} 个节点。点任意一行展开它「为什么是这个时候」；筛选标签只看一条线。
+      {{ data.ui.hint(data.timeline.length) }}
     </p>
 
     <section v-for="era in eraGroups" :key="era.name" class="era">
@@ -124,7 +134,7 @@ onBeforeUnmount(() => {
         <p class="era-meta">
           <span class="era-range">{{ era.label }}</span>
           <span class="sep">·</span>
-          <span>{{ era.count }} 个节点</span>
+          <span>{{ data.ui.nodes(era.count) }}</span>
         </p>
         <p class="era-intro">{{ era.intro }}</p>
       </header>
@@ -150,25 +160,25 @@ onBeforeUnmount(() => {
               <span class="title">{{ e.title }}</span>
               <span v-if="e.who" class="who">{{ e.who }}</span>
             </span>
-            <span class="tag">{{ FIELD_LABELS[e.field] }}</span>
+            <span class="tag">{{ data.fieldLabels[e.field] }}</span>
           </button>
           <div v-show="selected === i" class="detail">
             <p class="why">{{ e.why }}</p>
-            <a v-if="e.link" class="more" :href="withBase(e.link)">进入相关章节</a>
+            <a v-if="e.link" class="more" :href="localeHref(e.link)">{{ data.ui.more }}</a>
           </div>
         </li>
       </ol>
     </section>
 
     <details class="readall">
-      <summary>按时期通读全部 {{ filtered.length }} 个节点</summary>
+      <summary>{{ data.ui.readAll(filtered.length) }}</summary>
       <section v-for="era in eraGroups" :key="'r' + era.name" class="era">
         <header class="era-head">
           <h3 class="era-name">{{ era.name }}</h3>
           <p class="era-meta">
             <span class="era-range">{{ era.label }}</span>
             <span class="sep">·</span>
-            <span>{{ era.count }} 个节点</span>
+            <span>{{ data.ui.nodes(era.count) }}</span>
           </p>
         </header>
         <ol class="events plain">
@@ -176,11 +186,11 @@ onBeforeUnmount(() => {
             <p class="plain-head">
               <span class="year">{{ e.year }}</span>
               <span class="title">{{ e.title }}</span>
-              <span class="tag">{{ FIELD_LABELS[e.field] }}</span>
+              <span class="tag">{{ data.fieldLabels[e.field] }}</span>
             </p>
             <p v-if="e.who" class="who">{{ e.who }}</p>
             <p class="why">{{ e.why }}</p>
-            <a v-if="e.link" class="more" :href="withBase(e.link)">进入相关章节</a>
+            <a v-if="e.link" class="more" :href="localeHref(e.link)">{{ data.ui.more }}</a>
           </li>
         </ol>
       </section>

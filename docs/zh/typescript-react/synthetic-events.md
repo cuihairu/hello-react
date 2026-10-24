@@ -136,7 +136,7 @@ React 合成事件统一了事件处理接口；排查交互时，我会同时�
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
 - [README](README.md)
 - [deep-dive-components](deep-dive-components.md)

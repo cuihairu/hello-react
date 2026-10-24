@@ -143,5 +143,5 @@ Profiler API 用于分析 React 应用的性能。React Profiler 允许开发者
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

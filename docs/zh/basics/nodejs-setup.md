@@ -152,5 +152,5 @@ npm -v
 ## 相关页面
 
 - [environment-setup](environment-setup.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))

@@ -65,5 +65,5 @@ Reconciliation 算法是 React 的核心性能优化技术，通过比较虚拟 
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))
 - [README](README.md)

@@ -127,4 +127,4 @@ HTML 文档结构和语义标签让页面层次更清晰，也有助于辅助技
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

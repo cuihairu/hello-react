@@ -182,4 +182,4 @@ Refs 提供了一种强大而灵活的方式来直接操作 DOM 元素和 React 
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

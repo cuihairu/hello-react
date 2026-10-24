@@ -79,4 +79,4 @@ React 最初发布于 2013 年，其核心理念是通过 Virtual DOM 来优化 
 ## 相关页面
 
 - [README](README.md)
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

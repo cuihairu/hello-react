@@ -239,4 +239,4 @@ Taro 允许从一个代码库面向多个平台构建应用。项目初始化、
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

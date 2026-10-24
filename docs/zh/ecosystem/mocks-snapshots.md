@@ -149,4 +149,4 @@ $ jest --updateSnapshot
 
 - [README](README.md)
 - [testing-tools](testing-tools.md)
-- [glossary](/glossary.md)
+- [glossary](/zh/glossary.md))

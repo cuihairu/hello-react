@@ -98,6 +98,6 @@ Concurrent Mode 和调度器（Scheduler）是 React 提升应用响应性和性
 ## 相关页面
 
 - [README](README.md)
-- [glossary](/glossary.md)
-- [knowledge](/knowledge.md)
-- [react-history-principles](/typescript-react/react-history-principles.md)
+- [glossary](/zh/glossary.md))
+- [knowledge](/zh/knowledge.md))
+- [react-history-principles](/zh/typescript-react/react-history-principles.md))

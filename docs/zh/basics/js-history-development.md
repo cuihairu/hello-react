@@ -70,4 +70,4 @@ JavaScript 的发展历程展示了其从一个简单的脚本语言到现代全
 <!-- BACKLINKS-AUTO -->
 ## 相关页面
 
-- [knowledge](/knowledge.md)
+- [knowledge](/zh/knowledge.md))

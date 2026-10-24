@@ -205,4 +205,4 @@ npx react-codemod update-react-imports .
 ## 相关页面
 
 - [README](README.md)
-- [ci-code-quality](/ecosystem/ci-code-quality.md)- [unit-integration-tests](/ecosystem/unit-integration-tests.md)- [knowledge](/knowledge.md)
+- [ci-code-quality](/zh/ecosystem/ci-code-quality.md))- [unit-integration-tests](/zh/ecosystem/unit-integration-tests.md))- [knowledge](/zh/knowledge.md))
