@@ -161,4 +161,4 @@ Understanding how `state` and `props` work — and how they differ — is the fo
 
 - [README](README.md)
 - [component-api](component-api.md)
-- [glossary](glossary.md))
+- [glossary](/glossary.md))

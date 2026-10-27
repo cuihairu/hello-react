@@ -262,4 +262,4 @@ These helper APIs provide various features to support different development need
 ## Related Pages
 
 - [README](README.md)
-- [knowledge](knowledge.md))
+- [knowledge](/knowledge.md))

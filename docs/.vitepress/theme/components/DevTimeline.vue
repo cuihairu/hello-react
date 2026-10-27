@@ -5,7 +5,7 @@
 //   · 进场动画走 IntersectionObserver，prefers-reduced-motion 下整体旁路
 // 页面底部 <details> 是同一份数据的文本形态，可整段通读。
 // 多语言：页面把对应语言的 localeData（timeline.zh / timeline.en）经 :data 传入，
-// 组件只消费 prop，不做语言判断；事件 link 是语言相对路径，这里按 locale 补前缀。
+// 组件只消费 prop，不做语言判断；事件 link 是语言相对路径，这里按 localeIndex 补前缀。
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useData, withBase } from 'vitepress'
 import type { TimelineEvent, TimelineLocaleData } from '../data/timeline.types'
@@ -15,9 +15,12 @@ type Filter = 'all' | Field
 
 const props = defineProps<{ data: TimelineLocaleData }>()
 
-const { locale } = useData()
+const { localeIndex } = useData()
 const localeHref = (link: string) =>
-  withBase((locale.value === '/' ? '' : locale.value.replace(/\/+$/, '')) + link)
+  withBase(
+    (localeIndex.value === 'root' ? '' : '/' + localeIndex.value.replace(/\/+$/, '')) +
+      link,
+  )
 
 const filter = ref<Filter>('all')
 const selected = ref<number | null>(null)

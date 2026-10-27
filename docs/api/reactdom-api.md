@@ -185,5 +185,5 @@ These APIs provide powerful functionality for rendering and manipulating React c
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
-- [knowledge](knowledge.md))
+- [glossary](/glossary.md))
+- [knowledge](/knowledge.md))

@@ -270,4 +270,4 @@ These patterns and APIs help improve the reusability, performance, and maintaina
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
+- [glossary](/glossary.md))

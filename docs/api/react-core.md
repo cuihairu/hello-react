@@ -318,4 +318,4 @@ This covers React's core APIs by JSX, components, lifecycle, Hooks, Context, Ref
 <!-- BACKLINKS-AUTO -->
 ## Related Pages
 
-- [glossary](glossary.md))
+- [glossary](/glossary.md))

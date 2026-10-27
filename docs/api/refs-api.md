@@ -182,4 +182,4 @@ Refs are a powerful, flexible way to manipulate DOM elements and React component
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
+- [glossary](/glossary.md))

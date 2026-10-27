@@ -126,5 +126,5 @@ Using error boundaries makes a React app more robust and its UX better: even whe
 
 - [README](README.md)
 - [lifecycle-methods](lifecycle-methods.md)
-- [glossary](glossary.md))
-- [knowledge](knowledge.md))
+- [glossary](/glossary.md))
+- [knowledge](/knowledge.md))

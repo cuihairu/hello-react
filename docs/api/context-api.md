@@ -143,5 +143,5 @@ Source: [React 19 Upgrade Guide](https://react.dev/blog/2024/04/25/react-19-upgr
 
 - [README](README.md)
 - [hooks-api](hooks-api.md)
-- [glossary](glossary.md))
-- [knowledge](knowledge.md))
+- [glossary](/glossary.md))
+- [knowledge](/knowledge.md))

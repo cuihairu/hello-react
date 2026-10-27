@@ -100,4 +100,4 @@ Choosing between `React.Component` and `React.PureComponent` mostly comes down t
 
 - [README](README.md)
 - [react-extensions](react-extensions.md)
-- [glossary](glossary.md))- [knowledge](knowledge.md))
+- [glossary](/glossary.md))- [knowledge](/knowledge.md))

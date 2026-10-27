@@ -285,5 +285,5 @@ These Hooks are powerful: they let function components handle all kinds of state
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
-- [knowledge](knowledge.md))
+- [glossary](/glossary.md))
+- [knowledge](/knowledge.md))

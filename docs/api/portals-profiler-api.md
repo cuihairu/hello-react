@@ -143,5 +143,5 @@ These two APIs are powerful tools for managing and optimizing render performance
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
-- [knowledge](knowledge.md))
+- [glossary](/glossary.md))
+- [knowledge](/knowledge.md))

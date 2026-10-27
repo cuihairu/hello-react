@@ -223,4 +223,4 @@ React lifecycle methods let class components perform specific operations at diff
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
+- [glossary](/glossary.md))

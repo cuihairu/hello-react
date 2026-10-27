@@ -181,4 +181,4 @@ JSX is a powerful syntax extension provided by React that lets developers define
 ## Related Pages
 
 - [README](README.md)
-- [glossary](glossary.md))
+- [glossary](/glossary.md))
