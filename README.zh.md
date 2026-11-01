@@ -1,6 +1,20 @@
 [English](README.md) | [中文](README.zh.md)
 
-<div align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="license" /> <img src="docs/public/badges/langs.svg" alt="langs" /> <a href="https://cuihairu.github.io/hello-react/zh/"><img src="https://img.shields.io/badge/docs-文档-blue" alt="docs"></a></div>
+<div align="center">
+
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> </p>
+
+# Hello React
+
+<p align="center">
+  <img src="docs/public/badges/topic.svg" alt="topic" />
+  <img src="docs/public/badges/docs.svg" alt="docs" />
+  <img src="docs/public/badges/license.svg" alt="license" />
+  <img src="docs/public/badges/langs.svg" alt="langs" />
+</p>
+
+React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/zh//) · [知识点总纲](https://cuihairu.github.io/hello-react/zh//knowledge) <a href="https://cuihairu.github.io/hello-react/zh/"><img src="https://img.shields.io/badge/%E6%96%87%E6%A1%A3-blue" alt="docs"></a>
+</div>
 
 ---
 
@@ -40,7 +54,7 @@ VitePress 从 `docs/` 构建；新增或修改站点内容请编辑 `docs/`。`s
 
 ## 迁移说明
 
-本站由 mdBook 迁移至 VitePress。内容按主题目录存放，侧栏用于浏览；这里是个人开发笔记与经验记录，内容按主题浏览。
+本站由 mdBook 迁移至 VitePress。内容按主题目录存放，侧栏用于浏览；它是个人学习笔记、心得与开发经验分享，不按课程或学习阶段组织。
 
 ## 许可协议
 
