@@ -1,8 +1,18 @@
+<div align="center">
+
 [English](README.md) | [中文](README.zh.md)
 
-<div align="center">
-  <img src="docs/public/logo.svg" width="64" height="64" alt="logo" /> <img src="docs/public/badges/topic.svg" alt="topic" /> <img src="docs/public/badges/docs.svg" alt="docs" /> <img src="docs/public/badges/license.svg" alt="license" /> <img src="docs/public/badges/langs.svg" alt="langs" /> <a href="https://cuihairu.github.io/hello-react//"></a> <a href="https://cuihairu.github.io/hello-react/"></a>
-  <img src="https://img.shields.io/badge/docs-docs-blue" alt="docs"> <img src="https://img.shields.io/badge/docs-blue" alt="docs">
+<p align="center"><img src="docs/public/logo.svg" width="64" height="64" alt="logo" /></p>
+
+# Hello React
+
+<p align="center">
+  <img src="docs/public/badges/topic.svg" alt="topic" />
+  <img src="docs/public/badges/docs.svg" alt="docs" />
+  <img src="docs/public/badges/license.svg" alt="license" />
+  <img src="docs/public/badges/langs.svg" alt="langs" />
+</p>
+
 </div>
 
 ---
@@ -12,11 +22,11 @@ A personal collection of React learning notes, takeaways, and development experi
 ## Local Development
 
 ```bash
-npm install           # install dependencies
-npm run docs:dev      # local dev server
-npm run docs:build    # build to docs/.vitepress/dist, checks source-level dead links
-npm run docs:preview  # preview the build output locally
-npm run audit:links   # audit all built HTML for dead links and broken anchors
+pnpm install           # install dependencies
+pnpm run docs:dev      # local dev server
+pnpm run docs:build    # build to docs/.vitepress/dist, checks source-level dead links
+pnpm run docs:preview  # preview the build output locally
+pnpm run audit:links   # audit all built HTML for dead links and broken anchors
 ```
 
 Dead-link checking runs at two levels: VitePress fails the build on source-level dead links, and `audit:links` scans the built HTML for links pointing to excluded files or broken page anchors (CI runs it after every build).

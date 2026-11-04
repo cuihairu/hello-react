@@ -13,7 +13,7 @@
   <img src="docs/public/badges/langs.svg" alt="langs" />
 </p>
 
-React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/zh//) · [知识点总纲](https://cuihairu.github.io/hello-react/zh//knowledge) <a href="https://cuihairu.github.io/hello-react/zh/"><img src="https://img.shields.io/badge/%E6%96%87%E6%A1%A3-blue" alt="docs"></a>
+React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/zh/) · [知识点总纲](https://cuihairu.github.io/hello-react/zh/knowledge) <a href="https://cuihairu.github.io/hello-react/zh/"><img src="https://img.shields.io/badge/%E6%96%87%E6%A1%A3-blue" alt="docs"></a>
 </div>
 
 ---
@@ -23,11 +23,11 @@ React 开发笔记 · [在线阅读](https://cuihairu.github.io/hello-react/zh//
 ## 本地开发
 
 ```bash
-npm install         # 安装依赖
-npm run docs:dev    # 本地开发
-npm run docs:build  # 构建到 docs/.vitepress/dist，检查源级死链
-npm run docs:preview # 本地预览构建产物
-npm run audit:links # 扫描构建产物中的死链与失效锚点
+pnpm install         # 安装依赖
+pnpm run docs:dev    # 本地开发
+pnpm run docs:build  # 构建到 docs/.vitepress/dist，检查源级死链
+pnpm run docs:preview # 本地预览构建产物
+pnpm run audit:links # 扫描构建产物中的死链与失效锚点
 ```
 
 死链检查分两层：VitePress 构建时对源级死链直接报错，`audit:links` 扫描构建产物中指向被排除文件或失效锚点的链接（CI 每次构建后执行）。
